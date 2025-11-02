@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Interactive Networking Quiz — 100 MCQs</title>
+  <style>
+    :root {
+      --bg: #0f1724;
+      --card: #0b1220;
+      --accent: #0ea5ef;
+      --muted: #94a3b8;
+      --ok: #10b981
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      background: linear-gradient(180deg, #071128 0%, #071827 100%);
+      color: #e6eef8;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px
+    }
+
+    .app {
+      width: 100%;
+      max-width: 980px
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 18px
+    }
+
+    header h1 {
+      font-size: 20px;
+      margin: 0
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+      padding: 20px;
+      border-radius: 14px;
+      box-shadow: 0 6px 20px rgba(2, 6, 23, 0.6)
+    }
+
+    .meta {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 12px
+    }
+
+    .progress {
+      flex: 1;
+      background: #061225;
+      height: 10px;
+      border-radius: 999px;
+      overflow: hidden
+    }
+
+    .bar {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent), #7c3aed);
+      width: 0%
+    }
+
+    .controls {
+      display: flex;
+      gap: 8px;
+      align-items: center
+    }
+
+    .btn {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      padding: 8px 12px;
+      border-radius: 10px;
+      color: var(--accent);
+      cursor: pointer
+    }
+
+    .btn.secondary {
+      color: var(--muted);
+      border-style: dashed
+    }
+
+    .question {
+      font-size: 18px;
+      margin: 12px 0 6px
+    }
+
+    .options {
+      display: grid;
+      gap: 8px
+    }
+
+    .option {
+      background: rgba(255, 255, 255, 0.02);
+      padding: 12px;
+      border-radius: 10px;
+      cursor: pointer;
+      border: 1px solid transparent
+    }
+
+    .option:hover {
+      transform: translateY(-2px)
+    }
+
+    .option.selected {
+      border-color: var(--accent);
+      box-shadow: 0 4px 18px rgba(14, 165, 239, 0.12)
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 14px
+    }
+
+    .small {
+      font-size: 13px;
+      color: var(--muted)
+    }
+
+    .result {
+      display: none;
+      padding: 16px;
+      border-radius: 10px;
+      margin-top: 12px;
+      background: linear-gradient(180deg, rgba(16, 185, 129, 0.06), rgba(16, 185, 129, 0.02));
+      color: var(--ok)
+    }
+
+    .review {
+      display: none;
+      margin-top: 14px
+    }
+
+    .review .q {
+      padding: 10px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.02);
+      margin-bottom: 8px
+    }
+
+    .right {
+      color: var(--ok);
+      font-weight: 600
+    }
+
+    .wrong {
+      color: #fb7185;
+      font-weight: 600
+    }
+
+    footer {
+      margin-top: 18px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px
+    }
+
+    @media(max-width:640px) {
+      .question {
+        font-size: 16px
+      }
+
+      .btn {
+        padding: 6px 8px
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app card">
+    <header>
+      <svg width="44" height="44" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="1" y="1" width="22" height="22" rx="6" fill="#071834" stroke="#0ea5ef" stroke-opacity="0.12" />
+      </svg>
+      <div>
+        <h1>Interactive Networking Quiz — 100 MCQs</h1>
+        <div class="small">Practice mode: one question at a time • Instant scoring & review</div>
+      </div>
+    </header>
+
+    <div class="meta">
+      <div class="small">Question <span id="qIndex">1</span> / 100</div>
+      <div class="progress" aria-hidden>
+        <div class="bar" id="progress"></div>
+      </div>
+      <div class="controls">
+        <button class="btn" id="prevBtn">◀ Prev</button>
+        <button class="btn" id="nextBtn">Next ▶</button>
+        <button class="btn secondary" id="submitBtn">Submit Quiz</button>
+      </div>
+    </div>
+
+    <div id="quizArea">
+      <div id="question" class="question">Loading...</div>
+      <div id="options" class="options"></div>
+      <div class="footer">
+        <div class="small">Selected: <span id="selectedText">—</span></div>
+        <div class="small">Time: <span id="timer">00:00</span></div>
+      </div>
+
+      <div class="result" id="resultBox"></div>
+      <div class="review" id="reviewBox"></div>
+    </div>
+
+    <footer>
+      Tip: Use the Next / Prev buttons to navigate. Click "Submit Quiz" to finish and review your answers.
+    </footer>
+  </div>
+
+<script>
+let questions = []; // global variable
+let current = 0;
+let answers = [];
+let seconds = 0, timerInterval;
+
+const qIndexEl = document.getElementById('qIndex');
+const progressEl = document.getElementById('progress');
+const questionEl = document.getElementById('question');
+const optionsEl = document.getElementById('options');
+const selectedText = document.getElementById('selectedText');
+const resultBox = document.getElementById('resultBox');
+const reviewBox = document.getElementById('reviewBox');
+const timerEl = document.getElementById('timer');
+
+async function initQuiz() {
+  questions = await loadQuestions();
+  answers = new Array(questions.length).fill(null); // now safe
+  render();
+  startTimer();
+}
+
+function startTimer() {
+  timerInterval = setInterval(() => {
+    seconds++;
+    const m = String(Math.floor(seconds / 60)).padStart(2, '0');
+    const s = String(seconds % 60).padStart(2, '0');
+    timerEl.textContent = `${m}:${s}`;
+  }, 1000);
+}
+
+function stopTimer() { clearInterval(timerInterval); }
+
+function render() {
+  if (!questions.length) return; // safety
+  const item = questions[current];
+  qIndexEl.textContent = current + 1;
+  progressEl.style.width = Math.round(((current + 1) / questions.length) * 100) + '%';
+  questionEl.textContent = item.q;
+  optionsEl.innerHTML = '';
+
+  item.opts.forEach((opt, i) => {
+    const div = document.createElement('div');
+    div.className = 'option' + (answers[current] === i ? ' selected' : '');
+    div.tabIndex = 0;
+    div.textContent = String.fromCharCode(65 + i) + '. ' + opt;
+    div.onclick = () => { answers[current] = i; updateSelected(); render(); };
+    div.onkeydown = e => { if (e.key === 'Enter') { answers[current] = i; updateSelected(); render(); } };
+    optionsEl.appendChild(div);
+  });
+
+  updateSelected();
+}
+
+function updateSelected() {
+  const sel = answers[current];
+  selectedText.textContent = (sel === null) ? '—' : String.fromCharCode(65 + sel) + ' (' + questions[current].opts[sel] + ')';
+  document.querySelectorAll('.option').forEach((el, idx) => {
+    el.classList.toggle('selected', answers[current] === idx);
+  });
+}
+
+// Navigation buttons
+document.getElementById('prevBtn').addEventListener('click', () => { if (current > 0) { current--; render(); } });
+document.getElementById('nextBtn').addEventListener('click', () => { if (current < questions.length - 1) { current++; render(); } });
+
+// Submit quiz
+document.getElementById('submitBtn').addEventListener('click', () => {
+  if (!confirm('Submit quiz and calculate score?')) return;
+  stopTimer();
+  let score = 0;
+  const details = [];
+  for (let i = 0; i < questions.length; i++) {
+    const user = answers[i], correct = questions[i].a;
+    const ok = user !== null && user === correct; 
+    if (ok) score++;
+    details.push({ q: questions[i].q, user, correct, opts: questions[i].opts });
+  }
+  resultBox.style.display = 'block';
+  resultBox.innerHTML = `<strong>Score: ${score} / ${questions.length}</strong> — Time: ${timerEl.textContent}`;
+
+  reviewBox.style.display = 'block';
+  reviewBox.innerHTML = '<h3 style="margin:8px 0;color:var(--muted)">Review answers</h3>';
+  details.forEach((d, i) => {
+    const div = document.createElement('div'); div.className = 'q';
+    const u = d.user === null ? 'No answer' : String.fromCharCode(65 + d.user) + '. ' + (d.user === null ? '' : d.opts[d.user]);
+    const c = String.fromCharCode(65 + d.correct) + '. ' + d.opts[d.correct];
+    const isRight = d.user !== null && d.user === d.correct;
+    div.innerHTML = `<div style="display:flex;justify-content:space-between;gap:10px">
+      <div style='flex:1'><strong>Q${i + 1}:</strong> ${d.q}</div>
+      <div style='min-width:160px;text-align:right' class='${isRight ? 'right' : 'wrong'}'>Your: ${u}<br>Correct: ${c}</div>
+    </div>`;
+    reviewBox.appendChild(div);
+  });
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// Keyboard shortcuts
+document.addEventListener('keydown', (e) => {
+  if (!questions.length) return;
+  if (e.key === 'ArrowRight') document.getElementById('nextBtn').click();
+  if (e.key === 'ArrowLeft') document.getElementById('prevBtn').click();
+  if (e.key >= '1' && e.key <= '4') {
+    const idx = parseInt(e.key, 10) - 1;
+    if (idx < questions[current].opts.length) { answers[current] = idx; render(); }
+  }
+});
+
+// Download results
+function downloadResults() {
+  const out = answers.map((a, i) => ({ q: i + 1, question: questions[i].q, selected: a === null ? null : String.fromCharCode(65 + a), correct: String.fromCharCode(65 + questions[i].a) }));
+  const blob = new Blob([JSON.stringify(out, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a'); a.href = url; a.download = 'networking-quiz-results.json'; a.click(); URL.revokeObjectURL(url);
+}
+
+// Quick export button
+const exportBtn = document.createElement('button'); 
+exportBtn.className = 'btn'; 
+exportBtn.textContent = 'Export Results'; 
+exportBtn.style.marginLeft = '8px'; 
+exportBtn.onclick = downloadResults;
+document.querySelector('.controls').appendChild(exportBtn);
+
+// Load questions
+async function loadQuestions() {
+  const response = await fetch('./questions.json');
+  const questions = await response.json();
+  console.log("Loaded questions:", questions);
+  return questions;
+}
+
+// Initialize quiz after loading questions
+initQuiz();
+</script>
+
+</body>
+
+</html>
