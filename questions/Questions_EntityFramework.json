@@ -1,0 +1,1082 @@
+[
+  {
+    "q": "What is Entity Framework primarily used for?",
+    "opts": [
+      "Designing front-end UI",
+      "Object-relational mapping (ORM)",
+      "Managing network protocols",
+      "Writing SQL queries manually"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which of the following is a core component of Entity Framework?",
+    "opts": [
+      "DbContext",
+      "HttpClient",
+      "TaskScheduler",
+      "JsonSerializer"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Which method is used to retrieve all records from a DbSet in EF Core?",
+    "opts": [
+      "DbSet.GetAll()",
+      "DbSet.ToList()",
+      "DbSet.Fetch()",
+      "DbSet.Read()"
+    ],
+    "a": 1
+  },
+  {
+    "q": "In EF Core, which approach involves creating your database schema first?",
+    "opts": [
+      "Code First",
+      "Database First",
+      "Model First",
+      "Service First"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which command is used to create migrations in EF Core?",
+    "opts": [
+      "dotnet ef migrations add <Name>",
+      "dotnet ef database update",
+      "dotnet ef scaffold",
+      "dotnet ef init"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Which attribute is used to mark a property as a primary key in EF Core?",
+    "opts": [
+      "[ForeignKey]",
+      "[Key]",
+      "[Required]",
+      "[Column]"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which method is used to apply pending migrations to the database?",
+    "opts": [
+      "DbContext.Migrate()",
+      "DbContext.Update()",
+      "DbContext.Apply()",
+      "DbContext.SaveChanges()"
+    ],
+    "a": 0
+  },
+  {
+    "q": "In EF Core, what does 'DbSet<TEntity>' represent?",
+    "opts": [
+      "A database table",
+      "A SQL query",
+      "A stored procedure",
+      "A configuration file"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Which method is used to add a new entity to the context in EF Core?",
+    "opts": [
+      "DbSet.Insert()",
+      "DbSet.Add()",
+      "DbSet.Create()",
+      "DbSet.New()"
+    ],
+    "a": 1
+  },
+  {
+    "q": "EF Core supports which of the following databases?",
+    "opts": [
+      "SQL Server",
+      "SQLite",
+      "PostgreSQL",
+      "All of the above"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Which method is used to remove an entity from the context?",
+    "opts": [
+      "DbSet.Delete()",
+      "DbSet.Remove()",
+      "DbSet.Drop()",
+      "DbSet.Clear()"
+    ],
+    "a": 1
+  },
+  {
+    "q": "EF Core allows which type of relationships between entities?",
+    "opts": [
+      "One-to-One",
+      "One-to-Many",
+      "Many-to-Many",
+      "All of the above"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Which method is used to persist changes in EF Core?",
+    "opts": [
+      "DbContext.Commit()",
+      "DbContext.SaveChanges()",
+      "DbContext.ApplyChanges()",
+      "DbContext.Execute()"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which LINQ method is used for filtering records in EF Core?",
+    "opts": [
+      "Where()",
+      "Select()",
+      "Include()",
+      "Join()"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What does 'AsNoTracking()' do in EF Core?",
+    "opts": [
+      "Prevents lazy loading",
+      "Tracks entities for updates",
+      "Improves performance by not tracking entities",
+      "Deletes entities automatically"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Which approach allows EF Core to generate the database from your models?",
+    "opts": [
+      "Database First",
+      "Code First",
+      "Model First",
+      "Service First"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What is the purpose of 'DbContextOptions'?",
+    "opts": [
+      "Define connection strings and database provider",
+      "Execute SQL queries",
+      "Track migrations",
+      "Serialize entities"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Which method is used to include related entities in a query?",
+    "opts": [
+      "ThenInclude()",
+      "Include()",
+      "Load()",
+      "Attach()"
+    ],
+    "a": 1
+  },
+  {
+    "q": "EF Core can automatically generate which type of keys?",
+    "opts": [
+      "Primary Keys",
+      "Foreign Keys",
+      "Composite Keys",
+      "All of the above"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Which command updates the database to the latest migration?",
+    "opts": [
+      "dotnet ef database update",
+      "dotnet ef migrations add",
+      "dotnet ef scaffold",
+      "dotnet ef init"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Which data annotation is used to set maximum string length?",
+    "opts": [
+      "[MaxLength]",
+      "[StringLength]",
+      "[Column]",
+      "[Required]"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which feature in EF Core allows execution of raw SQL queries?",
+    "opts": [
+      "FromSqlRaw()",
+      "ExecuteSql()",
+      "QuerySql()",
+      "SqlCommand()"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Lazy loading in EF Core means:",
+    "opts": [
+      "Entities are loaded on demand",
+      "Entities are loaded eagerly",
+      "Entities are never loaded",
+      "Entities are loaded randomly"
+    ],
+    "a": 0
+  },
+  {
+    "q": "EF Core supports which of the following migrations?",
+    "opts": [
+      "Add",
+      "Remove",
+      "Update",
+      "All of the above"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Which method attaches a detached entity to the context?",
+    "opts": [
+      "DbSet.Attach()",
+      "DbSet.Add()",
+      "DbSet.Track()",
+      "DbSet.Connect()"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Which command generates a DbContext and entity classes from an existing database?",
+    "opts": [
+      "dotnet ef scaffold",
+      "dotnet ef migrations add",
+      "dotnet ef update",
+      "dotnet ef create"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Which feature allows mapping multiple tables to one entity?",
+    "opts": [
+      "Table splitting",
+      "Entity splitting",
+      "Relationship splitting",
+      "DbSet splitting"
+    ],
+    "a": 1
+  },
+  {
+    "q": "EF Core supports which loading strategies?",
+    "opts": [
+      "Eager loading",
+      "Lazy loading",
+      "Explicit loading",
+      "All of the above"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Which method is used to start a transaction in EF Core?",
+    "opts": [
+      "DbContext.BeginTransaction()",
+      "DbContext.StartTransaction()",
+      "DbContext.Transaction()",
+      "DbContext.OpenTransaction()"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Which data annotation makes a property required?",
+    "opts": [
+      "[Required]",
+      "[NotNull]",
+      "[Key]",
+      "[MaxLength]"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Which method removes all tracked entities from the context?",
+    "opts": [
+      "DbContext.Clear()",
+      "DbContext.DetachAll()",
+      "DbContext.ChangeTracker.Clear()",
+      "DbContext.ChangeTracker.Entries().ToList().ForEach(e => e.State = Detached)"
+    ],
+    "a": 3
+  },
+  {
+    "q": "What is the default behavior of EF Core when deleting a principal entity?",
+    "opts": [
+      "Cascade delete related entities",
+      "Throw an exception",
+      "Set foreign keys to null",
+      "Do nothing"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Which interface provides access to EF Core's change tracker?",
+    "opts": [
+      "IChangeTracker",
+      "ITracking",
+      "ChangeTracker",
+      "IEntityTracker"
+    ],
+    "a": 2
+  },
+  {
+    "q": "In EF Core, 'HasKey()' is used to:",
+    "opts": [
+      "Define a primary key",
+      "Define a foreign key",
+      "Define an index",
+      "Define a unique constraint"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Which EF Core feature allows mapping to database views?",
+    "opts": [
+      "Query types / Keyless entities",
+      "Database First",
+      "Stored procedures",
+      "Entity splitting"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Which method forces immediate loading of related entities?",
+    "opts": [
+      "Include()",
+      "Load()",
+      "Attach()",
+      "Fetch()"
+    ],
+    "a": 1
+  },
+  {
+    "q": "EF Core supports which type of primary keys?",
+    "opts": [
+      "Single property keys",
+      "Composite keys",
+      "GUID keys",
+      "All of the above"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Which LINQ method is used to project entities into a new shape?",
+    "opts": [
+      "Select()",
+      "Where()",
+      "Include()",
+      "Join()"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What does 'DbContext.Entry(entity)' provide?",
+    "opts": [
+      "Metadata about the entity",
+      "Tracking information",
+      "Entity state",
+      "All of the above"
+    ],
+    "a": 3
+  },
+  {
+    "q": "EF Core's 'FirstOrDefault()' method:",
+    "opts": [
+      "Returns the first entity or default if none found",
+      "Returns all entities",
+      "Returns a random entity",
+      "Throws an exception if empty"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Which method generates a SQL script for migrations?",
+    "opts": [
+      "dotnet ef migrations script",
+      "dotnet ef database update",
+      "dotnet ef migrations add",
+      "dotnet ef scaffold"
+    ],
+    "a": 0
+  },
+  {
+    "q": "EF Core allows querying using:",
+    "opts": [
+      "LINQ",
+      "Raw SQL",
+      "Stored procedures",
+      "All of the above"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Which configuration is used to map entities in EF Core Fluent API?",
+    "opts": [
+      "OnModelCreating()",
+      "DbContextOptions",
+      "DbSet configuration",
+      "MigrationBuilder"
+    ],
+    "a": 0
+  },
+  {
+    "q": "EF Core's 'Update()' method:",
+    "opts": [
+      "Marks entity as modified",
+      "Adds a new entity",
+      "Deletes an entity",
+      "Tracks an entity without changes"
+    ],
+    "a": 0
+  },
+  {
+    "q": "EF Core supports which type of keys for auto-generation?",
+    "opts": [
+      "Identity",
+      "GUID",
+      "Sequence",
+      "All of the above"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Which EF Core method executes a command without returning results?",
+    "opts": [
+      "ExecuteSqlRaw()",
+      "FromSqlRaw()",
+      "SqlQuery()",
+      "ExecuteQuery()"
+    ],
+    "a": 0
+  },
+  {
+    "q": "EF Core supports which of the following index types?",
+    "opts": [
+      "Single column index",
+      "Composite index",
+      "Unique index",
+      "All of the above"
+    ],
+    "a": 3
+  },
+  {
+    "q": "EF Core migrations allow:",
+    "opts": [
+      "Incremental database changes",
+      "Full database reset",
+      "Only adding tables",
+      "Only removing columns"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Which attribute specifies a foreign key property?",
+    "opts": [
+      "[Key]",
+      "[ForeignKey]",
+      "[InverseProperty]",
+      "[Required]"
+    ],
+    "a": 1
+  },
+  {
+    "q": "EF Core's 'Attach()' method is used to:",
+    "opts": [
+      "Start tracking an existing entity",
+      "Add a new entity",
+      "Remove an entity",
+      "Detach an entity"
+    ],
+    "a": 0
+  },
+  {
+    "q": "EF Core can map entities to which database objects?",
+    "opts": [
+      "Tables",
+      "Views",
+      "Stored procedures",
+      "All of the above"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Which method reloads an entity from the database?",
+    "opts": [
+      "Reload()",
+      "Refresh()",
+      "Update()",
+      "Attach()"
+    ],
+    "a": 0
+  },
+  {
+    "q": "EF Core change tracking occurs by default for:",
+    "opts": [
+      "Entities retrieved via DbSet",
+      "Detached entities",
+      "Raw SQL queries",
+      "Entities in memory only"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Which EF Core method explicitly sets entity state?",
+    "opts": [
+      "DbContext.Entry(entity).State",
+      "DbSet.Update()",
+      "DbSet.Attach()",
+      "DbContext.SaveChanges()"
+    ],
+    "a": 0
+  },
+  {
+    "q": "EF Core supports which cascade delete options?",
+    "opts": [
+      "Cascade",
+      "SetNull",
+      "Restrict",
+      "All of the above"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Which command removes the last migration?",
+    "opts": [
+      "dotnet ef migrations remove",
+      "dotnet ef database update",
+      "dotnet ef migrations delete",
+      "dotnet ef rollback"
+    ],
+    "a": 0
+  },
+  {
+    "q": "EF Core allows configuring indexes using Fluent API:",
+    "opts": [
+      "HasIndex()",
+      "HasKey()",
+      "HasForeignKey()",
+      "HasConstraint()"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Which method allows explicit loading of a collection navigation property?",
+    "opts": [
+      "Entry(entity).Collection().Load()",
+      "Include()",
+      "Attach()",
+      "FromSqlRaw()"
+    ],
+    "a": 0
+  },
+  {
+    "q": "EF Core supports which type of value generation for keys?",
+    "opts": [
+      "Identity columns",
+      "GUID",
+      "Sequence",
+      "All of the above"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Which method is used to detach an entity from the context?",
+    "opts": [
+      "DbContext.Entry(entity).State = EntityState.Detached",
+      "DbSet.Remove()",
+      "DbSet.Attach()",
+      "DbContext.SaveChanges()"
+    ],
+    "a": 0
+  },
+  {
+    "q": "EF Core's 'Select()' in LINQ is used to:",
+    "opts": [
+      "Filter records",
+      "Project data into new form",
+      "Include related entities",
+      "Track entity state"
+    ],
+    "a": 1
+  },
+  {
+    "q": "EF Core 'FromSqlRaw()' should be used with caution because:",
+    "opts": [
+      "It bypasses LINQ queries",
+      "It may lead to SQL injection",
+      "It returns entities directly",
+      "All of the above"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Which EF Core feature allows mapping multiple entities to one table?",
+    "opts": [
+      "Table splitting",
+      "Entity splitting",
+      "Relationship splitting",
+      "Inheritance mapping"
+    ],
+    "a": 0
+  },
+  {
+    "q": "EF Core can handle which inheritance mapping strategies?",
+    "opts": [
+      "Table-per-hierarchy",
+      "Table-per-type",
+      "Table-per-concrete-class",
+      "All of the above"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Which method explicitly loads a reference navigation property?",
+    "opts": [
+      "Entry(entity).Reference().Load()",
+      "Include()",
+      "Attach()",
+      "Update()"
+    ],
+    "a": 0
+  },
+  {
+    "q": "EF Core logging can be configured via:",
+    "opts": [
+      "DbContextOptionsBuilder",
+      "App.config",
+      "Web.config",
+      "DbSet configuration"
+    ],
+    "a": 0
+  },
+  {
+    "q": "EF Core supports optimistic concurrency via:",
+    "opts": [
+      "[ConcurrencyCheck]",
+      "RowVersion / Timestamp",
+      "[Key]",
+      "[Required]"
+    ],
+    "a": 1
+  },
+  {
+    "q": "EF Core supports which query types for keyless entities?",
+    "opts": [
+      "Views",
+      "Raw SQL queries",
+      "Stored procedures",
+      "All of the above"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Which EF Core feature tracks all changes before saving?",
+    "opts": [
+      "ChangeTracker",
+      "DbSet",
+      "DbContextOptions",
+      "MigrationBuilder"
+    ],
+    "a": 0
+  },
+  {
+    "q": "EF Core 'HasAlternateKey()' is used to define:",
+    "opts": [
+      "Unique constraint",
+      "Primary key",
+      "Foreign key",
+      "Index"
+    ],
+    "a": 0
+  },
+  {
+    "q": "EF Core supports which database providers?",
+    "opts": [
+      "SQL Server",
+      "PostgreSQL",
+      "MySQL",
+      "All of the above"
+    ],
+    "a": 3
+  },
+  {
+    "q": "EF Core 'ValueGeneratedOnAdd()' configures:",
+    "opts": [
+      "Key generated on insert",
+      "Key generated on update",
+      "Key never generated",
+      "Key generated manually"
+    ],
+    "a": 0
+  },
+  {
+    "q": "EF Core migrations are stored in which folder by default?",
+    "opts": [
+      "Migrations",
+      "Scripts",
+      "DbContext",
+      "Models"
+    ],
+    "a": 0
+  },
+  {
+    "q": "EF Core supports raw SQL commands that return:",
+    "opts": [
+      "Entities",
+      "Primitive types",
+      "Both",
+      "Neither"
+    ],
+    "a": 2
+  },
+  {
+    "q": "EF Core supports which types of relationships for navigation properties?",
+    "opts": [
+      "Collection",
+      "Reference",
+      "Both",
+      "Neither"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Which attribute maps a property to a specific column name?",
+    "opts": [
+      "[Column]",
+      "[Key]",
+      "[Required]",
+      "[ForeignKey]"
+    ],
+    "a": 0
+  },
+  {
+    "q": "EF Core 'HasDefaultValue()' sets:",
+    "opts": [
+      "Default database column value",
+      "Default entity state",
+      "Default navigation property",
+      "Default table name"
+    ],
+    "a": 0
+  },
+  {
+    "q": "EF Core supports which database functions in queries?",
+    "opts": [
+      "String functions",
+      "Date functions",
+      "Math functions",
+      "All of the above"
+    ],
+    "a": 3
+  },
+  {
+    "q": "EF Core supports asynchronous operations via:",
+    "opts": [
+      "ToListAsync()",
+      "SaveChangesAsync()",
+      "FirstOrDefaultAsync()",
+      "All of the above"
+    ],
+    "a": 3
+  },
+  {
+    "q": "EF Core's 'Any()' method:",
+    "opts": [
+      "Checks if any entities match a condition",
+      "Returns all entities",
+      "Deletes all entities",
+      "Updates all entities"
+    ],
+    "a": 0
+  },
+  {
+    "q": "EF Core Fluent API allows overriding which conventions?",
+    "opts": [
+      "Table names",
+      "Column types",
+      "Relationships",
+      "All of the above"
+    ],
+    "a": 3
+  },
+  {
+    "q": "EF Core supports which tracking behavior options?",
+    "opts": [
+      "TrackAll",
+      "NoTracking",
+      "TrackGraph",
+      "All of the above"
+    ],
+    "a": 3
+  },
+  {
+    "q": "EF Core 'Find()' method:",
+    "opts": [
+      "Finds an entity by primary key",
+      "Finds entities by foreign key",
+      "Finds all entities",
+      "Finds using raw SQL"
+    ],
+    "a": 0
+  },
+  {
+    "q": "EF Core allows configuring default schema via:",
+    "opts": [
+      "OnModelCreating()",
+      "DbSet",
+      "DbContextOptions",
+      "MigrationBuilder"
+    ],
+    "a": 0
+  },
+  {
+    "q": "EF Core supports which types of queries?",
+    "opts": [
+      "LINQ",
+      "Raw SQL",
+      "Stored procedures",
+      "All of the above"
+    ],
+    "a": 3
+  },
+  {
+    "q": "EF Core allows setting precision for decimal columns via:",
+    "opts": [
+      "HasPrecision(precision, scale)",
+      "HasMaxLength()",
+      "HasDefaultValue()",
+      "HasColumnName()"
+    ],
+    "a": 0
+  },
+  {
+    "q": "EF Core supports composite primary keys via:",
+    "opts": [
+      "Fluent API only",
+      "Data annotations only",
+      "Both Fluent API and Data annotations",
+      "Not supported"
+    ],
+    "a": 0
+  },
+  {
+    "q": "EF Core supports querying owned types via:",
+    "opts": [
+      "OwnsOne()",
+      "OwnsMany()",
+      "Both",
+      "Neither"
+    ],
+    "a": 2
+  },
+  {
+    "q": "EF Core allows configuring delete behavior using:",
+    "opts": [
+      "OnDelete()",
+      "DeleteBehavior()",
+      "CascadeDelete()",
+      "All of the above"
+    ],
+    "a": 0
+  },
+  {
+    "q": "EF Core can map enums to database columns as:",
+    "opts": [
+      "Integers",
+      "Strings",
+      "Both",
+      "Neither"
+    ],
+    "a": 2
+  },
+  {
+    "q": "EF Core provides 'DbContextOptionsBuilder' for:",
+    "opts": [
+      "Configuring database provider",
+      "Setting connection string",
+      "Enabling logging",
+      "All of the above"
+    ],
+    "a": 3
+  },
+  {
+    "q": "EF Core can automatically detect changes via:",
+    "opts": [
+      "ChangeTracker",
+      "DbSet.Attach()",
+      "FromSqlRaw()",
+      "Entry()"
+    ],
+    "a": 0
+  },
+  {
+    "q": "EF Core 'Include()' can be chained with:",
+    "opts": [
+      "ThenInclude()",
+      "Select()",
+      "Where()",
+      "All of the above"
+    ],
+    "a": 0
+  },
+  {
+    "q": "EF Core supports transactions via:",
+    "opts": [
+      "Database.BeginTransaction()",
+      "DbContextTransaction",
+      "TransactionScope",
+      "All of the above"
+    ],
+    "a": 3
+  },
+  {
+    "q": "EF Core 'AnyAsync()' method is used for:",
+    "opts": [
+      "Asynchronous check for entities",
+      "Adding entities asynchronously",
+      "Deleting entities asynchronously",
+      "Saving changes asynchronously"
+    ],
+    "a": 0
+  },
+  {
+    "q": "EF Core supports which type of indexes?",
+    "opts": [
+      "Unique indexes",
+      "Non-unique indexes",
+      "Composite indexes",
+      "All of the above"
+    ],
+    "a": 3
+  },
+  {
+    "q": "EF Core 'Count()' method:",
+    "opts": [
+      "Returns the number of matching entities",
+      "Returns the first entity",
+      "Deletes entities",
+      "Updates entities"
+    ],
+    "a": 0
+  },
+  {
+    "q": "EF Core can generate migrations using CLI command:",
+    "opts": [
+      "dotnet ef migrations add <name>",
+      "dotnet ef database update",
+      "dotnet ef scaffold",
+      "dotnet ef init"
+    ],
+    "a": 0
+  },
+  {
+    "q": "EF Core supports which type of concurrency handling?",
+    "opts": [
+      "Optimistic concurrency",
+      "Pessimistic concurrency",
+      "Both",
+      "Neither"
+    ],
+    "a": 2
+  },
+  {
+    "q": "EF Core allows executing stored procedures via:",
+    "opts": [
+      "FromSqlRaw()",
+      "ExecuteSqlRaw()",
+      "Both",
+      "Neither"
+    ],
+    "a": 2
+  },
+  {
+    "q": "EF Core 'FirstOrDefaultAsync()' method:",
+    "opts": [
+      "Returns the first matching entity asynchronously",
+      "Returns all entities asynchronously",
+      "Deletes the first entity",
+      "Updates the first entity"
+    ],
+    "a": 0
+  },
+  {
+    "q": "EF Core supports configuring relationships via:",
+    "opts": [
+      "Fluent API",
+      "Data annotations",
+      "Both",
+      "Neither"
+    ],
+    "a": 2
+  },
+  {
+    "q": "EF Core allows configuring schema per entity via:",
+    "opts": [
+      "ToTable(\"TableName\", \"Schema\")",
+      "HasTableSchema()",
+      "HasSchema()",
+      "All of the above"
+    ],
+    "a": 0
+  },
+  {
+    "q": "EF Core allows mapping private properties via:",
+    "opts": [
+      "Fluent API",
+      "Data annotations",
+      "Neither",
+      "Both"
+    ],
+    "a": 0
+  },
+  {
+    "q": "EF Core supports executing asynchronous LINQ queries using:",
+    "opts": [
+      "ToListAsync()",
+      "FirstOrDefaultAsync()",
+      "AnyAsync()",
+      "All of the above"
+    ],
+    "a": 3
+  },
+  {
+    "q": "EF Core change tracker can be accessed via:",
+    "opts": [
+      "DbContext.ChangeTracker",
+      "DbSet.ChangeTracker",
+      "DbContext.Entry()",
+      "All of the above"
+    ],
+    "a": 0
+  },
+  {
+    "q": "EF Core supports shadow properties, which are:",
+    "opts": [
+      "Properties not defined in entity class but mapped to database",
+      "Properties not mapped to database",
+      "Properties with default value",
+      "Properties used for concurrency"
+    ],
+    "a": 0
+  },
+  {
+    "q": "EF Core supports configuring indexes to be unique via:",
+    "opts": [
+      "IsUnique()",
+      "HasAlternateKey()",
+      "HasIndex()",
+      "All of the above"
+    ],
+    "a": 0
+  }
+]
