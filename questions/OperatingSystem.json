@@ -1,0 +1,1502 @@
+[
+  {
+    "q": "What is the main function of an operating system?",
+    "opts": [
+      "Managing hardware and software resources",
+      "Compiling programs",
+      "Designing user interfaces",
+      "Translating high-level code"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Which of the following is NOT an operating system?",
+    "opts": [
+      "Windows",
+      "Linux",
+      "Oracle",
+      "macOS"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What does CPU scheduling in an OS manage?",
+    "opts": [
+      "Memory allocation",
+      "Process execution order",
+      "Disk usage",
+      "User permissions"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which of the following is an example of a real-time operating system?",
+    "opts": [
+      "Windows 11",
+      "Linux Ubuntu",
+      "VxWorks",
+      "macOS"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What is a process in operating systems?",
+    "opts": [
+      "A program in execution",
+      "A type of memory",
+      "An input device",
+      "A compiler module"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Which command is used to display running processes in Linux?",
+    "opts": [
+      "ls",
+      "ps",
+      "top",
+      "showproc"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What is the purpose of the kernel in an OS?",
+    "opts": [
+      "Providing the GUI",
+      "Managing hardware resources",
+      "Creating documents",
+      "Sending emails"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which of the following is NOT a type of OS?",
+    "opts": [
+      "Batch OS",
+      "Time-sharing OS",
+      "Networking OS",
+      "Firmware OS"
+    ],
+    "a": 3
+  },
+  {
+    "q": "What does \u2018context switching\u2019 mean?",
+    "opts": [
+      "Switching between user interfaces",
+      "Saving and restoring process states",
+      "Changing file permissions",
+      "Swapping disks"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which component of the OS is responsible for file management?",
+    "opts": [
+      "Shell",
+      "Memory manager",
+      "File system",
+      "Scheduler"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Operating System Question #11?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Operating System Question #12?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Operating System Question #13?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Operating System Question #14?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Operating System Question #15?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Operating System Question #16?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Operating System Question #17?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Operating System Question #18?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Operating System Question #19?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Operating System Question #20?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Operating System Question #21?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Operating System Question #22?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Operating System Question #23?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Operating System Question #24?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Operating System Question #25?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Operating System Question #26?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Operating System Question #27?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Operating System Question #28?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Operating System Question #29?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Operating System Question #30?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Operating System Question #31?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Operating System Question #32?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Operating System Question #33?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Operating System Question #34?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Operating System Question #35?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Operating System Question #36?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Operating System Question #37?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Operating System Question #38?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Operating System Question #39?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Operating System Question #40?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Operating System Question #41?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Operating System Question #42?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Operating System Question #43?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Operating System Question #44?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Operating System Question #45?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Operating System Question #46?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Operating System Question #47?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Operating System Question #48?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Operating System Question #49?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Operating System Question #50?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Operating System Question #51?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Operating System Question #52?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Operating System Question #53?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Operating System Question #54?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Operating System Question #55?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Operating System Question #56?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Operating System Question #57?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Operating System Question #58?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Operating System Question #59?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Operating System Question #60?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Operating System Question #61?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Operating System Question #62?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Operating System Question #63?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Operating System Question #64?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Operating System Question #65?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Operating System Question #66?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Operating System Question #67?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Operating System Question #68?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Operating System Question #69?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Operating System Question #70?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Operating System Question #71?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Operating System Question #72?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Operating System Question #73?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Operating System Question #74?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Operating System Question #75?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Operating System Question #76?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Operating System Question #77?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Operating System Question #78?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Operating System Question #79?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Operating System Question #80?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Operating System Question #81?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Operating System Question #82?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Operating System Question #83?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Operating System Question #84?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Operating System Question #85?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Operating System Question #86?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Operating System Question #87?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Operating System Question #88?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Operating System Question #89?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Operating System Question #90?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Operating System Question #91?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Operating System Question #92?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Operating System Question #93?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Operating System Question #94?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Operating System Question #95?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Operating System Question #96?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Operating System Question #97?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Operating System Question #98?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Operating System Question #99?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Operating System Question #100?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Operating System Question #101?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Operating System Question #102?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Operating System Question #103?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Operating System Question #104?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Operating System Question #105?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Operating System Question #106?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Operating System Question #107?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Operating System Question #108?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Operating System Question #109?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Operating System Question #110?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Operating System Question #111?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Operating System Question #112?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Operating System Question #113?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Operating System Question #114?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Operating System Question #115?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Operating System Question #116?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Operating System Question #117?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Operating System Question #118?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Operating System Question #119?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Operating System Question #120?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Operating System Question #121?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Operating System Question #122?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Operating System Question #123?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Operating System Question #124?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Operating System Question #125?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Operating System Question #126?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Operating System Question #127?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Operating System Question #128?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Operating System Question #129?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Operating System Question #130?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Operating System Question #131?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Operating System Question #132?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Operating System Question #133?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Operating System Question #134?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Operating System Question #135?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Operating System Question #136?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Operating System Question #137?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Operating System Question #138?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Operating System Question #139?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Operating System Question #140?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Operating System Question #141?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Operating System Question #142?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Operating System Question #143?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Operating System Question #144?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Operating System Question #145?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Operating System Question #146?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Operating System Question #147?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Operating System Question #148?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Operating System Question #149?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Operating System Question #150?",
+    "opts": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "a": 1
+  }
+]
