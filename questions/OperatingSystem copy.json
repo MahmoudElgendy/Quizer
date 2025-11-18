@@ -1,0 +1,523 @@
+[
+  /* ================================
+     CPU & SCHEDULING (1–15)
+     ================================ */
+  {
+    "q": "What is the main purpose of CPU scheduling?",
+    "opts": ["Minimize OS size", "Determine process execution order", "Manage I/O devices", "Handle user authentication"],
+    "a": 1
+  },
+  {
+    "q": "Which scheduling algorithm gives each process a fixed time slice?",
+    "opts": ["FCFS", "Round Robin", "SJF", "Priority"],
+    "a": 1
+  },
+  {
+    "q": "Which scheduling algorithm minimizes average waiting time?",
+    "opts": ["SJF", "Round Robin", "Priority", "FCFS"],
+    "a": 0
+  },
+  {
+    "q": "Which scheduling algorithm can cause starvation?",
+    "opts": ["Round Robin", "FCFS", "Priority Scheduling", "LIFO"],
+    "a": 2
+  },
+  {
+    "q": "What is a time quantum in Round Robin scheduling?",
+    "opts": ["Fixed CPU burst", "Maximum wait time", "Time slice given to each process", "Blocked process timeout"],
+    "a": 2
+  },
+  {
+    "q": "Which scheduling algorithm is best for time-sharing systems?",
+    "opts": ["Round Robin", "FCFS", "LIFO", "SJF"],
+    "a": 0
+  },
+  {
+    "q": "FCFS stands for:",
+    "opts": ["Fast CPU File System", "First Come First Served", "File Control First", "Fastest CPU Scheduling"],
+    "a": 1
+  },
+  {
+    "q": "Which scheduling algorithm selects the shortest next CPU burst?",
+    "opts": ["SJF", "FCFS", "Round Robin", "LIFO"],
+    "a": 0
+  },
+  {
+    "q": "CPU utilization is:",
+    "opts": ["Always 100%", "Percentage of time CPU is busy", "Disk usage", "Interrupt frequency"],
+    "a": 1
+  },
+  {
+    "q": "Which scheduling algorithm is preemptive?",
+    "opts": ["Non-preemptive priority", "Round Robin", "SJF (non-preemptive)", "FCFS"],
+    "a": 1
+  },
+  {
+    "q": "Context switching occurs when:",
+    "opts": ["CPU changes task", "Disk is full", "Cache is cleared", "OS shuts down"],
+    "a": 0
+  },
+  {
+    "q": "Which is NOT a CPU scheduling algorithm?",
+    "opts": ["FCFS", "SJF", "Optimal Scheduling", "Round Robin"],
+    "a": 2
+  },
+  {
+    "q": "Which factor does NOT affect CPU scheduling?",
+    "opts": ["CPU burst length", "I/O burst length", "Process priority", "Screen resolution"],
+    "a": 3
+  },
+  {
+    "q": "Dispatcher latency refers to:",
+    "opts": ["RAM speed", "Time to switch between processes", "File loading time", "Disk scheduling delay"],
+    "a": 1
+  },
+  {
+    "q": "In multiprocessor scheduling, load balancing helps to:",
+    "opts": ["Reduce RAM size", "Distribute workload evenly", "Stop interrupts", "Improve boot time"],
+    "a": 1
+  },
+
+  /* ================================
+     PROCESSES & THREADS (16–32)
+     ================================ */
+  {
+    "q": "What is a process?",
+    "opts": ["A program in execution", "Network packet", "Hardware thread", "Memory block"],
+    "a": 0
+  },
+  {
+    "q": "What is a thread?",
+    "opts": ["A lightweight process", "A file type", "A page in memory", "A scheduler"],
+    "a": 0
+  },
+  {
+    "q": "Which OS structure stores process metadata?",
+    "opts": ["Stack", "PCB", "Page table", "Heap"],
+    "a": 1
+  },
+  {
+    "q": "The state in which a process waits for CPU is called:",
+    "opts": ["Running", "Blocked", "Ready", "Terminated"],
+    "a": 2
+  },
+  {
+    "q": "Which of the following is NOT a process state?",
+    "opts": ["Running", "Ready", "Linked", "Blocked"],
+    "a": 2
+  },
+  {
+    "q": "A zombie process is:",
+    "opts": ["Running forever", "Terminated but still in process table", "Blocked permanently", "Using full CPU"],
+    "a": 1
+  },
+  {
+    "q": "Fork() system call does what?",
+    "opts": ["Creates new thread", "Creates new process", "Terminates process", "Allocates memory"],
+    "a": 1
+  },
+  {
+    "q": "exec() system call does what?",
+    "opts": ["Replaces process memory with new program", "Ends the OS", "Creates a file", "Switches CPU"],
+    "a": 0
+  },
+  {
+    "q": "Which section of process memory stores local variables?",
+    "opts": ["Heap", "Stack", "Data", "Code"],
+    "a": 1
+  },
+  {
+    "q": "Which stores dynamically allocated memory?",
+    "opts": ["Stack", "Heap", "Cache", "ROM"],
+    "a": 1
+  },
+  {
+    "q": "Threads within a process share:",
+    "opts": ["Program counter", "Registers", "Code and data", "Stack"],
+    "a": 2
+  },
+  {
+    "q": "What is multithreading?",
+    "opts": ["Multiple CPUs", "Multiple threads in a process", "Multiple OSes", "Multiple disks"],
+    "a": 1
+  },
+  {
+    "q": "What is the smallest unit of CPU execution?",
+    "opts": ["Process", "Thread", "Page", "Instruction"],
+    "a": 1
+  },
+  {
+    "q": "What is IPC?",
+    "opts": ["Internal Process Copy", "Inter-Process Communication", "Internet Packet Control", "Instruction Pipeline Cache"],
+    "a": 1
+  },
+  {
+    "q": "Which is NOT an IPC method?",
+    "opts": ["Pipes", "Shared memory", "Message queues", "Compiler"],
+    "a": 3
+  },
+  {
+    "q": "Which of these does a thread NOT have?",
+    "opts": ["Registers", "Stack", "Heap", "Program counter"],
+    "a": 2
+  },
+
+  /* ================================
+     MEMORY & VIRTUAL MEMORY (33–55)
+     ================================ */
+  {
+    "q": "What is virtual memory?",
+    "opts": ["RAM", "Using disk as extension of memory", "Encrypted memory", "Cloud memory"],
+    "a": 1
+  },
+  {
+    "q": "Paging divides memory into:",
+    "opts": ["Fixed-size frames", "Variable-size segments", "Files", "Clusters"],
+    "a": 0
+  },
+  {
+    "q": "Segmentation divides memory into:",
+    "opts": ["Pages", "Fixed blocks", "Logical variable-size units", "Frames"],
+    "a": 2
+  },
+  {
+    "q": "Page table maps:",
+    "opts": ["Physical to virtual", "Virtual to physical", "Files to memory", "Threads to CPU"],
+    "a": 1
+  },
+  {
+    "q": "TLB stands for:",
+    "opts": ["Table Lookup Buffer", "Translation Lookaside Buffer", "Temporary Load Base", "Transfer Logic Block"],
+    "a": 1
+  },
+  {
+    "q": "Thrashing occurs when:",
+    "opts": ["CPU overheats", "Too much paging happens", "File deleted", "Network is slow"],
+    "a": 1
+  },
+  {
+    "q": "Page fault occurs when:",
+    "opts": ["Data exists in RAM", "Page is not in RAM", "Disk is full", "CPU idle"],
+    "a": 1
+  },
+  {
+    "q": "LRU replacement selects:",
+    "opts": ["Oldest used page", "Least recently used page", "Random page", "Largest page"],
+    "a": 1
+  },
+  {
+    "q": "FIFO replacement selects:",
+    "opts": ["Most used page", "Newest page", "Oldest loaded page", "Random page"],
+    "a": 2
+  },
+  {
+    "q": "Demand paging loads pages:",
+    "opts": ["All at once", "Only when needed", "At boot time", "Only from SSD"],
+    "a": 1
+  },
+  {
+    "q": "Internal fragmentation is:",
+    "opts": ["Gaps in memory", "Unused memory inside allocated block", "Process corruption", "Cache failure"],
+    "a": 1
+  },
+  {
+    "q": "External fragmentation is:",
+    "opts": ["Memory inside block unused", "Scattered free space", "Disk damage", "Kernel panic"],
+    "a": 1
+  },
+  {
+    "q": "Swapping moves processes:",
+    "opts": ["RAM ↔ Disk", "CPU ↔ RAM", "Cache ↔ Registers", "ROM ↔ RAM"],
+    "a": 0
+  },
+  {
+    "q": "Registers are:",
+    "opts": ["Slowest memory", "Fastest memory", "Disk buffers", "Shared memory"],
+    "a": 1
+  },
+  {
+    "q": "Which memory is volatile?",
+    "opts": ["ROM", "Flash", "RAM", "SSD"],
+    "a": 2
+  },
+  {
+    "q": "MMU stands for:",
+    "opts": ["Memory Management Unit", "Machine Mapping Utility", "Main Memory Unit", "Micro Memory Utility"],
+    "a": 0
+  },
+  {
+    "q": "Secondary memory refers to:",
+    "opts": ["RAM", "Registers", "SSD/HDD", "Cache"],
+    "a": 2
+  },
+  {
+    "q": "Which improves memory access speed?",
+    "opts": ["Cache", "Firewall", "Power supply", "USB"],
+    "a": 0
+  },
+  {
+    "q": "Effective access time depends on:",
+    "opts": ["Stack size", "TLB hit ratio", "Screen brightness", "Number of files"],
+    "a": 1
+  },
+  {
+    "q": "Which memory is used to store BIOS?",
+    "opts": ["Cache", "RAM", "ROM", "Registers"],
+    "a": 2
+  },
+  {
+    "q": "A segmentation fault occurs when:",
+    "opts": ["OS boots", "Invalid memory access happens", "CPU overheats", "Network fails"],
+    "a": 1
+  },
+  {
+    "q": "Page size is typically:",
+    "opts": ["4 KB", "4 MB", "1 GB", "128 bytes"],
+    "a": 0
+  },
+
+  /* ================================
+     FILE SYSTEMS (56–70)
+     ================================ */
+  {
+    "q": "Which of the following is a Linux file system?",
+    "opts": ["NTFS", "APFS", "ext4", "ReFS"],
+    "a": 2
+  },
+  {
+    "q": "Which operation is NOT part of a file system?",
+    "opts": ["Create", "Delete", "Execute", "Read"],
+    "a": 2
+  },
+  {
+    "q": "Inodes store:",
+    "opts": ["File name", "File metadata", "File icon", "File content only"],
+    "a": 1
+  },
+  {
+    "q": "Directory structure can be:",
+    "opts": ["Flat", "Hierarchical", "Two-level", "All of the above"],
+    "a": 3
+  },
+  {
+    "q": "File allocation method using contiguous blocks suffers from:",
+    "opts": ["Fast access", "Fragmentation", "Low space usage", "Non-random access"],
+    "a": 1
+  },
+  {
+    "q": "Which file allocation method uses linked blocks?",
+    "opts": ["Contiguous", "Indexed", "Linked", "Slotted"],
+    "a": 2
+  },
+  {
+    "q": "Which file system supports journaling?",
+    "opts": ["ext4", "FAT32", "exFAT", "None"],
+    "a": 0
+  },
+  {
+    "q": "FAT stands for:",
+    "opts": ["File Allocation Table", "Fast Allocation Type", "File Access Type", "Folder Allocation Tracker"],
+    "a": 0
+  },
+  {
+    "q": "Which is NOT a file access method?",
+    "opts": ["Sequential", "Direct", "Random", "Circular"],
+    "a": 3
+  },
+  {
+    "q": "What does the file system store?",
+    "opts": ["Only file names", "Only data", "Metadata & data", "CPU instructions"],
+    "a": 2
+  },
+  {
+    "q": "Hard links point to:",
+    "opts": ["File name", "Inode", "Block address", "Folder"],
+    "a": 1
+  },
+  {
+    "q": "Soft links point to:",
+    "opts": ["File name", "Inode", "Disk block", "File metadata"],
+    "a": 0
+  },
+  {
+    "q": "Which command lists file details in Linux?",
+    "opts": ["ls -l", "list", "show", "find"],
+    "a": 0
+  },
+  {
+    "q": "Which file system is commonly used in Windows?",
+    "opts": ["ext4", "NTFS", "XFS", "F2FS"],
+    "a": 1
+  },
+  {
+    "q": "A file descriptor is:",
+    "opts": ["A memory block", "Index to an open file table", "CPU register", "Network address"],
+    "a": 1
+  },
+
+  /* ================================
+     DEADLOCK & SYNCHRONIZATION (71–85)
+     ================================ */
+  {
+    "q": "What is a deadlock?",
+    "opts": ["Process completion", "Processes waiting on each other indefinitely", "OS boot failure", "Memory corruption"],
+    "a": 1
+  },
+  {
+    "q": "Which is NOT a necessary condition for deadlock?",
+    "opts": ["Mutual exclusion", "Hold and wait", "No preemption", "High CPU load"],
+    "a": 3
+  },
+  {
+    "q": "A race condition occurs when:",
+    "opts": ["Two processes run in sync", "Output depends on execution order", "Disk fails", "Memory leaks"],
+    "a": 1
+  },
+  {
+    "q": "Mutual exclusion prevents:",
+    "opts": ["Multiple processes accessing critical section", "Memory overflow", "Disk read", "Thread creation"],
+    "a": 0
+  },
+  {
+    "q": "Semaphores are used for:",
+    "opts": ["Networking", "Synchronization", "Screensavers", "Compilation"],
+    "a": 1
+  },
+  {
+    "q": "Binary semaphore values are:",
+    "opts": ["0 or 1", "1 to 10", "True/False", "Unlimited"],
+    "a": 0
+  },
+  {
+    "q": "Mutex is used for:",
+    "opts": ["Interrupt handling", "Mutual exclusion", "Paging", "File locking"],
+    "a": 1
+  },
+  {
+    "q": "Critical section refers to:",
+    "opts": ["Code running on GPU", "Code accessing shared resources", "Interrupt routines", "Bootloader memory"],
+    "a": 1
+  },
+  {
+    "q": "Deadlock avoidance algorithm:",
+    "opts": ["Banker's algorithm", "LRU", "SJF", "FIFO"],
+    "a": 0
+  },
+  {
+    "q": "Deadlock recovery includes:",
+    "opts": ["Swapping", "Terminating processes", "Rebooting disk", "Increasing RAM"],
+    "a": 1
+  },
+  {
+    "q": "Starvation occurs when:",
+    "opts": ["Process gets CPU frequently", "Process never gets required resources", "CPU overheats", "File corrupts"],
+    "a": 1
+  },
+  {
+    "q": "Which is a synchronization tool?",
+    "opts": ["Semaphore", "Stack", "Heap", "TLB"],
+    "a": 0
+  },
+  {
+    "q": "Spinlocks are useful when:",
+    "opts": ["Lock is held for short time", "Disk is slow", "File corrupts", "Memory is full"],
+    "a": 0
+  },
+  {
+    "q": "Priority inversion happens when:",
+    "opts": ["High priority waits for lower priority", "Low waits for high", "All wait", "No wait"],
+    "a": 0
+  },
+  {
+    "q": "Monitor is:",
+    "opts": ["Hardware", "High-level synchronization construct", "Disk utility", "Thread"],
+    "a": 1
+  },
+
+  /* ================================
+     I/O & DEVICES (86–93)
+     ================================ */
+  {
+    "q": "What is DMA used for?",
+    "opts": ["Direct data transfer between memory and device", "Memory swapping", "Booting", "Scheduling"],
+    "a": 0
+  },
+  {
+    "q": "What is spooling?",
+    "opts": ["Disk formatting", "Buffering output for slow devices", "Thread creation", "Process scheduling"],
+    "a": 1
+  },
+  {
+    "q": "Disk scheduling algorithm:",
+    "opts": ["SCAN", "LOOK", "FCFS", "All of the above"],
+    "a": 3
+  },
+  {
+    "q": "A device driver:",
+    "opts": ["Manages hardware devices", "Manages RAM", "Compiles code", "Runs threads"],
+    "a": 0
+  },
+  {
+    "q": "Interrupt is:",
+    "opts": ["Manual input", "Signal to CPU for attention", "File operation", "Memory block"],
+    "a": 1
+  },
+  {
+    "q": "Polling is:",
+    "opts": ["Checking device status repeatedly", "Buffering files", "Allocating memory", "Scheduling threads"],
+    "a": 0
+  },
+  {
+    "q": "I/O-bound processes spend most of their time:",
+    "opts": ["Using CPU", "Waiting for I/O", "In RAM", "In cache"],
+    "a": 1
+  },
+  {
+    "q": "SSD stands for:",
+    "opts": ["Solid State Disk", "Soft Storage Device", "Sequential Storage Disk", "System Storage Driver"],
+    "a": 0
+  },
+
+  /* ================================
+     KERNEL, BOOT, OS ARCHITECTURE (94–97)
+     ================================ */
+  {
+    "q": "Kernel is:",
+    "opts": ["Hardware", "Core part of OS", "Compiler", "Driver"],
+    "a": 1
+  },
+  {
+    "q": "Bootloader loads:",
+    "opts": ["BIOS", "Operating system into memory", "Antivirus", "User data"],
+    "a": 1
+  },
+  {
+    "q": "Linux uses which kernel architecture?",
+    "opts": ["Microkernel", "Hybrid", "Monolithic", "Distributed"],
+    "a": 2
+  },
+  {
+    "q": "Shell provides:",
+    "opts": ["CPU scheduling", "Command interface", "RAM organization", "Disk encryption"],
+    "a": 1
+  },
+
+  /* ================================
+     LINUX COMMANDS & PERMISSIONS (98–100)
+     ================================ */
+  {
+    "q": "Which command shows running processes?",
+    "opts": ["ls", "top", "cd", "clear"],
+    "a": 1
+  },
+  {
+    "q": "In Linux, 'x' permission means:",
+    "opts": ["Execute", "Write", "Read", "Hidden"],
+    "a": 0
+  },
+  {
+    "q": "chmod 755 gives:",
+    "opts": ["Full permissions to everyone", "Owner full, others read/execute", "No execute", "Write only"],
+    "a": 1
+  }
+]
