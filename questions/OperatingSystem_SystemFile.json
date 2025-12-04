@@ -1,0 +1,152 @@
+[
+  {
+    "q":"A file system is responsible for:",
+    "opts":["Managing memory addresses","Organizing and storing files","Handling network packets","Managing CPU scheduling"],
+    "a":1
+  },
+  {
+    "q":"Which of the following is a file allocation method?",
+    "opts":["Contiguous","Paging","Segmentation","Pipelining"],
+    "a":0
+  },
+  {
+    "q":"Which file system is commonly used in Linux?",
+    "opts":["NTFS","EXT4","FAT16","HFS+"],
+    "a":1
+  },
+  {
+    "q":"NTFS stands for:",
+    "opts":["New Technology File System","Network Transfer File System","Normal Text File Storage","Nested Table File System"],
+    "a":0
+  },
+  {
+    "q":"Which component translates file names to disk block locations?",
+    "opts":["File descriptor","File control block (FCB)","Scheduler","Semaphore"],
+    "a":1
+  },
+  {
+    "q":"Directory is used to:",
+    "opts":["Store processes","Store file metadata and organization","Run threads","Allocate CPU time"],
+    "a":1
+  },
+  {
+    "q":"FAT stands for:",
+    "opts":["File Allocation Table","Fast Access Technology","File Address Translation","Format Allocation Type"],
+    "a":0
+  },
+  {
+    "q":"Which file access method reads files sequentially from start to end?",
+    "opts":["Sequential access","Direct access","Indexed access","Random access"],
+    "a":0
+  },
+  {
+    "q":"Direct access allows:",
+    "opts":["Only sequential reading","Accessing any block directly","Only read-only mode","Faster CPU scheduling"],
+    "a":1
+  },
+  {
+    "q":"Which file operation opens an existing file?",
+    "opts":["delete()","open()","close()","chmod()"],
+    "a":1
+  },
+  {
+    "q":"Metadata of a file does NOT include:",
+    "opts":["Creation date","File size","File content","Permissions"],
+    "a":2
+  },
+  {
+    "q":"Which command in Linux lists files?",
+    "opts":["ls","cd","rm","pwd"],
+    "a":0
+  },
+  {
+    "q":"Which is a journaling file system?",
+    "opts":["FAT32","EXT4","FAT16","None"],
+    "a":1
+  },
+  {
+    "q":"Root directory in UNIX is represented by:",
+    "opts":["/","C:","\\","home"],
+    "a":0
+  },
+  {
+    "q":"The smallest storage unit in a file system is:",
+    "opts":["Sector","Cluster/Block","Track","File"],
+    "a":1
+  },
+  {
+    "q":"Which system call is used to create a file in UNIX?",
+    "opts":["fork()","open()","create()","exec()"],
+    "a":2
+  },
+  {
+    "q":"Hard links point to:",
+    "opts":["File path only","Inode of file","Another hard link","Directory only"],
+    "a":1
+  },
+  {
+    "q":"Soft link is also known as:",
+    "opts":["Symbolic link","Binary link","Mirror link","Static link"],
+    "a":0
+  },
+  {
+    "q":"Deletion of a file does NOT remove data until:",
+    "opts":["System restarts","Blocks are overwritten","User confirms twice","Inode is cached"],
+    "a":1
+  },
+  {
+    "q":"File extension represents:",
+    "opts":["CPU type","File type/format","Memory location","Thread count"],
+    "a":1
+  },
+  {
+    "q":"Which OS uses NTFS mainly?",
+    "opts":["Linux","macOS","Windows","Android"],
+    "a":2
+  },
+  {
+    "q":"Which file allocation suffers from fragmentation?",
+    "opts":["Contiguous","Linked","Indexed","All of them"],
+    "a":0
+  },
+  {
+    "q":"Which method stores file blocks as a linked list?",
+    "opts":["Contiguous allocation","Linked allocation","Indexed allocation","Hashed allocation"],
+    "a":1
+  },
+  {
+    "q":"Which method uses an index table for file blocks?",
+    "opts":["Linked allocation","Contiguous allocation","Indexed allocation","Sequential only"],
+    "a":2
+  },
+  {
+    "q":"In UNIX, 'chmod' command changes:",
+    "opts":["Owner","Path","Permissions","Size"],
+    "a":2
+  },
+  {
+    "q":"File descriptor is:",
+    "opts":["Pointer to CPU","Identifier for an open file","Memory page number","Directory name"],
+    "a":1
+  },
+  {
+    "q":"SSD storage access is:",
+    "opts":["Mechanical","Sequential only","Non-mechanical and fast","Slower than HDD"],
+    "a":2
+  },
+  {
+    "q":"Mounting a filesystem means:",
+    "opts":["Copying data","Attaching FS to directory tree","Deleting old logs","Formatting disk"],
+    "a":1
+  },
+  {
+    "q":"Which Linux command deletes a file?",
+    "opts":["rm","ls","touch","mv"],
+    "a":0
+  },
+  {
+    "q":"A file system crash recovery tool is:",
+    "opts":["fsck","gcc","grep","kill"],
+    "a":0
+  }
+]
