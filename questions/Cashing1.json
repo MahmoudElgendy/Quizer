@@ -1,0 +1,127 @@
+[
+  {
+    "q":"What problem does caching primarily solve in a growing system?",
+    "opts":["Lack of storage space","High database query load","Network security issues","Code complexity"],
+    "a":1
+  },
+  {
+    "q":"What is a cache?",
+    "opts":["A permanent data store","A temporary fast data storage","A backup database","A logging system"],
+    "a":1
+  },
+  {
+    "q":"When data is found in the cache, it is called:",
+    "opts":["Cache miss","Cache refresh","Cache hit","Cache eviction"],
+    "a":2
+  },
+  {
+    "q":"What happens during a cache miss?",
+    "opts":["Data is deleted","Data is fetched from the database","Request fails","Cache is cleared"],
+    "a":1
+  },
+  {
+    "q":"Why is RAM considered suitable for caching?",
+    "opts":["It is persistent","It is cheap and slow","It has fast access time","It supports SQL"],
+    "a":2
+  },
+  {
+    "q":"What is a distributed cache?",
+    "opts":["A cache stored on disk","A cache used by a single server","Multiple cache servers working together","A database replica"],
+    "a":2
+  },
+  {
+    "q":"Why are distributed caches needed?",
+    "opts":["Single cache servers are always faster","To handle large datasets and scalability","To replace databases entirely","To store logs"],
+    "a":1
+  },
+  {
+    "q":"Which principle do caches commonly rely on?",
+    "opts":["CAP theorem","Locality of reference","Normalization","ACID compliance"],
+    "a":1
+  },
+  {
+    "q":"Which benefit of distributed caching reduces database load?",
+    "opts":["Data compression","Offloading frequent reads to memory","Sharding tables","Index rebuilding"],
+    "a":1
+  },
+  {
+    "q":"Which of the following is a reason NOT to use a single large cache server?",
+    "opts":["Higher availability","Single point of failure","Lower latency","Better scalability"],
+    "a":1
+  },
+  {
+    "q":"Caching at different layers mainly helps with:",
+    "opts":["Security enforcement","Latency reduction","Data encryption","Schema validation"],
+    "a":1
+  },
+  {
+    "q":"Which system layer uses HTTP cache headers and CDNs?",
+    "opts":["Database layer","Application layer","Web layer","Operating system layer"],
+    "a":2
+  },
+  {
+    "q":"What type of data is commonly stored in a distributed cache?",
+    "opts":["Frequently accessed and rarely changing data","Highly volatile transaction logs","Archived historical data","Encrypted backups"],
+    "a":0
+  },
+  {
+    "q":"In distributed caching, where can cache servers be deployed?",
+    "opts":["Only on the database server","Only on client devices","On the same or separate servers","Only in the cloud"],
+    "a":2
+  },
+  {
+    "q":"Why are distributed cache servers often deployed in clusters?",
+    "opts":["To simplify code","To improve performance and scalability","To reduce memory usage","To replace databases"],
+    "a":1
+  },
+  {
+    "q":"What is the purpose of cache eviction policies?",
+    "opts":["To encrypt cached data","To remove stale or less useful data","To replicate data","To log cache usage"],
+    "a":1
+  },
+  {
+    "q":"Which of the following is a cache eviction strategy?",
+    "opts":["Two-phase commit","Least Recently Used (LRU)","Database sharding","Index scan"],
+    "a":1
+  },
+  {
+    "q":"What does TTL stand for in caching?",
+    "opts":["Total Transaction Load","Time To Live","Temporary Transfer Limit","Thread Time Lock"],
+    "a":1
+  },
+  {
+    "q":"Why is monitoring cache hit and miss rates important?",
+    "opts":["To detect security attacks","To identify performance improvements","To enforce schema rules","To manage users"],
+    "a":1
+  },
+  {
+    "q":"Which use case commonly relies on distributed caching?",
+    "opts":["Compiler optimization","Web applications","Operating system scheduling","Device drivers"],
+    "a":1
+  },
+  {
+    "q":"How do distributed caches help when a database is temporarily down?",
+    "opts":["They rebuild the database","They serve data from temporary storage","They block all requests","They migrate data"],
+    "a":1
+  },
+  {
+    "q":"Which e-commerce data is commonly cached?",
+    "opts":["Audit logs","Product catalogs and shopping carts","Encryption keys","Source code"],
+    "a":1
+  },
+  {
+    "q":"Which distributed caching solution is known for in-memory data structures?",
+    "opts":["MongoDB","Redis","MySQL","PostgreSQL"],
+    "a":1
+  },
+  {
+    "q":"Which distributed cache is known for simplicity and easy scalability?",
+    "opts":["Hazelcast","Apache Ignite","Memcached","Oracle RAC"],
+    "a":2
+  },
+  {
+    "q":"What is a key design focus when implementing distributed caching?",
+    "opts":["Caching all data","Avoiding expiration","Caching frequently accessed data","Eliminating databases"],
+    "a":2
+  }
+]

@@ -225,141 +225,148 @@
     </footer>
   </div>
 
-<script>
-let questions = []; // global variable
-let current = 0;
-let answers = [];
-let seconds = 0, timerInterval;
+  <script>
+    let questions = []; // global variable
+    let current = 0;
+    let answers = [];
+    let seconds = 0, timerInterval;
 
-const qIndexEl = document.getElementById('qIndex');
-const progressEl = document.getElementById('progress');
-const questionEl = document.getElementById('question');
-const optionsEl = document.getElementById('options');
-const selectedText = document.getElementById('selectedText');
-const resultBox = document.getElementById('resultBox');
-const reviewBox = document.getElementById('reviewBox');
-const timerEl = document.getElementById('timer');
+    const qIndexEl = document.getElementById('qIndex');
+    const progressEl = document.getElementById('progress');
+    const questionEl = document.getElementById('question');
+    const optionsEl = document.getElementById('options');
+    const selectedText = document.getElementById('selectedText');
+    const resultBox = document.getElementById('resultBox');
+    const reviewBox = document.getElementById('reviewBox');
+    const timerEl = document.getElementById('timer');
 
-async function initQuiz() {
-  questions = await loadQuestions();
-  answers = new Array(questions.length).fill(null); // now safe
-  render();
-  startTimer();
-}
+    async function initQuiz() {
+      questions = await loadQuestions();
+      answers = new Array(questions.length).fill(null); // now safe
+      render();
+      startTimer();
+    }
 
-function startTimer() {
-  timerInterval = setInterval(() => {
-    seconds++;
-    const m = String(Math.floor(seconds / 60)).padStart(2, '0');
-    const s = String(seconds % 60).padStart(2, '0');
-    timerEl.textContent = `${m}:${s}`;
-  }, 1000);
-}
+    function startTimer() {
+      timerInterval = setInterval(() => {
+        seconds++;
+        const m = String(Math.floor(seconds / 60)).padStart(2, '0');
+        const s = String(seconds % 60).padStart(2, '0');
+        timerEl.textContent = `${m}:${s}`;
+      }, 1000);
+    }
 
-function stopTimer() { clearInterval(timerInterval); }
+    function stopTimer() { clearInterval(timerInterval); }
 
-function render() {
-  if (!questions.length) return; // safety
-  const item = questions[current];
-  qIndexEl.textContent = current + 1;
-  progressEl.style.width = Math.round(((current + 1) / questions.length) * 100) + '%';
-  questionEl.textContent = item.q;
-  optionsEl.innerHTML = '';
+    function render() {
+      if (!questions.length) return; // safety
+      const item = questions[current];
+      qIndexEl.textContent = current + 1;
+      progressEl.style.width = Math.round(((current + 1) / questions.length) * 100) + '%';
+      questionEl.textContent = item.q;
+      optionsEl.innerHTML = '';
 
-  item.opts.forEach((opt, i) => {
-    const div = document.createElement('div');
-    div.className = 'option' + (answers[current] === i ? ' selected' : '');
-    div.tabIndex = 0;
-    div.textContent = String.fromCharCode(65 + i) + '. ' + opt;
-    div.onclick = () => { answers[current] = i; updateSelected(); render(); };
-    div.onkeydown = e => { if (e.key === 'Enter') { answers[current] = i; updateSelected(); render(); } };
-    optionsEl.appendChild(div);
-  });
+      item.opts.forEach((opt, i) => {
+        const div = document.createElement('div');
+        div.className = 'option' + (answers[current] === i ? ' selected' : '');
+        div.tabIndex = 0;
+        div.textContent = String.fromCharCode(65 + i) + '. ' + opt;
+        div.onclick = () => { answers[current] = i; updateSelected(); render(); };
+        div.onkeydown = e => { if (e.key === 'Enter') { answers[current] = i; updateSelected(); render(); } };
+        optionsEl.appendChild(div);
+      });
 
-  updateSelected();
-}
+      updateSelected();
+    }
 
-function updateSelected() {
-  const sel = answers[current];
-  selectedText.textContent = (sel === null) ? '—' : String.fromCharCode(65 + sel) + ' (' + questions[current].opts[sel] + ')';
-  document.querySelectorAll('.option').forEach((el, idx) => {
-    el.classList.toggle('selected', answers[current] === idx);
-  });
-}
+    function updateSelected() {
+      const sel = answers[current];
+      selectedText.textContent = (sel === null) ? '—' : String.fromCharCode(65 + sel) + ' (' + questions[current].opts[sel] + ')';
+      document.querySelectorAll('.option').forEach((el, idx) => {
+        el.classList.toggle('selected', answers[current] === idx);
+      });
+    }
 
-// Navigation buttons
-document.getElementById('prevBtn').addEventListener('click', () => { if (current > 0) { current--; render(); } });
-document.getElementById('nextBtn').addEventListener('click', () => { if (current < questions.length - 1) { current++; render(); } });
+    // Navigation buttons
+    document.getElementById('prevBtn').addEventListener('click', () => { if (current > 0) { current--; render(); } });
+    document.getElementById('nextBtn').addEventListener('click', () => { if (current < questions.length - 1) { current++; render(); } });
 
-// Submit quiz
-document.getElementById('submitBtn').addEventListener('click', () => {
-  if (!confirm('Submit quiz and calculate score?')) return;
-  stopTimer();
-  let score = 0;
-  const details = [];
-  for (let i = 0; i < questions.length; i++) {
-    const user = answers[i], correct = questions[i].a;
-    const ok = user !== null && user === correct; 
-    if (ok) score++;
-    details.push({ q: questions[i].q, user, correct, opts: questions[i].opts });
-  }
-  resultBox.style.display = 'block';
-  resultBox.innerHTML = `<strong>Score: ${score} / ${questions.length}</strong> — Time: ${timerEl.textContent}`;
+    // Submit quiz
+    document.getElementById('submitBtn').addEventListener('click', () => {
+      if (!confirm('Submit quiz and calculate score?')) return;
+      stopTimer();
+      let score = 0;
+      const details = [];
+      for (let i = 0; i < questions.length; i++) {
+        const user = answers[i], correct = questions[i].a;
+        const ok = user !== null && user === correct;
+        if (ok) score++;
+        details.push({ q: questions[i].q, user, correct, opts: questions[i].opts });
+      }
+      resultBox.style.display = 'block';
+      resultBox.innerHTML = `<strong>Score: ${score} / ${questions.length}</strong> — Time: ${timerEl.textContent}`;
 
-  reviewBox.style.display = 'block';
-  reviewBox.innerHTML = '<h3 style="margin:8px 0;color:var(--muted)">Review answers</h3>';
-  details.forEach((d, i) => {
-    const div = document.createElement('div'); div.className = 'q';
-    const u = d.user === null ? 'No answer' : String.fromCharCode(65 + d.user) + '. ' + (d.user === null ? '' : d.opts[d.user]);
-    const c = String.fromCharCode(65 + d.correct) + '. ' + d.opts[d.correct];
-    const isRight = d.user !== null && d.user === d.correct;
-    div.innerHTML = `<div style="display:flex;justify-content:space-between;gap:10px">
+      reviewBox.style.display = 'block';
+      reviewBox.innerHTML = '<h3 style="margin:8px 0;color:var(--muted)">Review answers</h3>';
+      details.forEach((d, i) => {
+        const div = document.createElement('div'); div.className = 'q';
+        const u = d.user === null ? 'No answer' : String.fromCharCode(65 + d.user) + '. ' + (d.user === null ? '' : d.opts[d.user]);
+        const c = String.fromCharCode(65 + d.correct) + '. ' + d.opts[d.correct];
+        const isRight = d.user !== null && d.user === d.correct;
+        div.innerHTML = `<div style="display:flex;justify-content:space-between;gap:10px">
       <div style='flex:1'><strong>Q${i + 1}:</strong> ${d.q}</div>
       <div style='min-width:160px;text-align:right' class='${isRight ? 'right' : 'wrong'}'>Your: ${u}<br>Correct: ${c}</div>
     </div>`;
-    reviewBox.appendChild(div);
-  });
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
+        reviewBox.appendChild(div);
+      });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
 
-// Keyboard shortcuts
-document.addEventListener('keydown', (e) => {
-  if (!questions.length) return;
-  if (e.key === 'ArrowRight') document.getElementById('nextBtn').click();
-  if (e.key === 'ArrowLeft') document.getElementById('prevBtn').click();
-  if (e.key >= '1' && e.key <= '4') {
-    const idx = parseInt(e.key, 10) - 1;
-    if (idx < questions[current].opts.length) { answers[current] = idx; render(); }
-  }
-});
+    // Keyboard shortcuts
+    document.addEventListener('keydown', (e) => {
+      if (!questions.length) return;
+      if (e.key === 'ArrowRight') document.getElementById('nextBtn').click();
+      if (e.key === 'ArrowLeft') document.getElementById('prevBtn').click();
+      if (e.key >= '1' && e.key <= '4') {
+        const idx = parseInt(e.key, 10) - 1;
+        if (idx < questions[current].opts.length) { answers[current] = idx; render(); }
+      }
+    });
 
-// Download results
-function downloadResults() {
-  const out = answers.map((a, i) => ({ q: i + 1, question: questions[i].q, selected: a === null ? null : String.fromCharCode(65 + a), correct: String.fromCharCode(65 + questions[i].a) }));
-  const blob = new Blob([JSON.stringify(out, null, 2)], { type: 'application/json' });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a'); a.href = url; a.download = 'networking-quiz-results.json'; a.click(); URL.revokeObjectURL(url);
-}
+    // Download results
+    function downloadResults() {
+      const out = answers.map((a, i) => ({ q: i + 1, question: questions[i].q, selected: a === null ? null : String.fromCharCode(65 + a), correct: String.fromCharCode(65 + questions[i].a) }));
+      const blob = new Blob([JSON.stringify(out, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a'); a.href = url; a.download = 'networking-quiz-results.json'; a.click(); URL.revokeObjectURL(url);
+    }
 
-// Quick export button
-const exportBtn = document.createElement('button'); 
-exportBtn.className = 'btn'; 
-exportBtn.textContent = 'Export Results'; 
-exportBtn.style.marginLeft = '8px'; 
-exportBtn.onclick = downloadResults;
-document.querySelector('.controls').appendChild(exportBtn);
+    // Quick export button
+    const exportBtn = document.createElement('button');
+    exportBtn.className = 'btn';
+    exportBtn.textContent = 'Export Results';
+    exportBtn.style.marginLeft = '8px';
+    exportBtn.onclick = downloadResults;
+    document.querySelector('.controls').appendChild(exportBtn);
 
-// Load questions
-async function loadQuestions() {
-  const response = await fetch('./questions/OperatingSystem.json');
-  const questions = await response.json();
-  console.log("Loaded questions:", questions);
-  return questions;
-}
+    // Load questions
+    async function loadQuestions() {
+      // update file name as needed
+      var files = [
+        'cashing1.json',
+        'OperatingSystem1.json',
+        'cashing3.json',
+        'cashing4.json',
+        'cashing5.json'];
+      const response = await fetch('./questions/' + files[1]);
+      const questions = await response.json();
+      console.log("Loaded questions:", questions);
+      return questions;
+    }
 
-// Initialize quiz after loading questions
-initQuiz();
-</script>
+    // Initialize quiz after loading questions
+    initQuiz();
+  </script>
 
 </body>
 
