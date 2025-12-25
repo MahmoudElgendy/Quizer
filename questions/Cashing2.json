@@ -1,0 +1,127 @@
+[
+  {
+    "q":"What is the primary goal of the background chapter on distributed cache?",
+    "opts":["To compare databases","To design a distributed cache","To implement networking protocols","To analyze operating systems"],
+    "a":1
+  },
+  {
+    "q":"Why is background knowledge important before designing a distributed cache?",
+    "opts":["To learn UI design","To understand read/write techniques","To optimize compilers","To configure hardware drivers"],
+    "a":1
+  },
+  {
+    "q":"What key concern do writing policies address?",
+    "opts":["How data is encrypted","Order of writing data to cache and database","Network routing","User authentication"],
+    "a":1
+  },
+  {
+    "q":"Which factor is most affected by the order of data writing?",
+    "opts":["Memory size","Performance and consistency","UI responsiveness","Disk fragmentation"],
+    "a":1
+  },
+  {
+    "q":"Which writing policy writes to both cache and database synchronously or sequentially?",
+    "opts":["Write-back","Write-around","Write-through","Lazy write"],
+    "a":2
+  },
+  {
+    "q":"What is a disadvantage of the write-through cache policy?",
+    "opts":["Weak consistency","Higher write latency","Stale cache data","Database-only writes"],
+    "a":1
+  },
+  {
+    "q":"In which writing policy is data first written to cache and later to the database asynchronously?",
+    "opts":["Write-through","Write-around","Write-back","Read-through"],
+    "a":2
+  },
+  {
+    "q":"What is a major risk of write-back caching?",
+    "opts":["High latency","Cache overflow","Data inconsistency with database","Cache misses"],
+    "a":2
+  },
+  {
+    "q":"Which writing policy writes data only to the database initially?",
+    "opts":["Write-through","Write-back","Write-around","Cache-first"],
+    "a":2
+  },
+  {
+    "q":"Why is write-around cache not ideal for recently updated data?",
+    "opts":["Cache is always full","Reads may miss the cache","Writes are slower","TTL is too short"],
+    "a":1
+  },
+  {
+    "q":"Why do caches require eviction policies?",
+    "opts":["Caches are persistent","Caches have limited storage","Caches are encrypted","Caches store logs"],
+    "a":1
+  },
+  {
+    "q":"Which eviction policy removes the least recently accessed item?",
+    "opts":["LFU","MFU","LRU","FIFO"],
+    "a":2
+  },
+  {
+    "q":"Which eviction policy removes the most frequently accessed item?",
+    "opts":["MFU","LFU","LRU","MRU"],
+    "a":0
+  },
+  {
+    "q":"What problem does cache invalidation primarily address?",
+    "opts":["Cache overflow","Stale or outdated data","Slow networks","High CPU usage"],
+    "a":1
+  },
+  {
+    "q":"What metadata is commonly used to detect stale cache entries?",
+    "opts":["Index key","TTL value","Hash code","Shard ID"],
+    "a":1
+  },
+  {
+    "q":"Which cache invalidation method checks TTL during access time?",
+    "opts":["Active expiration","Passive expiration","Lazy eviction","Forced eviction"],
+    "a":1
+  },
+  {
+    "q":"Which cache invalidation method uses a background process to remove expired items?",
+    "opts":["Passive expiration","Manual expiration","Active expiration","Read-through expiration"],
+    "a":2
+  },
+  {
+    "q":"Why is data placement important in distributed cache storage?",
+    "opts":["For UI consistency","For performance optimization","For encryption","For compression"],
+    "a":1
+  },
+  {
+    "q":"Which technique is commonly used to select a cache server in a distributed cache?",
+    "opts":["Round-robin scheduling","Consistent hashing","Binary search","Polling"],
+    "a":1
+  },
+  {
+    "q":"Why is consistent hashing preferred over simple hashing?",
+    "opts":["It uses less memory","It improves scalability and fault tolerance","It is easier to implement","It avoids TTL usage"],
+    "a":1
+  },
+  {
+    "q":"Which data structure is commonly used to support eviction in cache servers?",
+    "opts":["Binary tree","Array","Doubly linked list","Stack"],
+    "a":2
+  },
+  {
+    "q":"Why is a doubly linked list suitable for cache eviction?",
+    "opts":["It supports sorting","It allows constant-time insert and delete","It minimizes memory usage","It supports hashing"],
+    "a":1
+  },
+  {
+    "q":"What is a key property of Bloom filters in caching systems?",
+    "opts":["They guarantee exact results","They detect cache hits only","They probabilistically detect non-existence","They replace hash tables"],
+    "a":2
+  },
+  {
+    "q":"What is the main purpose of sharding in cache clusters?",
+    "opts":["Encrypt cache data","Avoid single point of failure","Increase TTL","Reduce client logic"],
+    "a":1
+  },
+  {
+    "q":"Which cache deployment embeds cache and application on the same host?",
+    "opts":["Dedicated cache servers","Remote cache","Co-located cache","Edge cache"],
+    "a":2
+  }
+]

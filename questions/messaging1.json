@@ -1,0 +1,127 @@
+[
+  {
+    "q":"What is a messaging queue?",
+    "opts":["A database table","An intermediate component between producers and consumers","A load balancer","A caching layer"],
+    "a":1
+  },
+  {
+    "q":"Who is responsible for creating and sending messages to the queue?",
+    "opts":["Consumers","Brokers","Producers","Schedulers"],
+    "a":2
+  },
+  {
+    "q":"What role does a consumer play in a messaging queue system?",
+    "opts":["Stores messages permanently","Creates messages","Processes messages from the queue","Routes network traffic"],
+    "a":2
+  },
+  {
+    "q":"Which data structure behavior is commonly guaranteed by queues?",
+    "opts":["LIFO","Random order","FIFO","Sorted order"],
+    "a":2
+  },
+  {
+    "q":"What is the main purpose of a queue acting as a buffer?",
+    "opts":["Encrypt messages","Decouple producers and consumers","Persist data forever","Replace databases"],
+    "a":1
+  },
+  {
+    "q":"What does a message typically contain?",
+    "opts":["Only raw data","Only metadata","Payload and metadata","Encrypted binaries only"],
+    "a":2
+  },
+  {
+    "q":"Why do messaging queues improve system performance?",
+    "opts":["They eliminate databases","They enable asynchronous communication","They reduce memory usage","They compress data"],
+    "a":1
+  },
+  {
+    "q":"How do messaging queues help during traffic spikes?",
+    "opts":["They reject requests","They buffer messages","They scale databases","They drop old messages"],
+    "a":1
+  },
+  {
+    "q":"What is a key benefit of decoupling producers and consumers?",
+    "opts":["Tighter integration","Independent scaling and deployment","Lower security","Simpler networking"],
+    "a":1
+  },
+  {
+    "q":"How do messaging queues support load balancing?",
+    "opts":["By caching responses","By distributing messages across consumers","By replicating databases","By throttling producers"],
+    "a":1
+  },
+  {
+    "q":"Which feature improves fault tolerance in messaging systems?",
+    "opts":["Polling","Persistence and retries","In-memory only storage","Synchronous calls"],
+    "a":1
+  },
+  {
+    "q":"What is a dead-letter queue used for?",
+    "opts":["High-priority messages","Failed messages for troubleshooting","Message encryption","Broadcast messages"],
+    "a":1
+  },
+  {
+    "q":"What messaging pattern delivers each message to exactly one consumer?",
+    "opts":["Publish/subscribe","Broadcast","Point-to-point","Multicast"],
+    "a":2
+  },
+  {
+    "q":"Which messaging pattern supports one-to-many communication?",
+    "opts":["Request/reply","Point-to-point","Publish/subscribe","Pipeline"],
+    "a":2
+  },
+  {
+    "q":"Which pattern is commonly used for APIs needing immediate feedback?",
+    "opts":["Publish/subscribe","Event sourcing","Request/reply","Batch processing"],
+    "a":2
+  },
+  {
+    "q":"What problem does message prioritization address?",
+    "opts":["Message duplication","Starvation of critical tasks","Data persistence","Network latency"],
+    "a":1
+  },
+  {
+    "q":"Which technique helps avoid starving low-priority messages?",
+    "opts":["Single queue","Weighted round-robin","FIFO only","Manual retries"],
+    "a":1
+  },
+  {
+    "q":"Which technology is known as a traditional message broker?",
+    "opts":["Redis","RabbitMQ","MySQL","Nginx"],
+    "a":1
+  },
+  {
+    "q":"Which platform is optimized for high-throughput event streaming?",
+    "opts":["Amazon SQS","RabbitMQ","Apache Kafka","Memcached"],
+    "a":2
+  },
+  {
+    "q":"Which messaging service is fully managed in the cloud?",
+    "opts":["RabbitMQ","Apache Kafka","Amazon SQS","ActiveMQ"],
+    "a":2
+  },
+  {
+    "q":"Why are messaging queues useful for sending emails?",
+    "opts":["Emails must be synchronous","Emails require immediate processing","Email sending can be processed asynchronously","Emails replace databases"],
+    "a":2
+  },
+  {
+    "q":"How do messaging queues help with data post-processing?",
+    "opts":["They block uploads","They schedule offline processing","They encrypt media","They reduce storage size"],
+    "a":1
+  },
+  {
+    "q":"Why are messaging queues suitable for recommender systems?",
+    "opts":["They reduce model accuracy","They handle time-consuming processing asynchronously","They replace ML models","They cache predictions permanently"],
+    "a":1
+  },
+  {
+    "q":"What is message idempotency?",
+    "opts":["Processing messages only once","Allowing retries without side effects","Deleting duplicate messages","Encrypting messages"],
+    "a":1
+  },
+  {
+    "q":"What risk emerges if producers are faster than consumers without a queue?",
+    "opts":["Better performance","Data loss and system overload","Lower latency","Improved consistency"],
+    "a":1
+  }
+]
