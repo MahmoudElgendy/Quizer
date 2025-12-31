@@ -355,14 +355,15 @@
     document.querySelector('.controls').appendChild(exportBtn);
 
     // Load questions
-    async function loadQuestions() {
+    async function loadQuestions(fileName) {
 
       // 1️⃣ Load file list from index.json
       const filesResponse = await fetch('./questions/index.json');
       const files = await filesResponse.json();
 
       // 2️⃣ Use the first file (same behavior as before)
-      const response = await fetch('./questions/' + files[6]);
+      const selectedFile = fileName ?? files[0];
+      const response = await fetch('./questions/' + selectedFile);
       const questions = await response.json();
 
       console.log("Loaded questions:", questions);
@@ -390,6 +391,20 @@
 
 // Call on page load
 populateDropdown();
+const dropdown = document.getElementById('questionsDropdown');
+
+dropdown.addEventListener('change', async function () {
+  if (!this.value) return; // ignore placeholder
+  current = 0;
+  seconds = 0;
+  stopTimer();
+
+  questions = await loadQuestions(this.value);
+  answers = new Array(questions.length).fill(null);
+
+  render();
+  startTimer();
+});
   </script>
 
 </body>
