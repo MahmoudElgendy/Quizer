@@ -1,5 +1,4 @@
 ﻿[
-    "AzureAppService.json",
     "Cashing1.json",
     "Cashing2.json",
     "Docker.json",
@@ -9,5 +8,6 @@
     "OperatingSystem copy.json",
     "OperatingSystem.json",
     "OperatingSystem_SystemFile.json",
+    "OperatingSystem1 - Copy.json",
     "OperatingSystem1.json"
 ]

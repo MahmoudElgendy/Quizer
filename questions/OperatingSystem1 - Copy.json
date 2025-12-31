@@ -1,0 +1,102 @@
+[
+  {
+    "q":"Concurrency means:",
+    "opts":["Tasks running simultaneously","Tasks making progress in the same time period","Only one task exists","CPU idle"],
+    "a":1
+  },
+  {
+    "q":"Parallelism requires:",
+    "opts":["Single CPU core","Multiple CPU cores","No scheduler","Compiler support"],
+    "a":1
+  },
+  {
+    "q":"True simultaneous execution is called:",
+    "opts":["Synchronization","Parallelism","Concurrency","Deadlock"],
+    "a":1
+  },
+  {
+    "q":"Synchronization is mainly used to:",
+    "opts":["Increase speed","Prevent race conditions","Reduce memory","Optimize compilers"],
+    "a":1
+  },
+  {
+    "q":"Concurrency can run on a single-core processor.",
+    "opts":["True","False"],
+    "a":0
+  },
+  {
+    "q":"A mutex allows how many threads at the same time?",
+    "opts":["0","1","2","Unlimited"],
+    "a":1
+  },
+  {
+    "q":"Which primitive controls how many threads can enter a resource?",
+    "opts":["Semaphore","ALU","Cache","Compiler"],
+    "a":0
+  },
+  {
+    "q":"Parallelism increases performance by:",
+    "opts":["UI rendering","Using multiple CPU cores","Compression","File indexing"],
+    "a":1
+  },
+  {
+    "q":"Concurrency without synchronization can lead to:",
+    "opts":["Faster execution","Race conditions","No change","Perfect stability"],
+    "a":1
+  },
+  {
+    "q":"A critical section is:",
+    "opts":["An unsafe code block","Code only one thread can execute at a time","A log file","An interrupt handler"],
+    "a":1
+  },
+  {
+    "q":"Which is NOT a synchronization mechanism?",
+    "opts":["Mutex","Semaphore","Monitor","Compiler"],
+    "a":3
+  },
+  {
+    "q":"Which blocks until a condition becomes true?",
+    "opts":["RAM","Condition variable","Cache","SSD"],
+    "a":1
+  },
+  {
+    "q":"Concurrency mainly improves:",
+    "opts":["CPU utilization","Disk speed","RAM size","GPU load"],
+    "a":0
+  },
+  {
+    "q":"Parallelism mainly improves:",
+    "opts":["Debugging difficulty","True execution speed","Latency only","Network routing"],
+    "a":1
+  },
+  {
+    "q":"Semaphore count 3 means:",
+    "opts":["1 thread allowed","3 threads allowed","0 threads allowed","Unlimited threads"],
+    "a":1
+  },
+  {
+    "q":"Which scenario REQUIRES synchronization?",
+    "opts":["Two threads reading different files","Single-thread program","Two threads writing to same variable","Async logging"],
+    "a":2
+  },
+  {
+    "q":"Synchronization is needed only when:",
+    "opts":["Threads share resources","No threads exist","Memory is large","Kernel idle"],
+    "a":0
+  },
+  {
+    "q":"Best description:",
+    "opts":["Concurrency = Parallelism","Concurrency = progress, Parallelism = true simultaneous execution","Concurrency always slower","Parallelism requires one core"],
+    "a":1
+  },
+  {
+    "q":"Thread time-sharing in concurrency is managed by:",
+    "opts":["Developer","CPU cache","OS scheduler","Disk driver"],
+    "a":2
+  },
+  {
+    "q":"Spinlock means:",
+    "opts":["Thread sleeps waiting","Thread waits actively without sleeping","File locked","CPU shutdown"],
+    "a":1
+  }
+]
