@@ -1,0 +1,494 @@
+[
+  {
+    "q": "What is the main function of an operating system?",
+    "opts": [
+      "Managing hardware and software resources",
+      "Compiling programs",
+      "Designing user interfaces",
+      "Translating high-level code"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Which of the following is NOT an operating system?",
+    "opts": ["Windows", "Linux", "Oracle", "macOS"],
+    "a": 2
+  },
+  {
+    "q": "What does CPU scheduling in an OS manage?",
+    "opts": ["Memory allocation", "Process execution order", "Disk usage", "User permissions"],
+    "a": 1
+  },
+  {
+    "q": "Which of the following is an example of a real-time operating system?",
+    "opts": ["Windows 11", "Linux Ubuntu", "VxWorks", "macOS"],
+    "a": 2
+  },
+  {
+    "q": "What is a process in operating systems?",
+    "opts": ["A program in execution", "A type of memory", "An input device", "A compiler module"],
+    "a": 0
+  },
+  {
+    "q": "Which Linux command shows running processes in real-time?",
+    "opts": ["ls", "ps", "top", "cat"],
+    "a": 2
+  },
+  {
+    "q": "What is the role of the kernel?",
+    "opts": ["Provide the GUI", "Manage hardware resources", "Store user data", "Run web apps"],
+    "a": 1
+  },
+  {
+    "q": "Which of the following is NOT a type of OS?",
+    "opts": ["Batch OS", "Distributed OS", "Time-sharing OS", "Hardware OS"],
+    "a": 3
+  },
+  {
+    "q": "What does context switching mean?",
+    "opts": [
+      "Changing screens",
+      "Saving and loading process state",
+      "Switching networks",
+      "Reformatting disks"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which part of the OS manages files and directories?",
+    "opts": ["File system", "Scheduler", "Loader", "Cache manager"],
+    "a": 0
+  },
+
+  {
+    "q": "What is thrashing in virtual memory?",
+    "opts": [
+      "A disk format error",
+      "Excessive paging causing poor performance",
+      "Overheating of CPU",
+      "File system corruption"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What is the purpose of a device driver?",
+    "opts": ["Manage users", "Translate OS commands to hardware actions", "Start the OS", "Manage RAM"],
+    "a": 1
+  },
+  {
+    "q": "Which memory is volatile?",
+    "opts": ["ROM", "Flash", "RAM", "SSD"],
+    "a": 2
+  },
+  {
+    "q": "What is a thread?",
+    "opts": [
+      "A process inside the kernel",
+      "The smallest unit of execution",
+      "A hardware interrupt",
+      "A disk block"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which scheduling algorithm may cause starvation?",
+    "opts": ["Round Robin", "FCFS", "Priority scheduling", "SJF (non-preemptive)"],
+    "a": 2
+  },
+  {
+    "q": "What is a deadlock?",
+    "opts": [
+      "Memory running out",
+      "Processes waiting forever on each other",
+      "CPU overheating",
+      "File deletion error"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which is a necessary condition for deadlock?",
+    "opts": ["Preemption", "Mutual exclusion", "High CPU load", "Paging"],
+    "a": 1
+  },
+  {
+    "q": "What is virtual memory?",
+    "opts": [
+      "Memory on the cloud",
+      "Technique to use disk as extension of RAM",
+      "Memory inside CPU",
+      "Encrypted memory"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which memory management technique divides memory into fixed blocks?",
+    "opts": ["Paging", "Segmentation", "Compaction", "Swapping"],
+    "a": 0
+  },
+  {
+    "q": "What is a system call?",
+    "opts": [
+      "A request by a process to the OS",
+      "A phone call inside a system",
+      "An error message",
+      "A programming language"
+    ],
+    "a": 0
+  },
+
+  {
+    "q": "Which of these is NOT a system call category?",
+    "opts": ["Process control", "File management", "Memory allocation", "Machine learning"],
+    "a": 3
+  },
+  {
+    "q": "In which state is a process waiting for CPU?",
+    "opts": ["Running", "Blocked", "Ready", "Terminated"],
+    "a": 2
+  },
+  {
+    "q": "What is the bootloader responsible for?",
+    "opts": [
+      "Managing users",
+      "Initializing hardware and loading the OS",
+      "Running apps",
+      "Monitoring performance"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which is a preemptive scheduling algorithm?",
+    "opts": ["SJF", "Round Robin", "FCFS", "Priority (non-preemptive)"],
+    "a": 1
+  },
+  {
+    "q": "What is internal fragmentation?",
+    "opts": [
+      "Unused space inside allocated memory block",
+      "Memory lost between partitions",
+      "Disk error",
+      "CPU idle time"
+    ],
+    "a": 0
+  },
+
+  {
+    "q": "What is external fragmentation?",
+    "opts": [
+      "Small free spaces scattered in memory",
+      "Errors in SSD",
+      "RAM overheating",
+      "Swapping failure"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What is the purpose of swapping?",
+    "opts": [
+      "Move processes between memory and disk",
+      "Increase CPU speed",
+      "Encrypt memory",
+      "Clean cache"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Which structure stores process information in the OS?",
+    "opts": ["Cache table", "PCB", "Page table", "Dispatch table"],
+    "a": 1
+  },
+  {
+    "q": "What is the maximum number of processes that can run simultaneously on a single-core CPU?",
+    "opts": ["1", "2", "Depends on RAM", "Unlimited"],
+    "a": 0
+  },
+  {
+    "q": "Which OS component allocates CPU time to processes?",
+    "opts": ["Linker", "Scheduler", "Loader", "Shell"],
+    "a": 1
+  },
+
+  {
+    "q": "What does FIFO scheduling stand for?",
+    "opts": ["First In, First Out", "Fast Input Fast Output", "File in File out", "First in File out"],
+    "a": 0
+  },
+  {
+    "q": "Which algorithm is best for time-sharing systems?",
+    "opts": ["Round Robin", "FCFS", "SJF", "LIFO"],
+    "a": 0
+  },
+  {
+    "q": "What is the purpose of a semaphore?",
+    "opts": ["Network control", "Process synchronization", "CPU scheduling", "File monitoring"],
+    "a": 1
+  },
+  {
+    "q": "Which is NOT a type of semaphore?",
+    "opts": ["Binary", "Counting", "Mutex", "Logical"],
+    "a": 3
+  },
+  {
+    "q": "What is a race condition?",
+    "opts": [
+      "A memory race",
+      "Incorrect results due to unsynchronized processes",
+      "Disk read failure",
+      "Hardware conflict"
+    ],
+    "a": 1
+  },
+
+  {
+    "q": "Which OS concept prevents multiple processes from entering critical section simultaneously?",
+    "opts": ["Paging", "Context switching", "Mutual exclusion", "Caching"],
+    "a": 2
+  },
+  {
+    "q": "What is a critical section?",
+    "opts": [
+      "Part of code with I/O operations",
+      "Section of code accessing shared resources",
+      "OS kernel function",
+      "Memory block"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What is demand paging?",
+    "opts": [
+      "Loading entire program to RAM",
+      "Loading pages only when needed",
+      "Loading OS from disk",
+      "Refreshing RAM"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which replacement algorithm uses the oldest page?",
+    "opts": ["FIFO", "LRU", "Optimal", "LFU"],
+    "a": 0
+  },
+  {
+    "q": "Which page replacement algorithm is closest to optimal?",
+    "opts": ["LRU", "FIFO", "LFU", "Random"],
+    "a": 0
+  },
+
+  {
+    "q": "What does LRU stand for?",
+    "opts": ["Least Recently Used", "Last Required Unit", "Logical Resource Unit", "Low RAM Usage"],
+    "a": 0
+  },
+  {
+    "q": "What is the purpose of a page table?",
+    "opts": [
+      "Track CPU usage",
+      "Map virtual to physical addresses",
+      "Store processes",
+      "Manage files"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which memory is the fastest?",
+    "opts": ["RAM", "Cache", "SSD", "Registers"],
+    "a": 3
+  },
+  {
+    "q": "Which interrupt occurs unexpectedly?",
+    "opts": ["Software interrupt", "Hardware interrupt", "Trap", "System call"],
+    "a": 1
+  },
+  {
+    "q": "Which command shuts down a Linux system?",
+    "opts": ["close", "exit", "sudo shutdown now", "end"],
+    "a": 2
+  },
+
+  {
+    "q": "Which file system is common on Linux?",
+    "opts": ["NTFS", "ext4", "APFS", "FAT32"],
+    "a": 1
+  },
+  {
+    "q": "What is the function of the shell?",
+    "opts": [
+      "Manage RAM",
+      "Provide user interface to command the OS",
+      "Manage hardware",
+      "Control boot process"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which is NOT a Linux shell?",
+    "opts": ["bash", "zsh", "ksh", "dashOS"],
+    "a": 3
+  },
+  {
+    "q": "What is an interrupt?",
+    "opts": [
+      "Request for CPU attention",
+      "Disk error",
+      "Software failure",
+      "Memory block"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Which OS uses a monolithic kernel?",
+    "opts": ["Windows", "Linux", "macOS", "Android"],
+    "a": 1
+  },
+
+  {
+    "q": "Which OS uses a microkernel architecture?",
+    "opts": ["Linux", "Windows", "macOS (XNU hybrid)", "Minix"],
+    "a": 3
+  },
+  {
+    "q": "Which scheduling algorithm minimizes average waiting time?",
+    "opts": ["FCFS", "Priority", "SJF", "Round Robin"],
+    "a": 2
+  },
+  {
+    "q": "Which Linux command shows memory usage?",
+    "opts": ["free", "mem", "showmem", "lsmem"],
+    "a": 0
+  },
+  {
+    "q": "Which of these is a valid IPC mechanism?",
+    "opts": ["Threads", "Pipes", "BIOS", "Cache"],
+    "a": 1
+  },
+  {
+    "q": "Which mechanism allows shared memory between processes?",
+    "opts": ["Forking", "Segmentation", "Shared memory region", "Interrupts"],
+    "a": 2
+  },
+
+  {
+    "q": "Which scheduling algorithm gives each process a fixed time slice?",
+    "opts": ["FCFS", "Round Robin", "SJF", "Priority"],
+    "a": 1
+  },
+  {
+    "q": "Which structure stores open file information?",
+    "opts": ["FTB", "OFT", "PCB", "Page table"],
+    "a": 1
+  },
+  {
+    "q": "What is a boot sector?",
+    "opts": [
+      "Memory chip",
+      "First sector of disk containing bootloader",
+      "Cache block",
+      "RAM location"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which of the following is a directory structure?",
+    "opts": ["Flat", "Two-level", "Tree", "All of the above"],
+    "a": 3
+  },
+  {
+    "q": "Which is a disk scheduling algorithm?",
+    "opts": ["SCAN", "LOOK", "FCFS", "All of the above"],
+    "a": 3
+  },
+
+  {
+    "q": "Which disk scheduling method moves the arm only in one direction?",
+    "opts": ["FCFS", "SSTF", "SCAN", "C-SCAN"],
+    "a": 3
+  },
+  {
+    "q": "Which command lists files in Linux?",
+    "opts": ["list", "ls", "show", "files"],
+    "a": 1
+  },
+  {
+    "q": "Which of the following increases concurrency?",
+    "opts": ["Threads", "Firmware", "Compilers", "BIOS"],
+    "a": 0
+  },
+  {
+    "q": "What is the role of DMA?",
+    "opts": [
+      "Directly transfer data between memory and device",
+      "Increase CPU speed",
+      "Manage files",
+      "Encrypt data"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What is the purpose of caching?",
+    "opts": ["Store backups", "Improve access speed", "Encrypt data", "Organize directories"],
+    "a": 1
+  },
+
+  {
+    "q": "Which memory stores the BIOS?",
+    "opts": ["RAM", "ROM", "Cache", "Register"],
+    "a": 1
+  },
+  {
+    "q": "What is the purpose of file permissions?",
+    "opts": ["Control access to files", "Increase storage", "Allocate RAM", "Encrypt disks"],
+    "a": 0
+  },
+  {
+    "q": "Which symbol represents execute permission in Linux?",
+    "opts": ["r", "w", "x", "e"],
+    "a": 2
+  },
+  {
+    "q": "Which of the following is a type of hypervisor?",
+    "opts": ["Type 1", "Type 2", "Both", "None"],
+    "a": 2
+  },
+  {
+    "q": "Which OS feature isolates processes from each other?",
+    "opts": ["Paging", "Process isolation", "Context switching", "Booting"],
+    "a": 1
+  },
+
+  {
+    "q": "Which type of OS handles multiple users?",
+    "opts": ["Single-user", "Embedded", "Multiuser", "Real-time"],
+    "a": 2
+  },
+  {
+    "q": "What is the function of the loader?",
+    "opts": [
+      "Load program from disk to memory",
+      "Compile code",
+      "Manage RAM",
+      "Print logs"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Which OS component handles I/O requests?",
+    "opts": ["Thread manager", "I/O subsystem", "File table", "Scheduler"],
+    "a": 1
+  },
+  {
+    "q": "What is a zombie process?",
+    "opts": [
+      "Process that is dead but still in process table",
+      "Process stuck in memory",
+      "Infinite loop",
+      "High CPU task"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Which command kills a process in Linux?",
+    "opts": ["end", "delete", "kill", "close"],
+    "a": 2
+  }
+]
