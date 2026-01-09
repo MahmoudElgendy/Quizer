@@ -1,0 +1,232 @@
+[
+  {
+    "q":"What is the main purpose of a multi-stage Docker build?",
+    "opts":["Run multiple containers at once","Reduce the final image size","Allow multiple ENTRYPOINTs","Speed up container startup"],
+    "a":1
+  },
+  {
+    "q":"Which Docker instruction starts a new build stage?",
+    "opts":["RUN","COPY","FROM","WORKDIR"],
+    "a":2
+  },
+  {
+    "q":"What does 'AS build' represent in a Dockerfile?",
+    "opts":["An environment variable","A container label","A stage name","A runtime alias"],
+    "a":2
+  },
+  {
+    "q":"Why is the .NET SDK image used in the build stage?",
+    "opts":["It is smaller","It includes runtime only","It contains build tools","It improves security"],
+    "a":2
+  },
+  {
+    "q":"Why is the ASP.NET runtime image used in the runtime stage?",
+    "opts":["It includes compilers","It reduces image size","It supports restoring packages","It allows debugging"],
+    "a":1
+  },
+  {
+    "q":"What does WORKDIR do in a Dockerfile?",
+    "opts":["Copies files","Creates a volume","Sets the working directory","Runs a command"],
+    "a":2
+  },
+  {
+    "q":"Why is the .csproj file copied before source code?",
+    "opts":["To improve security","To enable Docker caching","To reduce image size","To speed up runtime"],
+    "a":1
+  },
+  {
+    "q":"What does 'dotnet restore' do?",
+    "opts":["Builds the project","Publishes the app","Downloads NuGet dependencies","Runs the app"],
+    "a":2
+  },
+  {
+    "q":"What happens when Docker cache is reused?",
+    "opts":["Image size increases","Build becomes slower","Previously built layers are reused","Runtime crashes"],
+    "a":2
+  },
+  {
+    "q":"What does 'COPY . .' do?",
+    "opts":["Copies only binaries","Copies everything in the context","Copies runtime files","Copies files from another stage"],
+    "a":1
+  },
+  {
+    "q":"What is the purpose of 'dotnet publish'?",
+    "opts":["Restore packages","Compile source code","Produce runnable output","Start the application"],
+    "a":2
+  },
+  {
+    "q":"What does '-c Release' mean?",
+    "opts":["Create container","Clear cache","Build in optimized mode","Copy resources"],
+    "a":2
+  },
+  {
+    "q":"Why is '/p:UseAppHost=false' used?",
+    "opts":["Enable debugging","Reduce image size","Improve logging","Enable HTTPS"],
+    "a":1
+  },
+  {
+    "q":"What directory contains the published output?",
+    "opts":["/src","/bin","/app/publish","/runtime"],
+    "a":2
+  },
+  {
+    "q":"What does COPY --from=build do?",
+    "opts":["Copies from local machine","Copies from runtime stage","Copies from another build stage","Copies from Docker Hub"],
+    "a":2
+  },
+  {
+    "q":"What is 'build' in COPY --from=build?",
+    "opts":["A container","An image tag","A stage name","A folder"],
+    "a":2
+  },
+  {
+    "q":"What happens if the stage name is incorrect in COPY --from?",
+    "opts":["Runtime error","Build fails","Docker ignores it","App crashes"],
+    "a":1
+  },
+  {
+    "q":"Where are files copied when using COPY --from=build ... . ?",
+    "opts":["Root directory","Current WORKDIR","/src","/bin"],
+    "a":1
+  },
+  {
+    "q":"Why is WORKDIR important before COPY?",
+    "opts":["Improves caching","Defines destination path","Runs commands faster","Reduces layers"],
+    "a":1
+  },
+  {
+    "q":"What happens if WORKDIR is missing?",
+    "opts":["Build fails","Files go to root","Docker ignores COPY","App runs slower"],
+    "a":1
+  },
+  {
+    "q":"What does EXPOSE 8080 do?",
+    "opts":["Opens firewall","Starts server","Documents container port","Maps host port"],
+    "a":2
+  },
+  {
+    "q":"Does EXPOSE actually open the port?",
+    "opts":["Yes","No","Only in production","Only with docker-compose"],
+    "a":1
+  },
+  {
+    "q":"Which instruction starts the application?",
+    "opts":["RUN","CMD","ENTRYPOINT","COPY"],
+    "a":2
+  },
+  {
+    "q":"What does ENTRYPOINT define?",
+    "opts":["Build command","Startup command","Copy behavior","Environment variables"],
+    "a":1
+  },
+  {
+    "q":"What command is executed by ENTRYPOINT?",
+    "opts":["dotnet restore","dotnet publish","dotnet StudentService.dll","dotnet build"],
+    "a":2
+  },
+  {
+    "q":"Why is source code excluded from the runtime image?",
+    "opts":["To save memory","For security and size","Because Docker forbids it","Because runtime can't read it"],
+    "a":1
+  },
+  {
+    "q":"Which image is larger?",
+    "opts":["Runtime image","SDK image","Both same size","Depends on OS"],
+    "a":1
+  },
+  {
+    "q":"What happens to the build stage after image creation?",
+    "opts":["It runs continuously","It is discarded","It becomes runtime","It is cached forever"],
+    "a":1
+  },
+  {
+    "q":"What is the Docker build context in this setup?",
+    "opts":["Root folder","src folder","Service folder","Docker Hub"],
+    "a":2
+  },
+  {
+    "q":"Why should Dockerfile be inside the service folder?",
+    "opts":["Mandatory","Improves security","Avoids relative paths","Required by Docker"],
+    "a":2
+  },
+  {
+    "q":"What happens if build context is wrong?",
+    "opts":["Build succeeds","Files missing","Image is empty","Docker ignores Dockerfile"],
+    "a":1
+  },
+  {
+    "q":"What does docker-compose build do?",
+    "opts":["Runs containers","Creates volumes","Builds images","Publishes apps"],
+    "a":2
+  },
+  {
+    "q":"Why is multi-stage build best practice?",
+    "opts":["More commands","Better logging","Smaller and secure images","Faster networking"],
+    "a":2
+  },
+  {
+    "q":"Which stage contains dotnet restore?",
+    "opts":["Runtime","Build","Entry","Final"],
+    "a":1
+  },
+  {
+    "q":"Which stage contains ENTRYPOINT?",
+    "opts":["Build","Restore","Runtime","Publish"],
+    "a":2
+  },
+  {
+    "q":"What happens if publish folder path mismatches?",
+    "opts":["Silent failure","Build fails","Runtime crashes","Docker ignores COPY"],
+    "a":1
+  },
+  {
+    "q":"Why is Docker caching important?",
+    "opts":["Security","Speed","Port mapping","Logging"],
+    "a":1
+  },
+  {
+    "q":"Which file must exist for ENTRYPOINT to work?",
+    "opts":[".csproj","Dockerfile","DLL file","NuGet config"],
+    "a":2
+  },
+  {
+    "q":"What type of artifact is StudentService.dll?",
+    "opts":["Source code","Executable output","Configuration file","Docker layer"],
+    "a":1
+  },
+  {
+    "q":"What happens when container starts?",
+    "opts":["Build stage runs","Restore runs","ENTRYPOINT executes","COPY executes"],
+    "a":2
+  },
+  {
+    "q":"Why are there two FROM statements?",
+    "opts":["Multiple OS support","Multi-stage build","Multiple services","Caching"],
+    "a":1
+  },
+  {
+    "q":"Which instruction creates a new Docker layer?",
+    "opts":["FROM","RUN","COPY","All of the above"],
+    "a":3
+  },
+  {
+    "q":"What happens if ENTRYPOINT is missing?",
+    "opts":["Build fails","Container exits immediately","App never starts","Docker crashes"],
+    "a":2
+  },
+  {
+    "q":"Which command maps host port to container port?",
+    "opts":["EXPOSE","RUN","docker run -p","WORKDIR"],
+    "a":2
+  },
+  {
+    "q":"What does 'dotnet StudentService.dll' do?",
+    "opts":["Builds app","Publishes app","Starts Kestrel","Restores packages"],
+    "a":2
+  },
+  {
+    "q":"What is the final result of this Dockerfile?",
+    "opts":["A build image","A runtime-only image","A debug container","A source container"],
+    "a":1
+  }
+]

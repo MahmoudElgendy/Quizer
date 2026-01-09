@@ -1,52 +1,211 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Interactive Networking Quiz — 100 MCQs</title>
   <style>
-    :root{--bg:#0f1724;--card:#0b1220;--accent:#0ea5ef;--muted:#94a3b8;--ok:#10b981}
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;background:linear-gradient(180deg,#071128 0%,#071827 100%);color:#e6eef8;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
-    .app{width:100%;max-width:980px}
-    header{display:flex;align-items:center;gap:16px;margin-bottom:18px}
-    header h1{font-size:20px;margin:0}
-    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:20px;border-radius:14px;box-shadow:0 6px 20px rgba(2,6,23,0.6)}
-    .meta{display:flex;gap:12px;align-items:center;margin-bottom:12px}
-    .progress{flex:1;background:#061225;height:10px;border-radius:999px;overflow:hidden}
-    .bar{height:100%;background:linear-gradient(90deg,var(--accent),#7c3aed);width:0%}
-    .controls{display:flex;gap:8px;align-items:center}
-    .btn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px 12px;border-radius:10px;color:var(--accent);cursor:pointer}
-    .btn.secondary{color:var(--muted);border-style: dashed}
-    .question{font-size:18px;margin:12px 0 6px}
-    .options{display:grid;gap:8px}
-    .option{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px;cursor:pointer;border:1px solid transparent}
-    .option:hover{transform:translateY(-2px)}
-    .option.selected{border-color:var(--accent);box-shadow:0 4px 18px rgba(14,165,239,0.12)}
-    .footer{display:flex;justify-content:space-between;align-items:center;margin-top:14px}
-    .small{font-size:13px;color:var(--muted)}
-    .result{display:none;padding:16px;border-radius:10px;margin-top:12px;background:linear-gradient(180deg, rgba(16,185,129,0.06), rgba(16,185,129,0.02));color:var(--ok)}
-    .review{display:none;margin-top:14px}
-    .review .q{padding:10px;border-radius:8px;background:rgba(255,255,255,0.02);margin-bottom:8px}
-    .right{color:var(--ok);font-weight:600}
-    .wrong{color:#fb7185;font-weight:600}
-    footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
-    @media(max-width:640px){.question{font-size:16px}.btn{padding:6px 8px}}
+    :root {
+      --bg: #0f1724;
+      --card: #0b1220;
+      --accent: #0ea5ef;
+      --muted: #94a3b8;
+      --ok: #10b981
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      background: linear-gradient(180deg, #071128 0%, #071827 100%);
+      color: #e6eef8;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px
+    }
+
+    .app {
+      width: 100%;
+      max-width: 980px
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 18px
+    }
+
+    header h1 {
+      font-size: 20px;
+      margin: 0
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+      padding: 20px;
+      border-radius: 14px;
+      box-shadow: 0 6px 20px rgba(2, 6, 23, 0.6)
+    }
+
+    .meta {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 12px
+    }
+
+    .progress {
+      flex: 1;
+      background: #061225;
+      height: 10px;
+      border-radius: 999px;
+      overflow: hidden
+    }
+
+    .bar {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent), #7c3aed);
+      width: 0%
+    }
+
+    .controls {
+      display: flex;
+      gap: 8px;
+      align-items: center
+    }
+
+    .btn {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      padding: 8px 12px;
+      border-radius: 10px;
+      color: var(--accent);
+      cursor: pointer
+    }
+
+    .btn.secondary {
+      color: var(--muted);
+      border-style: dashed
+    }
+
+    .question {
+      font-size: 18px;
+      margin: 12px 0 6px
+    }
+
+    .options {
+      display: grid;
+      gap: 8px
+    }
+
+    .option {
+      background: rgba(255, 255, 255, 0.02);
+      padding: 12px;
+      border-radius: 10px;
+      cursor: pointer;
+      border: 1px solid transparent
+    }
+
+    .option:hover {
+      transform: translateY(-2px)
+    }
+
+    .option.selected {
+      border-color: var(--accent);
+      box-shadow: 0 4px 18px rgba(14, 165, 239, 0.12)
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 14px
+    }
+
+    .small {
+      font-size: 13px;
+      color: var(--muted)
+    }
+
+    .result {
+      display: none;
+      padding: 16px;
+      border-radius: 10px;
+      margin-top: 12px;
+      background: linear-gradient(180deg, rgba(16, 185, 129, 0.06), rgba(16, 185, 129, 0.02));
+      color: var(--ok)
+    }
+
+    .review {
+      display: none;
+      margin-top: 14px
+    }
+
+    .review .q {
+      padding: 10px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.02);
+      margin-bottom: 8px
+    }
+
+    .right {
+      color: var(--ok);
+      font-weight: 600
+    }
+
+    .wrong {
+      color: #fb7185;
+      font-weight: 600
+    }
+
+    footer {
+      margin-top: 18px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px
+    }
+
+    @media(max-width:640px) {
+      .question {
+        font-size: 16px
+      }
+
+      .btn {
+        padding: 6px 8px
+      }
+    }
   </style>
 </head>
+
 <body>
   <div class="app card">
     <header>
-      <svg width="44" height="44" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="22" height="22" rx="6" fill="#071834" stroke="#0ea5ef" stroke-opacity="0.12"/></svg>
+      <svg width="44" height="44" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="1" y="1" width="22" height="22" rx="6" fill="#071834" stroke="#0ea5ef" stroke-opacity="0.12" />
+      </svg>
       <div>
         <h1>Interactive Networking Quiz — 100 MCQs</h1>
         <div class="small">Practice mode: one question at a time • Instant scoring & review</div>
       </div>
+      <div>
+      <select id="questionsDropdown">
+        <option value="">-- Select a question file --</option>
+      </select>
+    </div>
     </header>
 
     <div class="meta">
       <div class="small">Question <span id="qIndex">1</span> / 100</div>
-      <div class="progress" aria-hidden><div class="bar" id="progress"></div></div>
+      <div class="progress" aria-hidden>
+        <div class="bar" id="progress"></div>
+      </div>
       <div class="controls">
         <button class="btn" id="prevBtn">◀ Prev</button>
         <button class="btn" id="nextBtn">Next ▶</button>
@@ -72,113 +231,10 @@
   </div>
 
   <script>
-    // QUESTIONS ARRAY: 100 questions with options and correct index (0-based)
-    const questions = [
-{q: 'Which layer of the OSI model is responsible for path determination and routing?', opts: ['Data Link','Network','Transport','Application'], a:1},
-{q: 'The OSI model has how many layers?', opts: ['5','9','7','6'], a:2},
-{q: 'Which of the following is not a layer of the OSI model?', opts: ['Session','Internet','Transport','Presentation'], a:1},
-{q: 'The Data Link layer deals with:', opts: ['Frames','Packets','Segments','Bits'], a:0},
-{q: 'Which layer ensures reliable transmission of data?', opts: ['Network','Transport','Application','Session'], a:1},
-{q: 'The Presentation layer is responsible for:', opts: ['Routing','Error control','Data translation and encryption','Flow control'], a:2},
-{q: 'The Physical layer deals with:', opts: ['Transmission of bits over media','Framing','Segmentation','Session management'], a:0},
-{q: 'Which layer establishes, manages, and terminates sessions?', opts: ['Application','Session','Transport','Data Link'], a:1},
-{q: 'The header and trailer are added in which layer?', opts: ['Data Link','Network','Transport','Application'], a:0},
-{q: 'Which of the following works at Layer 3?', opts: ['Switch','Bridge','Router','Hub'], a:2},
-{q: 'TCP stands for:', opts: ['Transmission Control Protocol','Transport Control Protocol','Transfer Communication Protocol','Transmission Communication Path'], a:0},
-{q: 'IP is responsible for:', opts: ['Logical addressing and routing','Physical addressing','Error correction','Encryption'], a:0},
-{q: 'Which of these is a connection-oriented protocol?', opts: ['TCP','UDP','IP','ICMP'], a:0},
-{q: 'DNS uses which transport protocol?', opts: ['TCP only','TCP and UDP','UDP only','ICMP'], a:1},
-{q: 'The default port for HTTP is:', opts: ['80','21','25','443'], a:0},
-{q: 'HTTPS uses which port by default?', opts: ['8080','22','443','110'], a:2},
-{q: 'FTP uses which ports?', opts: ['20 and 21','23 and 24','25 and 26','53 and 54'], a:0},
-{q: 'SMTP is used for:', opts: ['Sending emails','Receiving emails','File transfer','Remote login'], a:0},
-{q: 'POP3 port number is:', opts: ['21','22','110','143'], a:2},
-{q: 'IMAP uses which port by default?', opts: ['25','143','53','110'], a:1},
-{q: 'IPv4 address size is:', opts: ['32 bits','64 bits','128 bits','16 bits'], a:0},
-{q: 'IPv6 address size is:', opts: ['32 bits','128 bits','64 bits','256 bits'], a:1},
-{q: 'The loopback address in IPv4 is:', opts: ['127.0.0.1','0.0.0.0','192.168.0.1','255.255.255.255'], a:0},
-{q: 'Class A IP address range starts from:', opts: ['1.0.0.0','128.0.0.0','192.0.0.0','224.0.0.0'], a:0},
-{q: 'Subnet mask 255.255.255.0 corresponds to:', opts: ['/24','/16','/8','/32'], a:0},
-{q: 'A default gateway is used to:', opts: ['Route traffic to other networks','Resolve IP addresses','Translate domain names','Manage DNS zones'], a:0},
-{q: 'Private IP range 192.168.x.x belongs to which class?', opts: ['A','B','C','D'], a:2},
-{q: 'CIDR stands for:', opts: ['Classless Inter-Domain Routing','Central Internet Data Routing','Computer Inter Domain Resource','Class Internet Domain Range'], a:0},
-{q: 'The broadcast address for 192.168.1.0/24 is:', opts: ['192.168.1.0','192.168.1.255','192.168.1.1','192.168.0.255'], a:1},
-{q: '255.255.0.0 represents which prefix?', opts: ['/8','/16','/24','/20'], a:1},
-{q: 'Which device operates at Layer 2?', opts: ['Switch','Router','Repeater','Gateway'], a:0},
-{q: 'The process of mapping IP address to MAC address is done by:', opts: ['ARP','DNS','DHCP','NAT'], a:0},
-{q: 'Which protocol is used by routers to find the best path?', opts: ['OSPF','ARP','DHCP','FTP'], a:0},
-{q: 'The routing protocol that uses hop count as a metric is:', opts: ['RIP','OSPF','BGP','EIGRP'], a:0},
-{q: 'VLANs operate at which layer?', opts: ['Data Link','Network','Transport','Application'], a:0},
-{q: 'STP (Spanning Tree Protocol) is used to:', opts: ['Prevent loops in network topology','Encrypt data','Assign IP addresses','Authenticate users'], a:0},
-{q: 'NAT translates:', opts: ['Private IPs to Public IPs','MAC to IP','Domain to IP','None of these'], a:0},
-{q: 'Which protocol assigns IP addresses dynamically?', opts: ['DHCP','DNS','ICMP','SNMP'], a:0},
-{q: 'Which table does a router use to make decisions?', opts: ['Routing table','ARP table','MAC table','DNS cache'], a:0},
-{q: 'Which layer is responsible for flow control?', opts: ['Network','Transport','Data Link','Application'], a:1},
-{q: 'HTTPS is HTTP with:', opts: ['SSL/TLS','AES','VPN','Firewall'], a:0},
-{q: 'A firewall operates at which layer?', opts: ['Network and Transport','Only Application','Only Data Link','Only Session'], a:0},
-{q: 'The purpose of a VPN is to:', opts: ['Create a secure tunnel over public networks','Increase bandwidth','Translate IPs','Monitor traffic'], a:0},
-{q: 'SSH default port:', opts: ['22','23','21','443'], a:0},
-{q: 'Telnet sends data in:', opts: ['Plain text','Encrypted format','Binary','Encoded'], a:0},
-{q: 'Which protocol is used for secure email transfer?', opts: ['SMTPS','FTP','HTTP','SNMP'], a:0},
-{q: 'IDS stands for:', opts: ['Intrusion Detection System','Internal Data Server','Internet Distribution Service','Inter Domain Switch'], a:0},
-{q: 'A DoS attack aims to:', opts: ['Overwhelm system resources','Steal credentials','Modify packets','Encrypt data'], a:0},
-{q: 'Which encryption method uses a public and private key?', opts: ['Asymmetric','Symmetric','Hashing','Block cipher'], a:0},
-{q: 'SSL operates between which two OSI layers?', opts: ['Transport and Application','Network and Transport','Session and Presentation','Data Link and Network'], a:0},
-{q: 'DNS stands for:', opts: ['Domain Name System','Data Network Service','Domain Network Server','Directory Naming Service'], a:0},
-{q: 'Which port does DNS use by default?', opts: ['53','80','110','21'], a:0},
-{q: 'What type of DNS record maps a domain to an IP address?', opts: ['A record','MX record','CNAME','TXT'], a:0},
-{q: 'The DNS record type used to redirect a domain to another domain is:', opts: ['A record','CNAME','PTR','SOA'], a:1},
-{q: 'The reverse lookup record type is:', opts: ['PTR','MX','A','TXT'], a:0},
-{q: 'HTTP is a:', opts: ['Stateless protocol','Stateful protocol','Connection-oriented protocol','Secure protocol'], a:0},
-{q: 'Which of the following is not a valid HTTP method?', opts: ['GET','POST','CONNECTED','DELETE'], a:2},
-{q: 'HTTP status code 200 means:', opts: ['OK','Moved Permanently','Not Found','Internal Server Error'], a:0},
-{q: 'HTTP status code 404 means:', opts: ['OK','Not Found','Forbidden','Redirect'], a:1},
-{q: 'HTTP 500 indicates:', opts: ['Client error','Server error','Redirect','Informational'], a:1},
-{q: 'Which device connects multiple computers within the same LAN?', opts: ['Switch','Router','Modem','Firewall'], a:0},
-{q: 'A repeater works at which OSI layer?', opts: ['Physical','Data Link','Network','Transport'], a:0},
-{q: 'The device that connects different networks is a:', opts: ['Router','Bridge','Switch','Repeater'], a:0},
-{q: 'A hub operates at:', opts: ['Physical layer','Data Link layer','Network layer','Transport layer'], a:0},
-{q: 'A device that filters traffic based on rules is a:', opts: ['Firewall','Hub','Switch','Router'], a:0},
-{q: 'Which device translates between digital and analog signals?', opts: ['Modem','Router','Switch','Repeater'], a:0},
-{q: 'A proxy server is mainly used for:', opts: ['Caching and filtering web requests','DNS resolution','Routing packets','Address translation'], a:0},
-{q: 'Load balancer works at which OSI layers?', opts: ['Layer 4 and Layer 7','Layer 2 only','Layer 3 only','Layer 1'], a:0},
-{q: 'A Layer 3 switch performs:', opts: ['Routing and switching','Only switching','Only routing','Encryption'], a:0},
-{q: 'The main function of an access point (AP) is:', opts: ['Provide wireless connectivity','Provide IP addresses','Encrypt data','Manage routing tables'], a:0},
-{q: 'A PAN (Personal Area Network) typically covers:', opts: ['A few meters','A city','A country','Multiple buildings'], a:0},
-{q: 'LAN stands for:', opts: ['Local Area Network','Long Area Network','Linked Access Network','Logical Area Node'], a:0},
-{q: 'WAN stands for:', opts: ['Wide Area Network','World Access Node','Wireless Access Network','Web Area Network'], a:0},
-{q: 'Which topology connects every node to every other node?', opts: ['Mesh','Star','Ring','Bus'], a:0},
-{q: 'In a star topology, all devices connect to a:', opts: ['Central hub or switch','Router','Server','Modem'], a:0},
-{q: 'The topology most prone to a single point of failure is:', opts: ['Star','Mesh','Bus','Ring'], a:0},
-{q: 'The cheapest and simplest network topology is:', opts: ['Bus','Mesh','Star','Hybrid'], a:0},
-{q: 'The topology offering maximum redundancy is:', opts: ['Mesh','Bus','Ring','Star'], a:0},
-{q: 'A MAN (Metropolitan Area Network) covers:', opts: ['A city or campus','A building','A room','A country'], a:0},
-{q: 'A hybrid topology is:', opts: ['A combination of two or more topologies','Only wireless','Peer-to-peer only','Cloud-based only'], a:0},
-{q: 'Wi-Fi stands for:', opts: ['Wireless Fidelity','Wide Frequency','Wireless Function','Wide Fidelity'], a:0},
-{q: 'Which IEEE standard defines Wi-Fi?', opts: ['802.11','802.3','802.5','802.15'], a:0},
-{q: 'Bluetooth uses which IEEE standard?', opts: ['802.15','802.3','802.11','802.16'], a:0},
-{q: 'Which frequency band does Wi-Fi use?', opts: ['2.4 GHz and 5 GHz','1 GHz and 3 GHz','800 MHz','900 MHz'], a:0},
-{q: 'Which protocol secures Wi-Fi connections?', opts: ['WPA3','FTP','HTTP','ICMP'], a:0},
-{q: 'Cloud computing allows:', opts: ['On-demand access to shared resources','Permanent offline storage','Fixed network access','Manual resource scaling'], a:0},
-{q: 'SaaS stands for:', opts: ['Software as a Service','Storage as a System','Server as a Software','Security as a Service'], a:0},
-{q: 'Virtualization means:', opts: ['Running multiple OSes on one physical machine','Increasing bandwidth','Hardware duplication','Cloud-only deployment'], a:0},
-{q: 'Which technology allows creating virtual networks inside a physical network?', opts: ['SDN','VPN','NAT','SNMP'], a:0},
-{q: 'A hypervisor is used for:', opts: ['Managing virtual machines','Encrypting traffic','Network routing','Caching data'], a:0},
-{q: 'The command used to test connectivity between devices:', opts: ['ping','nslookup','ipconfig','tracert'], a:0},
-{q: 'The command used to find DNS information:', opts: ['nslookup','ping','ipconfig','netstat'], a:0},
-{q: 'To display active TCP connections, use:', opts: ['netstat','ping','ipconfig','arp'], a:0},
-{q: 'To trace the path to a remote host, use:', opts: ['tracert','ping','nslookup','ipconfig'], a:0},
-{q: 'The command to display IP configuration:', opts: ['ipconfig','ping','tracert','netstat'], a:0},
-{q: 'Latency measures:', opts: ['Delay between request and response','Bandwidth','Packet size','Throughput'], a:0},
-{q: 'Bandwidth refers to:', opts: ['The amount of data transmitted per second','Delay','IP address','Protocol speed'], a:0},
-{q: 'Packet loss means:', opts: ['Some packets didn\'t reach their destination','Low bandwidth','Encryption error','Network congestion resolved'], a:0},
-{q: 'MTU stands for:', opts: ['Maximum Transmission Unit','Minimum Transfer Unit','Maximum Transfer Utility','Multi Transmission Unit'], a:0},
-{q: 'A network bottleneck happens when:', opts: ['One component slows down overall performance','Packets are encrypted','IPs change dynamically','DNS cache is full'], a:0}
-];
-
+    let questions = []; // global variable
     let current = 0;
-    const answers = new Array(questions.length).fill(null);
-    let seconds = 0; let timerInterval;
+    let answers = [];
+    let seconds = 0, timerInterval;
 
     const qIndexEl = document.getElementById('qIndex');
     const progressEl = document.getElementById('progress');
@@ -189,83 +245,168 @@
     const reviewBox = document.getElementById('reviewBox');
     const timerEl = document.getElementById('timer');
 
-    function startTimer(){
-      timerInterval = setInterval(()=>{seconds++; const m = String(Math.floor(seconds/60)).padStart(2,'0'); const s = String(seconds%60).padStart(2,'0'); timerEl.textContent = m+':'+s},1000);
+    async function initQuiz() {
+      questions = await loadQuestions();
+      answers = new Array(questions.length).fill(null); // now safe
+      render();
+      startTimer();
     }
-    function stopTimer(){clearInterval(timerInterval)}
 
-    function render(){
+    function startTimer() {
+      timerInterval = setInterval(() => {
+        seconds++;
+        const m = String(Math.floor(seconds / 60)).padStart(2, '0');
+        const s = String(seconds % 60).padStart(2, '0');
+        timerEl.textContent = `${m}:${s}`;
+      }, 1000);
+    }
+
+    function stopTimer() { clearInterval(timerInterval); }
+
+    function render() {
+      if (!questions.length) return; // safety
       const item = questions[current];
-      qIndexEl.textContent = current+1;
-      progressEl.style.width = Math.round(((current+1)/questions.length)*100)+'%';
+      qIndexEl.textContent = current + 1;
+      progressEl.style.width = Math.round(((current + 1) / questions.length) * 100) + '%';
       questionEl.textContent = item.q;
       optionsEl.innerHTML = '';
-      item.opts.forEach((opt, i)=>{
+
+      item.opts.forEach((opt, i) => {
         const div = document.createElement('div');
-        div.className = 'option'+(answers[current]===i? ' selected':'');
+        div.className = 'option' + (answers[current] === i ? ' selected' : '');
         div.tabIndex = 0;
-        div.textContent = String.fromCharCode(65+i)+'.  '+opt;
-        div.onclick = ()=>{answers[current]=i; updateSelected(); render();};
-        div.onkeydown = (e)=>{if(e.key==='Enter'){answers[current]=i; updateSelected(); render();}}
+        div.textContent = String.fromCharCode(65 + i) + '. ' + opt;
+        div.onclick = () => { answers[current] = i; updateSelected(); render(); };
+        div.onkeydown = e => { if (e.key === 'Enter') { answers[current] = i; updateSelected(); render(); } };
         optionsEl.appendChild(div);
       });
+
       updateSelected();
     }
 
-    function updateSelected(){
+    function updateSelected() {
       const sel = answers[current];
-      selectedText.textContent = (sel===null)? '—' : String.fromCharCode(65+sel) + ' (' + questions[current].opts[sel] + ')';
-      document.querySelectorAll('.option').forEach((el, idx)=>{el.classList.toggle('selected', answers[current]===idx)});
+      selectedText.textContent = (sel === null) ? '—' : String.fromCharCode(65 + sel) + ' (' + questions[current].opts[sel] + ')';
+      document.querySelectorAll('.option').forEach((el, idx) => {
+        el.classList.toggle('selected', answers[current] === idx);
+      });
     }
 
-    document.getElementById('prevBtn').addEventListener('click', ()=>{ if(current>0){current--; render()} });
-    document.getElementById('nextBtn').addEventListener('click', ()=>{ if(current<questions.length-1){current++; render()} });
+    // Navigation buttons
+    document.getElementById('prevBtn').addEventListener('click', () => { if (current > 0) { current--; render(); } });
+    document.getElementById('nextBtn').addEventListener('click', () => { if (current < questions.length - 1) { current++; render(); } });
 
-    document.getElementById('submitBtn').addEventListener('click', ()=>{
-      if(!confirm('Submit quiz and calculate score?')) return;
+    // Submit quiz
+    document.getElementById('submitBtn').addEventListener('click', () => {
+      if (!confirm('Submit quiz and calculate score?')) return;
       stopTimer();
-      let score=0; const details = [];
-      for(let i=0;i<questions.length;i++){
-        const user = answers[i]; const correct = questions[i].a;
-        const ok = user!==null && user===correct; if(ok) score++;
-        details.push({q:questions[i].q, user, correct, opts:questions[i].opts});
+      let score = 0;
+      const details = [];
+      for (let i = 0; i < questions.length; i++) {
+        const user = answers[i], correct = questions[i].a;
+        const ok = user !== null && user === correct;
+        if (ok) score++;
+        details.push({ q: questions[i].q, user, correct, opts: questions[i].opts });
       }
-      resultBox.style.display='block'; resultBox.innerHTML = `<strong>Score: ${score} / ${questions.length}</strong> — Time: ${timerEl.textContent}`;
-      reviewBox.style.display='block'; reviewBox.innerHTML = '<h3 style="margin:8px 0;color:var(--muted)">Review answers</h3>';
-      details.forEach((d,i)=>{
-        const div = document.createElement('div'); div.className='q';
-        const u = d.user===null? 'No answer': String.fromCharCode(65+d.user)+'. '+(d.user===null? '': d.opts[d.user]);
-        const c = String.fromCharCode(65+d.correct)+'. '+d.opts[d.correct];
-        const isRight = d.user!==null && d.user===d.correct;
-        div.innerHTML = `<div style="display:flex;justify-content:space-between;gap:10px"><div style='flex:1'><strong>Q${i+1}:</strong> ${d.q}</div><div style='min-width:160px;text-align:right' class='${isRight? 'right':'wrong'}'>Your: ${u}<br>Correct: ${c}</div></div>`;
+      resultBox.style.display = 'block';
+      resultBox.innerHTML = `<strong>Score: ${score} / ${questions.length}</strong> — Time: ${timerEl.textContent}`;
+
+      reviewBox.style.display = 'block';
+      reviewBox.innerHTML = '<h3 style="margin:8px 0;color:var(--muted)">Review answers</h3>';
+      details.forEach((d, i) => {
+        const div = document.createElement('div'); div.className = 'q';
+        const u = d.user === null ? 'No answer' : String.fromCharCode(65 + d.user) + '. ' + (d.user === null ? '' : d.opts[d.user]);
+        const c = String.fromCharCode(65 + d.correct) + '. ' + d.opts[d.correct];
+        const isRight = d.user !== null && d.user === d.correct;
+        div.innerHTML = `<div style="display:flex;justify-content:space-between;gap:10px">
+      <div style='flex:1'><strong>Q${i + 1}:</strong> ${d.q}</div>
+      <div style='min-width:160px;text-align:right' class='${isRight ? 'right' : 'wrong'}'>Your: ${u}<br>Correct: ${c}</div>
+    </div>`;
         reviewBox.appendChild(div);
       });
-      window.scrollTo({top:0,behavior:'smooth'});
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
     // Keyboard shortcuts
-    document.addEventListener('keydown',(e)=>{
-      if(e.key==='ArrowRight') document.getElementById('nextBtn').click();
-      if(e.key==='ArrowLeft') document.getElementById('prevBtn').click();
-      if(e.key>='1' && e.key<='4'){
-        const idx = parseInt(e.key,10)-1; if(idx<questions[current].opts.length){answers[current]=idx; render();}
+    document.addEventListener('keydown', (e) => {
+      if (!questions.length) return;
+      if (e.key === 'ArrowRight') document.getElementById('nextBtn').click();
+      if (e.key === 'ArrowLeft') document.getElementById('prevBtn').click();
+      if (e.key >= '1' && e.key <= '4') {
+        const idx = parseInt(e.key, 10) - 1;
+        if (idx < questions[current].opts.length) { answers[current] = idx; render(); }
       }
     });
 
-    // initialize
-    render(); startTimer();
-
-    // allow downloading results
-    function downloadResults(){
-      const out = answers.map((a,i)=>({q:i+1, question:questions[i].q, selected: a===null? null: String.fromCharCode(65+a), correct: String.fromCharCode(65+questions[i].a)}));
-      const blob = new Blob([JSON.stringify(out,null,2)],{type:'application/json'});
+    // Download results
+    function downloadResults() {
+      const out = answers.map((a, i) => ({ q: i + 1, question: questions[i].q, selected: a === null ? null : String.fromCharCode(65 + a), correct: String.fromCharCode(65 + questions[i].a) }));
+      const blob = new Blob([JSON.stringify(out, null, 2)], { type: 'application/json' });
       const url = URL.createObjectURL(blob);
-      const a = document.createElement('a'); a.href=url; a.download='networking-quiz-results.json'; a.click(); URL.revokeObjectURL(url);
+      const a = document.createElement('a'); a.href = url; a.download = 'networking-quiz-results.json'; a.click(); URL.revokeObjectURL(url);
     }
 
-    // add quick export button
-    const exportBtn = document.createElement('button'); exportBtn.className='btn'; exportBtn.textContent='Export Results'; exportBtn.style.marginLeft='8px'; exportBtn.onclick = downloadResults;
+    // Quick export button
+    const exportBtn = document.createElement('button');
+    exportBtn.className = 'btn';
+    exportBtn.textContent = 'Export Results';
+    exportBtn.style.marginLeft = '8px';
+    exportBtn.onclick = downloadResults;
     document.querySelector('.controls').appendChild(exportBtn);
+
+    // Load questions
+    async function loadQuestions(fileName) {
+
+      // 1️⃣ Load file list from index.json
+      const filesResponse = await fetch('./questions/index.json');
+      const files = await filesResponse.json();
+
+      // 2️⃣ Use the first file (same behavior as before)
+      const selectedFile = fileName ?? files[0];
+      const response = await fetch('./questions/' + selectedFile);
+      const questions = await response.json();
+
+      console.log("Loaded questions:", questions);
+      return questions;
+    }
+    initQuiz();
+    async function populateDropdown() {
+  // Load file list
+  const filesResponse = await fetch('./questions/index.json');
+  const files = await filesResponse.json();
+
+  const dropdown = document.getElementById('questionsDropdown');
+
+  // Clear existing options except first one
+  dropdown.length = 1;
+
+  // Populate dropdown
+  files.forEach(file => {
+    const option = document.createElement('option');
+    option.value = file;     // value used in code
+    option.textContent = file; // text shown to user
+    dropdown.appendChild(option);
+  });
+}
+
+// Call on page load
+populateDropdown();
+const dropdown = document.getElementById('questionsDropdown');
+
+dropdown.addEventListener('change', async function () {
+  if (!this.value) return; // ignore placeholder
+  current = 0;
+  seconds = 0;
+  stopTimer();
+
+  questions = await loadQuestions(this.value);
+  answers = new Array(questions.length).fill(null);
+
+  render();
+  startTimer();
+});
   </script>
+
 </body>
+
 </html>
