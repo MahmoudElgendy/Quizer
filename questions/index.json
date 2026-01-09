@@ -1,5 +1,7 @@
 ﻿[
     "Docker.json",
+    "DockerFile.json",
     "Networking.json",
-    "OperatingSystem.json"
+    "OperatingSystem.json",
+    "systemDesign.json"
 ]

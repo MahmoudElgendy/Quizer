@@ -1,0 +1,102 @@
+[
+  {
+    "q": "What is the primary goal of system design?",
+    "opts": ["Writing clean code", "Building scalable and reliable systems", "Choosing a programming language", "Designing UI screens"],
+    "a": 1
+  },
+  {
+    "q": "Which metric measures how often a system is operational?",
+    "opts": ["Latency", "Throughput", "Availability", "Scalability"],
+    "a": 2
+  },
+  {
+    "q": "What does scalability primarily address?",
+    "opts": ["Security concerns", "Handling increased load", "Reducing bugs", "Improving readability"],
+    "a": 1
+  },
+  {
+    "q": "Horizontal scaling means:",
+    "opts": ["Adding more CPU to a server", "Adding more servers", "Optimizing database queries", "Using faster disks"],
+    "a": 1
+  },
+  {
+    "q": "Vertical scaling refers to:",
+    "opts": ["Adding more servers", "Distributing load geographically", "Increasing resources on a single server", "Caching data"],
+    "a": 2
+  },
+  {
+    "q": "Which component distributes traffic across multiple servers?",
+    "opts": ["Cache", "Load balancer", "Database", "Message queue"],
+    "a": 1
+  },
+  {
+    "q": "What is latency?",
+    "opts": ["Number of requests per second", "Time taken to process a request", "System uptime", "Data consistency level"],
+    "a": 1
+  },
+  {
+    "q": "Throughput is best described as:",
+    "opts": ["Time to first byte", "Total system downtime", "Requests processed per unit time", "Database size"],
+    "a": 2
+  },
+  {
+    "q": "Which database property ensures data accuracy across replicas?",
+    "opts": ["Availability", "Partition tolerance", "Consistency", "Durability"],
+    "a": 2
+  },
+  {
+    "q": "The CAP theorem applies mainly to:",
+    "opts": ["Monolithic systems", "Distributed systems", "Single-node databases", "Frontend applications"],
+    "a": 1
+  },
+  {
+    "q": "In the CAP theorem, choosing availability means:",
+    "opts": ["Always returning the latest data", "System may reject requests", "System always responds, possibly with stale data", "No network failures"],
+    "a": 2
+  },
+  {
+    "q": "What problem do message queues primarily solve?",
+    "opts": ["Data storage", "Synchronous communication", "Tight coupling between services", "Asynchronous communication and buffering"],
+    "a": 3
+  },
+  {
+    "q": "Which pattern ensures data is written to cache and database simultaneously?",
+    "opts": ["Cache-Aside", "Write-Through", "Write-Behind", "Read-Through"],
+    "a": 1
+  },
+  {
+    "q": "A cache miss occurs when:",
+    "opts": ["Cache is full", "Data is not found in cache", "Cache is refreshed", "Cache returns stale data"],
+    "a": 1
+  },
+  {
+    "q": "What is a common use case for CDN?",
+    "opts": ["Storing user credentials", "Serving static content globally", "Processing background jobs", "Managing transactions"],
+    "a": 1
+  },
+  {
+    "q": "Which technique improves fault tolerance?",
+    "opts": ["Single point of failure", "Replication", "Hard-coded configuration", "Tight coupling"],
+    "a": 1
+  },
+  {
+    "q": "What does idempotency mean in system design?",
+    "opts": ["Operation executes only once", "Same request produces same result when repeated", "Requests are processed in order", "Data is eventually consistent"],
+    "a": 1
+  },
+  {
+    "q": "Why are health checks important?",
+    "opts": ["To encrypt traffic", "To detect unhealthy services", "To improve database performance", "To reduce code duplication"],
+    "a": 1
+  },
+  {
+    "q": "Which storage is best suited for unstructured or flexible schema data?",
+    "opts": ["Relational database", "Key-value store", "NoSQL document database", "In-memory cache only"],
+    "a": 2
+  },
+  {
+    "q": "What is eventual consistency?",
+    "opts": ["Data is always consistent", "Data may be temporarily inconsistent but converges over time", "Transactions always rollback", "Only one replica exists"],
+    "a": 1
+  }
+]

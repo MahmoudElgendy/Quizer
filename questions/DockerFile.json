@@ -1,0 +1,472 @@
+[
+  {
+    "q": "What is a Docker image best described as?",
+    "opts": [
+      "A running process",
+      "A virtual machine",
+      "A group of files stored as layered read-only filesystem",
+      "A compressed source code archive"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What does a Docker container add on top of an image?",
+    "opts": [
+      "Another image layer",
+      "A writable runtime layer",
+      "More source files",
+      "Another base OS"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which Dockerfile instruction creates a new image layer?",
+    "opts": [
+      "ENTRYPOINT",
+      "RUN",
+      "CMD",
+      "EXPOSE"
+    ],
+    "a": 1
+  },
+  {
+    "q": "In a multi-stage Dockerfile, which stage is used at runtime?",
+    "opts": [
+      "build",
+      "publish",
+      "base",
+      "final"
+    ],
+    "a": 3
+  },
+  {
+    "q": "What does WORKDIR affect in a Dockerfile?",
+    "opts": [
+      "All absolute paths",
+      "Only relative paths",
+      "Network configuration",
+      "Image size"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What happens to files created in intermediate build stages?",
+    "opts": [
+      "They are deleted automatically",
+      "They are copied to the final stage",
+      "They are discarded unless explicitly copied",
+      "They remain hidden in the image"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What does the command `COPY --from=publish /app/publish .` do?",
+    "opts": [
+      "Moves files from publish stage",
+      "Deletes the publish directory",
+      "Copies published output into the final image",
+      "Shares files between containers"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Does `/app/publish` exist in the final image by default?",
+    "opts": [
+      "Yes, always",
+      "Only in Debug mode",
+      "No, unless explicitly copied",
+      "Only on Windows containers"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Which image is typically used for building .NET projects?",
+    "opts": [
+      "aspnet",
+      "runtime",
+      "sdk",
+      "alpine"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Why is `dotnet restore` usually run before copying full source code?",
+    "opts": [
+      "To reduce image size",
+      "To improve Docker layer caching",
+      "To enable hot reload",
+      "To publish the app"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What does `dotnet build` primarily do?",
+    "opts": [
+      "Publishes the app",
+      "Runs the app",
+      "Compiles the project",
+      "Packages the container"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What does `dotnet publish` produce?",
+    "opts": [
+      "Source code",
+      "Intermediate build files",
+      "Final runtime-ready binaries",
+      "Docker images"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What does the `-o` flag in `dotnet build` specify?",
+    "opts": [
+      "Organization",
+      "Output directory",
+      "Optimization level",
+      "Operating system"
+    ],
+    "a": 1
+  },
+  {
+    "q": "If a path starts with `/` in Docker, it is considered:",
+    "opts": [
+      "Relative to WORKDIR",
+      "Relative to Dockerfile",
+      "Relative to build context",
+      "An absolute path"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Where does `-o /app/build` place build artifacts?",
+    "opts": [
+      "/src/app/build",
+      "/src/AuctionService/app/build",
+      "/app/build",
+      "bin/Release"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What happens if you rebuild an image after changing source code?",
+    "opts": [
+      "All layers are rebuilt",
+      "Only runtime layer changes",
+      "Layers after the change are rebuilt",
+      "Docker ignores changes"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What is the purpose of EXPOSE in a Dockerfile?",
+    "opts": [
+      "Opens the port on the host",
+      "Documents the container’s listening port",
+      "Enables HTTPS",
+      "Maps ports automatically"
+    ],
+    "a": 1
+  },
+  {
+    "q": "How do you access a containerized app from the browser?",
+    "opts": [
+      "Using the container IP only",
+      "Using image name",
+      "Using host port mapped to container port",
+      "Using Dockerfile EXPOSE"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Which Docker Compose command removes containers and locally built images?",
+    "opts": [
+      "docker compose stop",
+      "docker compose rm",
+      "docker compose down --rmi local",
+      "docker system prune"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What does `docker exec -it <container> sh` allow you to do?",
+    "opts": [
+      "Rebuild the image",
+      "Inspect container filesystem",
+      "Modify the Dockerfile",
+      "Restart Docker Desktop"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Where can you visually browse container files in Docker Desktop?",
+    "opts": [
+      "Images tab",
+      "Volumes tab",
+      "Containers → Files tab",
+      "Settings → Resources"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What type of filesystem do Docker images use conceptually?",
+    "opts": [
+      "Single flat filesystem",
+      "Layered union filesystem",
+      "NTFS filesystem",
+      "Temporary filesystem only"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What happens to files written inside a running container?",
+    "opts": [
+      "They are stored permanently in the image",
+      "They are saved to Docker Hub",
+      "They exist only in the writable layer",
+      "They modify the base image"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What happens to the writable layer when a container is deleted?",
+    "opts": [
+      "It is merged into the image",
+      "It is persisted automatically",
+      "It is removed",
+      "It becomes read-only"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Why are multi-stage builds considered more secure?",
+    "opts": [
+      "They encrypt images",
+      "They hide Dockerfiles",
+      "They exclude source code and SDK from final image",
+      "They prevent container access"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What does `ENTRYPOINT [\"dotnet\", \"AuctionService.dll\"]` define?",
+    "opts": [
+      "The build command",
+      "The runtime startup command",
+      "The image name",
+      "The container user"
+    ],
+    "a": 1
+  },
+  {
+    "q": "When is a RUN instruction executed?",
+    "opts": [
+      "At container startup",
+      "At image pull",
+      "At image build time",
+      "At runtime on every request"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Which stage usually produces the smallest output?",
+    "opts": [
+      "build",
+      "publish",
+      "final",
+      "sdk"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What does Docker layer caching primarily optimize?",
+    "opts": [
+      "Memory usage",
+      "Network latency",
+      "Rebuild speed",
+      "Runtime performance"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Why is absolute output path preferred in Docker builds?",
+    "opts": [
+      "To reduce image size",
+      "To avoid WORKDIR ambiguity",
+      "To improve logging",
+      "To enable HTTPS"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What does build context define?",
+    "opts": [
+      "Where containers run",
+      "Which files Docker can access",
+      "Which ports are open",
+      "Which stage runs first"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Where are COPY source paths resolved from?",
+    "opts": [
+      "Dockerfile directory",
+      "WORKDIR",
+      "Build context root",
+      "Image filesystem"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What happens if a file is not in the build context?",
+    "opts": [
+      "Docker downloads it",
+      "Docker ignores it",
+      "COPY fails",
+      "Docker creates it"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What is the purpose of `.dockerignore`?",
+    "opts": [
+      "Ignore runtime errors",
+      "Reduce build context size",
+      "Hide containers",
+      "Disable caching"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Why is the SDK image not used in production?",
+    "opts": [
+      "It is incompatible",
+      "It is too slow",
+      "It is larger and less secure",
+      "It cannot run DLLs"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What command shows image layer history?",
+    "opts": [
+      "docker ps",
+      "docker inspect",
+      "docker history",
+      "docker logs"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Which layer is shared across multiple containers?",
+    "opts": [
+      "Writable layer",
+      "Runtime layer",
+      "Image layers",
+      "Log layer"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What does `docker compose down` remove by default?",
+    "opts": [
+      "Images only",
+      "Volumes only",
+      "Containers and networks",
+      "Everything including cache"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What does `--rmi local` do in docker compose?",
+    "opts": [
+      "Removes all images",
+      "Removes pulled images",
+      "Removes locally built images",
+      "Removes base images"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Why is source code not visible in the final container?",
+    "opts": [
+      "Docker hides it automatically",
+      "It is deleted during build",
+      "It was never copied to the final stage",
+      "It is encrypted"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What is the main benefit of separating build and runtime stages?",
+    "opts": [
+      "Easier debugging",
+      "Smaller and cleaner runtime images",
+      "Automatic scaling",
+      "Better networking"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What happens if you modify files inside a running container?",
+    "opts": [
+      "Image is updated",
+      "Changes persist after rebuild",
+      "Changes are temporary",
+      "Dockerfile is regenerated"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Which file is required to start a .NET container?",
+    "opts": [
+      ".csproj",
+      ".sln",
+      ".dll",
+      ".pdb"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What is the correct mental model for Docker image layers?",
+    "opts": [
+      "Folders copied recursively",
+      "Stacked transparent sheets",
+      "Virtual machines",
+      "Compressed archives"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Why does Docker not delete intermediate stage files?",
+    "opts": [
+      "They are cached internally",
+      "They are shared with host",
+      "They are required at runtime",
+      "They are merged automatically"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What determines the current directory for ENTRYPOINT execution?",
+    "opts": [
+      "Dockerfile location",
+      "Image root",
+      "WORKDIR",
+      "Build context"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Why is Docker considered immutable by design?",
+    "opts": [
+      "Files cannot be copied",
+      "Images cannot be edited after build",
+      "Containers cannot be stopped",
+      "Layers cannot be shared"
+    ],
+    "a": 1
+  }
+]
