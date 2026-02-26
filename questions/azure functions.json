@@ -1,0 +1,252 @@
+[
+  {
+    "q": "What is Azure Functions primarily used for?",
+    "opts": ["Virtual machine hosting", "Event-driven serverless compute", "Database management", "DNS configuration"],
+    "a": 1
+  },
+  {
+    "q": "Which hosting plan charges per execution?",
+    "opts": ["Dedicated", "Premium", "Consumption", "Isolated ASE"],
+    "a": 2
+  },
+  {
+    "q": "Which trigger is used to execute a function on HTTP request?",
+    "opts": ["Timer Trigger", "Queue Trigger", "HTTP Trigger", "Blob Trigger"],
+    "a": 2
+  },
+  {
+    "q": "What causes a cold start in Azure Functions?",
+    "opts": ["High CPU usage", "Function idle time", "Large storage size", "Too many logs"],
+    "a": 1
+  },
+  {
+    "q": "Which file configures runtime behavior in Azure Functions?",
+    "opts": ["appsettings.json", "host.json", "runtime.json", "function.json"],
+    "a": 1
+  },
+  {
+    "q": "Which file is NOT deployed to Azure?",
+    "opts": ["host.json", "function.json", "local.settings.json", "Program.cs"],
+    "a": 2
+  },
+  {
+    "q": "What feature allows long-running workflows?",
+    "opts": ["Service Bus", "Durable Functions", "Blob Storage", "App Configuration"],
+    "a": 1
+  },
+  {
+    "q": "Which Durable Function type coordinates workflow?",
+    "opts": ["Activity", "Orchestrator", "Entity", "Client"],
+    "a": 1
+  },
+  {
+    "q": "What is the default timeout for Consumption plan?",
+    "opts": ["1 minute", "5 minutes", "30 minutes", "Unlimited"],
+    "a": 1
+  },
+  {
+    "q": "Which authentication level allows anonymous access?",
+    "opts": ["Admin", "Function", "Anonymous", "Host"],
+    "a": 2
+  },
+  {
+    "q": "Which service is commonly used for monitoring Azure Functions?",
+    "opts": ["Azure Monitor", "Azure DevOps", "Azure DNS", "Azure Backup"],
+    "a": 0
+  },
+  {
+    "q": "What is used to securely access Azure SQL without storing secrets?",
+    "opts": ["Connection strings in code", "Managed Identity", "Hardcoded password", "Environment variables only"],
+    "a": 1
+  },
+  {
+    "q": "Which binding allows writing messages to Service Bus?",
+    "opts": ["Input binding", "Output binding", "Trigger binding", "Host binding"],
+    "a": 1
+  },
+  {
+    "q": "Which plan supports VNET integration?",
+    "opts": ["Consumption only", "Premium", "Free", "Basic"],
+    "a": 1
+  },
+  {
+    "q": "How do Azure Functions scale?",
+    "opts": ["Manually only", "Automatically based on events", "Based on CPU only", "Never scale"],
+    "a": 1
+  },
+  {
+    "q": "Which trigger runs based on a schedule?",
+    "opts": ["HTTP", "Queue", "Timer", "Blob"],
+    "a": 2
+  },
+  {
+    "q": "What is idempotency used for?",
+    "opts": ["Increasing memory", "Prevent duplicate processing", "Encrypting data", "Scaling manually"],
+    "a": 1
+  },
+  {
+    "q": "Which service can help manage API versions?",
+    "opts": ["Azure Backup", "API Management", "Azure Monitor", "Azure Files"],
+    "a": 1
+  },
+  {
+    "q": "Which plan removes cold start issues?",
+    "opts": ["Free", "Consumption", "Premium", "Shared"],
+    "a": 2
+  },
+  {
+    "q": "Which model runs functions in a separate process in .NET?",
+    "opts": ["In-process", "Isolated worker", "Monolithic", "Inline"],
+    "a": 1
+  },
+  {
+    "q": "Which storage is required by Azure Functions runtime?",
+    "opts": ["Azure SQL", "Azure Blob Storage", "Azure Storage Account", "Cosmos DB"],
+    "a": 2
+  },
+  {
+    "q": "Which tool can deploy Azure Functions?",
+    "opts": ["GitHub Actions", "Azure CLI", "Visual Studio", "All of the above"],
+    "a": 3
+  },
+  {
+    "q": "Which binding reads data from Blob storage?",
+    "opts": ["Blob input binding", "HTTP binding", "Timer binding", "Queue binding"],
+    "a": 0
+  },
+  {
+    "q": "What helps handle failed queue messages?",
+    "opts": ["Retry policy", "Dead-letter queue", "Manual deletion", "Disable trigger"],
+    "a": 1
+  },
+  {
+    "q": "Which service enables event-driven microservices?",
+    "opts": ["Event Grid", "Azure VM", "Azure DNS", "Azure Policy"],
+    "a": 0
+  },
+  {
+    "q": "Which feature provides structured logging?",
+    "opts": ["Console.WriteLine", "Application Insights", "Azure Files", "Azure AD"],
+    "a": 1
+  },
+  {
+    "q": "Which plan allows unlimited execution timeout?",
+    "opts": ["Consumption", "Premium", "Free", "Shared"],
+    "a": 1
+  },
+  {
+    "q": "Which method helps reduce cold start?",
+    "opts": ["Disable logging", "Use Premium plan", "Increase storage", "Add more bindings"],
+    "a": 1
+  },
+  {
+    "q": "Which CRON format is used in Timer trigger?",
+    "opts": ["5-field", "6-field NCRONTAB", "Unix only", "Windows only"],
+    "a": 1
+  },
+  {
+    "q": "Which Azure service can act as a message broker?",
+    "opts": ["Service Bus", "Azure DNS", "Azure CDN", "Azure Monitor"],
+    "a": 0
+  },
+  {
+    "q": "Which option enables multi-region failover?",
+    "opts": ["Traffic Manager", "Azure VM", "Azure Files", "Azure DevOps"],
+    "a": 0
+  },
+  {
+    "q": "Which configuration file contains retry policies?",
+    "opts": ["host.json", "Program.cs", "local.settings.json", "appsettings.json"],
+    "a": 0
+  },
+  {
+    "q": "Which binding is used to read from Cosmos DB?",
+    "opts": ["Cosmos DB input binding", "Blob binding", "Timer binding", "HTTP binding"],
+    "a": 0
+  },
+  {
+    "q": "Which service can securely store secrets?",
+    "opts": ["Azure Key Vault", "Azure Monitor", "Azure DNS", "Azure CDN"],
+    "a": 0
+  },
+  {
+    "q": "Which trigger activates when a message arrives in a queue?",
+    "opts": ["Timer Trigger", "Queue Trigger", "Blob Trigger", "HTTP Trigger"],
+    "a": 1
+  },
+  {
+    "q": "What is fan-out/fan-in pattern used for?",
+    "opts": ["Scaling storage", "Parallel task execution", "DNS routing", "Encryption"],
+    "a": 1
+  },
+  {
+    "q": "Which feature ensures secure backend communication?",
+    "opts": ["Managed Identity", "Public IP", "Hardcoded secrets", "Plain text storage"],
+    "a": 0
+  },
+  {
+    "q": "Which Azure service handles distributed tracing?",
+    "opts": ["Application Insights", "Azure DNS", "Azure Backup", "Azure Files"],
+    "a": 0
+  },
+  {
+    "q": "Which deployment method packages code as ZIP?",
+    "opts": ["Zip Deploy", "Blob Deploy", "FTP Only", "DNS Deploy"],
+    "a": 0
+  },
+  {
+    "q": "Which scaling factor affects Service Bus triggers?",
+    "opts": ["Queue length", "Storage size", "DNS records", "Certificate count"],
+    "a": 0
+  },
+  {
+    "q": "Which Azure resource must exist before creating a Function App?",
+    "opts": ["Storage Account", "Virtual Machine", "Load Balancer", "Cosmos DB"],
+    "a": 0
+  },
+  {
+    "q": "Which tool helps infrastructure as code deployment?",
+    "opts": ["Bicep", "Notepad", "Azure Files", "DNS Manager"],
+    "a": 0
+  },
+  {
+    "q": "Which plan supports Always On setting?",
+    "opts": ["Consumption", "Premium", "Free", "Shared"],
+    "a": 1
+  },
+  {
+    "q": "Which feature enables stateful workflows?",
+    "opts": ["Durable Functions", "HTTP Trigger", "Blob Storage", "DNS"],
+    "a": 0
+  },
+  {
+    "q": "Which service allows event publishing and subscription?",
+    "opts": ["Event Grid", "Azure VM", "Azure AD", "Azure Files"],
+    "a": 0
+  },
+  {
+    "q": "Which trigger reacts to file upload?",
+    "opts": ["Blob Trigger", "Timer Trigger", "HTTP Trigger", "Queue Trigger"],
+    "a": 0
+  },
+  {
+    "q": "Which pattern handles unreliable external APIs?",
+    "opts": ["Circuit Breaker", "Hardcoding", "Disable logging", "Manual retry only"],
+    "a": 0
+  },
+  {
+    "q": "Which plan is best for predictable heavy workloads?",
+    "opts": ["Free", "Consumption", "Premium", "Shared"],
+    "a": 2
+  },
+  {
+    "q": "Which feature allows environment-specific configuration?",
+    "opts": ["Application Settings", "Hardcoded values", "Console logs", "Azure Files"],
+    "a": 0
+  },
+  {
+    "q": "Which service provides centralized logging?",
+    "opts": ["Log Analytics", "Azure DNS", "Azure CDN", "Azure VM"],
+    "a": 0
+  }
+]

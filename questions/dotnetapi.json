@@ -1,0 +1,410 @@
+[
+  {
+    "q": "What is the default lifetime of services registered using AddScoped() in ASP.NET Core?",
+    "opts": ["Per application", "Per HTTP request", "Per thread", "Per method call"],
+    "a": 1
+  },
+  {
+    "q": "Which middleware is responsible for routing in ASP.NET Core?",
+    "opts": ["UseAuthentication", "UseEndpoints", "UseRouting", "UseMvc"],
+    "a": 2
+  },
+  {
+    "q": "What attribute is used to define a Web API controller?",
+    "opts": ["[Controller]", "[ApiController]", "[RouteController]", "[WebApi]"],
+    "a": 1
+  },
+  {
+    "q": "Which HTTP method should be idempotent?",
+    "opts": ["POST", "PUT", "PATCH", "CONNECT"],
+    "a": 1
+  },
+  {
+    "q": "Which interface is used for logging in ASP.NET Core?",
+    "opts": ["ILog", "ILogger", "ILoggingService", "ITrace"],
+    "a": 1
+  },
+  {
+    "q": "What is the purpose of UseAuthentication() middleware?",
+    "opts": ["Authorize users", "Validate tokens and set HttpContext.User", "Encrypt responses", "Hash passwords"],
+    "a": 1
+  },
+  {
+    "q": "Which EF Core method tracks entities?",
+    "opts": ["AsNoTracking()", "FindAsync()", "Attach()", "ToListAsync()"],
+    "a": 2
+  },
+  {
+    "q": "What does AsNoTracking() improve?",
+    "opts": ["Security", "Performance for read-only queries", "Indexing", "Transactions"],
+    "a": 1
+  },
+  {
+    "q": "Which status code should be returned for successful resource creation?",
+    "opts": ["200", "201", "204", "302"],
+    "a": 1
+  },
+  {
+    "q": "Which class represents HTTP request context?",
+    "opts": ["HttpContext", "HttpRequestMessage", "HttpClient", "HttpServer"],
+    "a": 0
+  },
+
+  {
+    "q": "Which dependency injection lifetime creates a single instance for the entire application?",
+    "opts": ["Transient", "Scoped", "Singleton", "Static"],
+    "a": 2
+  },
+  {
+    "q": "Which package is used for JWT authentication?",
+    "opts": ["Microsoft.AspNetCore.Authentication.Jwt", "Microsoft.IdentityModel.Tokens", "System.Jwt", "Microsoft.AspNetCore.Identity.JwtBearer"],
+    "a": 3
+  },
+  {
+    "q": "Which EF Core command applies migrations?",
+    "opts": ["dotnet ef add", "dotnet ef update", "dotnet ef database update", "dotnet ef migrate"],
+    "a": 2
+  },
+  {
+    "q": "What is the purpose of IActionResult?",
+    "opts": ["Execute SQL", "Return HTTP responses", "Configure middleware", "Handle routing"],
+    "a": 1
+  },
+  {
+    "q": "Which interface supports background tasks in ASP.NET Core?",
+    "opts": ["IHostedService", "IWorkerService", "ITaskService", "IBackgroundJob"],
+    "a": 0
+  },
+
+  {
+    "q": "Which header is commonly used for JWT tokens?",
+    "opts": ["X-Auth", "Authorization", "Bearer", "Token"],
+    "a": 1
+  },
+  {
+    "q": "Which caching service stores data in memory?",
+    "opts": ["IDistributedCache", "IMemoryCache", "IRedisCache", "IFileCache"],
+    "a": 1
+  },
+  {
+    "q": "What is the purpose of AutoMapper?",
+    "opts": ["Database migrations", "Object-to-object mapping", "Logging", "Authentication"],
+    "a": 1
+  },
+  {
+    "q": "Which middleware should come before UseAuthorization()?",
+    "opts": ["UseEndpoints", "UseAuthentication", "UseStaticFiles", "UseCors"],
+    "a": 1
+  },
+  {
+    "q": "What does ConfigureServices() method do?",
+    "opts": ["Configure middleware", "Register services in DI container", "Start server", "Handle requests"],
+    "a": 1
+  },
+
+  {
+    "q": "Which HTTP status code represents unauthorized access?",
+    "opts": ["401", "403", "404", "400"],
+    "a": 0
+  },
+  {
+    "q": "What is the difference between 401 and 403?",
+    "opts": ["No difference", "401=Unauthenticated, 403=Forbidden", "403=Server error", "401=Validation error"],
+    "a": 1
+  },
+  {
+    "q": "Which tool generates OpenAPI documentation?",
+    "opts": ["Swagger", "Postman", "Serilog", "Kestrel"],
+    "a": 0
+  },
+  {
+    "q": "What is Kestrel?",
+    "opts": ["Database engine", "Web server", "Authentication provider", "Cache server"],
+    "a": 1
+  },
+  {
+    "q": "Which pattern improves API scalability?",
+    "opts": ["Singleton DB context", "Async/Await", "Blocking calls", "Static services"],
+    "a": 1
+  },
+
+  {
+    "q": "What is the purpose of CORS?",
+    "opts": ["Authentication", "Cross-origin resource sharing policy", "Caching", "Encryption"],
+    "a": 1
+  },
+  {
+    "q": "Which EF Core method loads related data explicitly?",
+    "opts": ["Include()", "Load()", "Select()", "Attach()"],
+    "a": 1
+  },
+  {
+    "q": "What is optimistic concurrency in EF Core?",
+    "opts": ["Multiple threads access memory", "Concurrency token validation", "Database locking", "Parallel queries"],
+    "a": 1
+  },
+  {
+    "q": "Which attribute enforces authorization?",
+    "opts": ["[Authorize]", "[Validate]", "[Secure]", "[AuthRequired]"],
+    "a": 0
+  },
+  {
+    "q": "Which class is used to make HTTP requests?",
+    "opts": ["HttpClient", "HttpRequest", "WebRequest", "RestClient"],
+    "a": 0
+  },
+  {
+    "q": "What is the purpose of UseExceptionHandler middleware?",
+    "opts": ["Handle global exceptions", "Validate models", "Authorize users", "Enable routing"],
+    "a": 0
+  },
+  {
+    "q": "Which feature enables API versioning in ASP.NET Core?",
+    "opts": ["Microsoft.AspNetCore.Mvc.Versioning", "UseVersioning()", "ApiVersionAttribute only", "SwaggerConfig"],
+    "a": 0
+  },
+  {
+    "q": "Which status code should be returned when validation fails?",
+    "opts": ["200", "400", "401", "500"],
+    "a": 1
+  },
+  {
+    "q": "What is the purpose of FluentValidation?",
+    "opts": ["Authentication", "Model validation", "Logging", "Database seeding"],
+    "a": 1
+  },
+  {
+    "q": "Which EF Core method executes raw SQL?",
+    "opts": ["FromSqlRaw()", "ExecuteSqlAsync()", "RunSql()", "SqlQuery()"],
+    "a": 0
+  },
+  {
+    "q": "What is the benefit of AddHttpClient()?",
+    "opts": ["Creates static HttpClient", "Prevents socket exhaustion", "Enables database pooling", "Improves EF performance"],
+    "a": 1
+  },
+  {
+    "q": "Which interface supports distributed caching?",
+    "opts": ["IMemoryCache", "IDistributedCache", "ICacheProvider", "IRedisClient"],
+    "a": 1
+  },
+  {
+    "q": "Which Redis client is commonly used in .NET?",
+    "opts": ["RedisSharp", "StackExchange.Redis", "Microsoft.Redis", "DotNetRedis"],
+    "a": 1
+  },
+  {
+    "q": "What does EnableRetryOnFailure() do in EF Core?",
+    "opts": ["Retry HTTP requests", "Retry failed database connections", "Retry logging", "Retry authentication"],
+    "a": 1
+  },
+  {
+    "q": "Which tool is used for structured logging?",
+    "opts": ["NLog", "Serilog", "Console.WriteLine", "Trace"],
+    "a": 1
+  },
+
+  {
+    "q": "What is the purpose of Health Checks in ASP.NET Core?",
+    "opts": ["Check UI performance", "Monitor application dependencies", "Handle authentication", "Optimize queries"],
+    "a": 1
+  },
+  {
+    "q": "Which package enables rate limiting in .NET 8?",
+    "opts": ["Microsoft.AspNetCore.RateLimiting", "UseThrottle()", "RateLimitCore", "AspNetRate"],
+    "a": 0
+  },
+  {
+    "q": "What is the purpose of ProblemDetails?",
+    "opts": ["Logging", "Standardized error response format", "Caching", "Authentication"],
+    "a": 1
+  },
+  {
+    "q": "Which pattern is recommended for microservices communication?",
+    "opts": ["Shared DB", "HTTP/gRPC", "Static classes", "File sharing"],
+    "a": 1
+  },
+  {
+    "q": "Which protocol does gRPC use?",
+    "opts": ["HTTP/1.1", "HTTP/2", "TCP only", "UDP"],
+    "a": 1
+  },
+  {
+    "q": "What is the purpose of CancellationToken?",
+    "opts": ["Retry operations", "Cancel long-running tasks", "Encrypt data", "Cache results"],
+    "a": 1
+  },
+  {
+    "q": "Which middleware must come before UseEndpoints()?",
+    "opts": ["UseRouting()", "UseCors()", "UseStaticFiles()", "UseAuthentication()"],
+    "a": 0
+  },
+  {
+    "q": "Which class represents a background worker template?",
+    "opts": ["BackgroundService", "TaskRunner", "AsyncWorker", "WorkerThread"],
+    "a": 0
+  },
+  {
+    "q": "What is the purpose of MapControllers()?",
+    "opts": ["Register controllers in DI", "Enable attribute routing", "Create DB", "Enable Swagger"],
+    "a": 1
+  },
+  {
+    "q": "Which EF Core feature prevents SQL injection?",
+    "opts": ["Raw SQL", "Parameterized queries", "Dynamic SQL", "String concatenation"],
+    "a": 1
+  },
+
+  {
+    "q": "What is the main advantage of Clean Architecture?",
+    "opts": ["Tight coupling", "Separation of concerns", "Direct DB access", "Fewer layers"],
+    "a": 1
+  },
+  {
+    "q": "Which method applies configuration per environment?",
+    "opts": ["appsettings.json only", "appsettings.{Environment}.json", "Program.cs only", "launchSettings.json"],
+    "a": 1
+  },
+  {
+    "q": "What is the purpose of IOptions<T>?",
+    "opts": ["Logging", "Strongly-typed configuration", "Database context", "Authentication"],
+    "a": 1
+  },
+  {
+    "q": "Which Azure service hosts containerized .NET APIs?",
+    "opts": ["Azure SQL", "Azure App Service", "Azure Blob Storage", "Azure CDN"],
+    "a": 1
+  },
+  {
+    "q": "Which Docker command builds an image?",
+    "opts": ["docker create", "docker build", "docker run", "docker start"],
+    "a": 1
+  },
+  {
+    "q": "Which Docker instruction defines container entry point?",
+    "opts": ["RUN", "ENTRYPOINT", "CMD", "COPY"],
+    "a": 1
+  },
+  {
+    "q": "What does docker-compose help with?",
+    "opts": ["Single container build", "Multi-container orchestration", "Logging", "Authentication"],
+    "a": 1
+  },
+  {
+    "q": "Which Azure feature secures secrets?",
+    "opts": ["Azure Monitor", "Azure Key Vault", "Azure DevOps", "Azure CDN"],
+    "a": 1
+  },
+  {
+    "q": "What is the purpose of Application Insights?",
+    "opts": ["Caching", "Monitoring & telemetry", "Authentication", "Container build"],
+    "a": 1
+  },
+  {
+    "q": "Which HTTP method is NOT idempotent?",
+    "opts": ["GET", "PUT", "DELETE", "POST"],
+    "a": 3
+  },
+
+  {
+    "q": "Which pattern improves API performance for read-heavy systems?",
+    "opts": ["CQRS", "Shared DB", "Static context", "Blocking calls"],
+    "a": 0
+  },
+  {
+    "q": "What is a common issue with DbContext registered as Singleton?",
+    "opts": ["Improved performance", "Thread safety issues", "Faster queries", "Less memory usage"],
+    "a": 1
+  },
+  {
+    "q": "Which attribute binds parameters from request body?",
+    "opts": ["[FromQuery]", "[FromBody]", "[FromRoute]", "[FromHeader]"],
+    "a": 1
+  },
+  {
+    "q": "Which attribute binds from route values?",
+    "opts": ["[FromQuery]", "[FromBody]", "[FromRoute]", "[FromForm]"],
+    "a": 2
+  },
+  {
+    "q": "What is middleware in ASP.NET Core?",
+    "opts": ["Database layer", "Request pipeline component", "Authentication provider", "Logging service"],
+    "a": 1
+  },
+  {
+    "q": "Which method customizes middleware pipeline?",
+    "opts": ["Configure()", "Run()", "Execute()", "Init()"],
+    "a": 0
+  },
+  {
+    "q": "What is the purpose of MapGet() in minimal APIs?",
+    "opts": ["Map GET endpoint", "Map database", "Map middleware", "Map controller"],
+    "a": 0
+  },
+  {
+    "q": "Which serialization library is default in ASP.NET Core?",
+    "opts": ["Newtonsoft.Json", "System.Text.Json", "Json.NET", "FastJson"],
+    "a": 1
+  },
+  {
+    "q": "What improves EF Core query performance for large datasets?",
+    "opts": ["Tracking", "Pagination", "Include everything", "Load all records"],
+    "a": 1
+  },
+  {
+    "q": "Which HTTP status code means No Content?",
+    "opts": ["200", "201", "204", "404"],
+    "a": 2
+  },
+
+  {
+    "q": "Which class handles JWT token validation parameters?",
+    "opts": ["JwtOptions", "TokenValidationParameters", "JwtBearerOptions", "AuthSettings"],
+    "a": 1
+  },
+  {
+    "q": "What is the benefit of using Redis over IMemoryCache?",
+    "opts": ["Faster local access", "Distributed caching support", "Less configuration", "No network usage"],
+    "a": 1
+  },
+  {
+    "q": "Which EF Core method updates multiple rows efficiently?",
+    "opts": ["SaveChanges in loop", "ExecuteUpdateAsync()", "Update() per entity", "Attach()"],
+    "a": 1
+  },
+  {
+    "q": "What is the purpose of global filters in EF Core?",
+    "opts": ["Authentication", "Soft delete filtering", "Caching", "Indexing"],
+    "a": 1
+  },
+  {
+    "q": "Which Azure feature supports managed identity?",
+    "opts": ["Azure SQL only", "Azure App Service", "Azure CDN", "Azure Storage static only"],
+    "a": 1
+  },
+  {
+    "q": "Which logging level is most severe?",
+    "opts": ["Information", "Warning", "Critical", "Debug"],
+    "a": 2
+  },
+  {
+    "q": "What does ConfigureAwait(false) do?",
+    "opts": ["Improve UI", "Avoid context capture", "Enable caching", "Retry task"],
+    "a": 1
+  },
+  {
+    "q": "Which pattern isolates domain logic from infrastructure?",
+    "opts": ["Layered architecture", "Clean Architecture", "Monolith", "Shared DB"],
+    "a": 1
+  },
+  {
+    "q": "Which protocol is typically used for REST APIs?",
+    "opts": ["HTTP", "FTP", "SMTP", "SSH"],
+    "a": 0
+  },
+  {
+    "q": "Which header protects against CSRF?",
+    "opts": ["X-CSRF-TOKEN", "Authorization", "Cache-Control", "Accept"],
+    "a": 0
+  }
+]

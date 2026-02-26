@@ -1,0 +1,77 @@
+[
+  {
+    "q": "A .NET API works locally but fails inside a Docker container. What is the FIRST thing you should check?",
+    "opts": ["Reinstall Docker", "Container logs", "Delete the image", "Restart the host machine"],
+    "a": 1
+  },
+  {
+    "q": "Why does a containerized API fail to connect to a database using localhost?",
+    "opts": ["Docker blocks localhost", "Containers run in isolated networks", "Docker does not support databases", "Ports cannot be exposed"],
+    "a": 1
+  },
+  {
+    "q": "What is the main purpose of Docker volumes?",
+    "opts": ["Improve container speed", "Persist data outside containers", "Reduce image size", "Secure containers"],
+    "a": 1
+  },
+  {
+    "q": "A database container loses data after restart. What is the most likely cause?",
+    "opts": ["Wrong Docker version", "Missing environment variables", "No volume configured", "Database corruption"],
+    "a": 2
+  },
+  {
+    "q": "Which Dockerfile technique helps reduce image size for .NET applications?",
+    "opts": ["Single-stage build", "Multi-stage build", "Using root user", "Copying entire project first"],
+    "a": 1
+  },
+  {
+    "q": "A container is running but the API cannot be accessed from the browser. What is a common cause?",
+    "opts": ["Container name is wrong", "Port is not mapped", "Docker image is corrupted", "Dockerfile is missing comments"],
+    "a": 1
+  },
+  {
+    "q": "In Docker Compose, how should one container connect to another container?",
+    "opts": ["Using localhost", "Using container IP manually", "Using service name", "Using host machine IP"],
+    "a": 2
+  },
+  {
+    "q": "What is the recommended way to provide environment-specific configuration to containers?",
+    "opts": ["Hardcode values in Dockerfile", "Rebuild image per environment", "Use environment variables", "Modify container filesystem"],
+    "a": 2
+  },
+  {
+    "q": "An Azure Web App fails to pull an image from Azure Container Registry. What is usually missing?",
+    "opts": ["Docker Compose file", "Managed identity with AcrPull role", "EXPOSE instruction", "Volume mapping"],
+    "a": 1
+  },
+  {
+    "q": "Why should secrets not be stored in a Dockerfile?",
+    "opts": ["They slow down builds", "They increase image size", "They become part of image layers", "Docker ignores them"],
+    "a": 2
+  },
+  {
+    "q": "Which command is used to see logs of a running container?",
+    "opts": ["docker inspect", "docker logs", "docker info", "docker stats"],
+    "a": 1
+  },
+  {
+    "q": "Why is copying only .csproj files before running dotnet restore considered best practice?",
+    "opts": ["Reduces image size", "Improves runtime performance", "Uses Docker layer caching", "Avoids compilation errors"],
+    "a": 2
+  },
+  {
+    "q": "A container keeps restarting repeatedly. What is the most likely reason?",
+    "opts": ["Docker daemon stopped", "Application inside container is crashing", "Volume is missing", "Network driver failure"],
+    "a": 1
+  },
+  {
+    "q": "What is the main benefit of running multiple containers of the same API?",
+    "opts": ["Reduce memory usage", "Enable scaling and load balancing", "Reduce image size", "Avoid networking issues"],
+    "a": 1
+  },
+  {
+    "q": "Which Docker feature allows multiple containers to share the same network?",
+    "opts": ["Docker volumes", "Docker networks", "Docker images", "Docker layers"],
+    "a": 1
+  }
+]

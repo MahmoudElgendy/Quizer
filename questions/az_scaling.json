@@ -1,0 +1,102 @@
+[
+  {
+    "q": "What does scaling up an Azure App Service Plan increase?",
+    "opts": ["Number of instances", "CPU and memory per instance", "Number of apps", "Storage account size"],
+    "a": 1
+  },
+  {
+    "q": "To enable features like deployment slots, you must scale up the:",
+    "opts": ["Web App", "Resource Group", "App Service Plan", "Virtual Network"],
+    "a": 2
+  },
+  {
+    "q": "Which pricing tier supports App Service Automatic Scaling?",
+    "opts": ["Free", "Basic", "Standard", "Premium V3"],
+    "a": 3
+  },
+  {
+    "q": "Scaling out refers to:",
+    "opts": ["Increasing CPU", "Increasing memory", "Increasing instance count", "Changing region"],
+    "a": 2
+  },
+  {
+    "q": "Which CLI command creates an autoscale setting?",
+    "opts": ["az monitor autoscale rule create", "az monitor autoscale create", "az appservice scale create", "az webapp autoscale create"],
+    "a": 1
+  },
+  {
+    "q": "What must be created before adding autoscale rules?",
+    "opts": ["Deployment slot", "App Service Plan", "Autoscale setting", "Virtual Network"],
+    "a": 2
+  },
+  {
+    "q": "Which metric is commonly used for autoscale rules?",
+    "opts": ["Disk type", "CPU percentage", "DNS name", "App name"],
+    "a": 1
+  },
+  {
+    "q": "What is the default cooldown period between scaling events?",
+    "opts": ["1 minute", "2 minutes", "5 minutes", "10 minutes"],
+    "a": 2
+  },
+  {
+    "q": "Scaling up an App Service Plan may affect:",
+    "opts": ["Inbound IP only", "Outbound IP addresses", "Subscription ID", "DNS zone"],
+    "a": 1
+  },
+  {
+    "q": "Which scaling option allows schedule-based scaling?",
+    "opts": ["Manual scaling", "Automatic scaling", "Azure Autoscale", "Free tier scaling"],
+    "a": 2
+  },
+  {
+    "q": "Which tier provides isolated single-tenant environments?",
+    "opts": ["Basic", "Premium", "App Service Environment", "Standard"],
+    "a": 2
+  },
+  {
+    "q": "Automatic scaling in App Service is primarily based on:",
+    "opts": ["Memory usage", "HTTP requests", "Disk IOPS", "Database size"],
+    "a": 1
+  },
+  {
+    "q": "When Web Apps and Function Apps share the same App Service Plan, which scaling is supported?",
+    "opts": ["Azure Autoscale", "Automatic scaling", "Manual scaling only", "Elastic scaling"],
+    "a": 2
+  },
+  {
+    "q": "The minimum instance count in autoscale should align with:",
+    "opts": ["Budget only", "Maximum burst capacity", "Baseline load", "Subscription limit"],
+    "a": 2
+  },
+  {
+    "q": "Frequent scale-in and scale-out events are known as:",
+    "opts": ["Elasticity", "Flapping", "Bursting", "Throttling"],
+    "a": 1
+  },
+  {
+    "q": "Which SKU parameter is used when scaling up via CLI?",
+    "opts": ["--tier", "--plan", "--sku", "--size"],
+    "a": 2
+  },
+  {
+    "q": "Per-app scale limits cannot exceed:",
+    "opts": ["Subscription quota", "Plan burst limit", "Resource group limit", "CPU threshold"],
+    "a": 1
+  },
+  {
+    "q": "Scaling up is considered:",
+    "opts": ["Horizontal scaling", "Vertical scaling", "Elastic scaling", "Dynamic scaling"],
+    "a": 1
+  },
+  {
+    "q": "Which tier adds support for custom domains?",
+    "opts": ["Free", "Basic", "App Service Environment", "Consumption"],
+    "a": 1
+  },
+  {
+    "q": "To configure autoscale rules via CLI, you use:",
+    "opts": ["az webapp scale", "az appservice scale", "az monitor autoscale rule create", "az scale rule create"],
+    "a": 2
+  }
+]

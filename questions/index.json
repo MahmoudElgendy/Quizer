@@ -1,6 +1,10 @@
 ﻿[
+    "az_scaling.json",
+    "Docker real senerios.json",
+    "Docker v2.json",
     "Docker.json",
     "DockerFile.json",
+    "dotnetapi.json",
     "Networking.json",
     "OperatingSystem.json",
     "systemDesign.json"

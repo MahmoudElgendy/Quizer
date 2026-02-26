@@ -1,47 +1,15 @@
 [
-   {
-     "q": "What is Docker primarily used for?",
-     "opts": ["Virtualization", "Containerization", "Configuration Management", "Continuous Integration"],
-     "a": 1
-   },
-   {
-     "q": "Which of the following commands is used to list all Docker images?",
-     "opts": ["docker list images", "docker show", "docker images", "docker ps -i"],
-     "a": 2
-   },
-   {
-     "q": "Which command is used to list all running Docker containers?",
-     "opts": ["docker list", "docker ps", "docker show", "docker status"],
-     "a": 1
-   },
+   
+ 
+   
    {
      "q": "What is the default base directory where Docker stores images, containers, and volumes on Linux?",
      "opts": ["/var/lib/docker", "/usr/local/docker", "/etc/docker", "/opt/docker"],
      "a": 0
    },
    {
-     "q": "Which Docker command is used to build an image from a Dockerfile?",
-     "opts": ["docker compile", "docker create", "docker build", "docker make"],
-     "a": 2
-   },
-   {
-     "q": "What file defines the steps to build a Docker image?",
-     "opts": ["Docker.config", "docker-compose.yml", "Dockerfile", "imagefile"],
-     "a": 2
-   },
-   {
-     "q": "Which command starts a new container from an image?",
-     "opts": ["docker run", "docker start", "docker init", "docker create"],
-     "a": 0
-   },
-   {
      "q": "What does the '-d' flag do when running a container?",
      "opts": ["Deletes container", "Runs in detached mode", "Displays logs", "Runs with default configuration"],
-     "a": 1
-   },
-   {
-     "q": "Which command stops a running container?",
-     "opts": ["docker halt", "docker stop", "docker kill", "docker pause"],
      "a": 1
    },
    {
@@ -53,11 +21,6 @@
      "q": "What is the purpose of the 'docker pull' command?",
      "opts": ["Download an image from a registry", "Upload an image to a registry", "Start a container", "Delete a container"],
      "a": 0
-   },
-   {
-     "q": "Which registry is used by default when pulling an image?",
-     "opts": ["Quay.io", "Docker Hub", "GitHub Packages", "Google Container Registry"],
-     "a": 1
    },
    {
      "q": "Which file defines multiple containers and their relationships?",
@@ -220,6 +183,26 @@
      "a": 1
    },
    {
+     "q": "What is Docker Swarm?",
+     "opts": ["Container orchestrator by Docker", "Storage driver", "Volume manager", "Security tool"],
+     "a": 0
+   },
+   {
+     "q": "Which command initializes a Docker Swarm?",
+     "opts": ["docker swarm init", "docker swarm create", "docker swarm start", "docker swarm setup"],
+     "a": 0
+   },
+   {
+     "q": "Which command lists all services in a Docker Swarm?",
+     "opts": ["docker service ls", "docker swarm list", "docker node services", "docker ps swarm"],
+     "a": 0
+   },
+   {
+     "q": "Which command adds a node to a swarm?",
+     "opts": ["docker node add", "docker swarm join", "docker join node", "docker add node"],
+     "a": 1
+   },
+   {
      "q": "Which command displays running processes inside a container?",
      "opts": ["docker top", "docker ps -inside", "docker exec ps", "docker show proc"],
      "a": 0
@@ -329,10 +312,24 @@
      "opts": ["bridge", "overlay", "host", "macvlan"],
      "a": 0
    },
-
+   {
+     "q": "Which command shows logs of a service in Swarm?",
+     "opts": ["docker service logs", "docker swarm logs", "docker node logs", "docker task logs"],
+     "a": 0
+   },
    {
      "q": "Which flag rebuilds images before starting containers with Docker Compose?",
      "opts": ["--build", "--rebuild", "--force", "--refresh"],
+     "a": 0
+   },
+   {
+     "q": "What command updates an existing service in Swarm?",
+     "opts": ["docker service update", "docker service modify", "docker service upgrade", "docker swarm edit"],
+     "a": 0
+   },
+   {
+     "q": "Which command removes a service in Docker Swarm?",
+     "opts": ["docker service rm", "docker swarm remove", "docker delete service", "docker service stop"],
      "a": 0
    },
    {
