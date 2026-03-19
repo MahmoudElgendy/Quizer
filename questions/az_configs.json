@@ -1,14 +1,14 @@
-[
-  {
-    "q": "What does scaling up an Azure App Service Plan increase?",
-    "opts": ["Number of instances", "CPU and memory per instance", "Number of apps", "Storage account size"],
-    "a": 1
-  },
-  {
-    "q": "To enable features like deployment slots, you must scale up the:",
-    "opts": ["Web App", "Resource Group", "App Service Plan", "Virtual Network"],
-    "a": 2
-  },
+  [
+    {
+      "q": "What does scaling up an Azure App Service Plan increase?",
+      "opts": ["Number of instances", "CPU and memory per instance", "Number of apps", "Storage account size"],
+      "a": 1
+    },
+    {
+      "q": "To enable features like deployment slots, you must scale up the:",
+      "opts": ["Web App", "Resource Group", "App Service Plan", "Virtual Network"],
+      "a": 2
+    },
   {
     "q": "Which pricing tier supports App Service Automatic Scaling?",
     "opts": ["Free", "Basic", "Standard", "Premium V3"],
