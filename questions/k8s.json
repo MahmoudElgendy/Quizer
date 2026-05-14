@@ -1,0 +1,1062 @@
+[
+  {
+    "q": "What is Kubernetes primarily used for?",
+    "opts": [
+      "Source control management",
+      "Container orchestration",
+      "Database management",
+      "Virtual machine hosting"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What is the smallest deployable unit in Kubernetes?",
+    "opts": [
+      "Node",
+      "Container",
+      "Service",
+      "Pod"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Which Kubernetes object is responsible for managing Pod replicas?",
+    "opts": [
+      "Service",
+      "ConfigMap",
+      "Deployment",
+      "Secret"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What command is used to list Pods in Kubernetes?",
+    "opts": [
+      "kubectl get pods",
+      "kubectl show pods",
+      "kubectl list pods",
+      "kubectl inspect pods"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What is a Kubernetes cluster?",
+    "opts": [
+      "A single container",
+      "A group of nodes running Kubernetes",
+      "A Docker image repository",
+      "A Linux distribution"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which component schedules Pods onto nodes?",
+    "opts": [
+      "kubelet",
+      "kubectl",
+      "scheduler",
+      "etcd"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Which Kubernetes component stores cluster state?",
+    "opts": [
+      "etcd",
+      "Ingress",
+      "kube-proxy",
+      "Container runtime"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What is the purpose of a Service in Kubernetes?",
+    "opts": [
+      "To build container images",
+      "To expose Pods through a stable network endpoint",
+      "To store secrets",
+      "To create nodes"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which Service type exposes an application internally within the cluster?",
+    "opts": [
+      "LoadBalancer",
+      "NodePort",
+      "ClusterIP",
+      "ExternalName"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Which Service type exposes an application on each node IP?",
+    "opts": [
+      "NodePort",
+      "ClusterIP",
+      "Headless",
+      "DaemonSet"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What command creates resources from a YAML file?",
+    "opts": [
+      "kubectl deploy",
+      "kubectl create yaml",
+      "kubectl apply -f",
+      "kubectl start"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What file format is commonly used for Kubernetes manifests?",
+    "opts": [
+      "JSON only",
+      "XML",
+      "YAML",
+      "INI"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Which object stores non-sensitive configuration data?",
+    "opts": [
+      "Secret",
+      "ConfigMap",
+      "Deployment",
+      "ReplicaSet"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which object is designed to store sensitive data?",
+    "opts": [
+      "ConfigMap",
+      "Secret",
+      "Service",
+      "Namespace"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What command shows logs for a Pod?",
+    "opts": [
+      "kubectl get logs",
+      "kubectl logs",
+      "kubectl show logs",
+      "kubectl pod logs"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What command describes detailed information about a Pod?",
+    "opts": [
+      "kubectl explain pod",
+      "kubectl info pod",
+      "kubectl describe pod",
+      "kubectl inspect pod"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What is a Node in Kubernetes?",
+    "opts": [
+      "A YAML file",
+      "A worker machine in the cluster",
+      "A container registry",
+      "A Pod controller"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which Kubernetes object ensures a specified number of Pods are running?",
+    "opts": [
+      "Deployment",
+      "Ingress",
+      "Secret",
+      "Namespace"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What does kubectl stand for?",
+    "opts": [
+      "Kubernetes control tool",
+      "Kube cluster terminal",
+      "Kubernetes command-line tool",
+      "Kube container launcher"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Which command lists all Services?",
+    "opts": [
+      "kubectl get services",
+      "kubectl list svc",
+      "kubectl services",
+      "kubectl show services"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What is the purpose of an Ingress?",
+    "opts": [
+      "Manage container builds",
+      "Expose HTTP/HTTPS routes into the cluster",
+      "Create Pods",
+      "Store cluster data"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which component runs on every node and manages containers?",
+    "opts": [
+      "scheduler",
+      "etcd",
+      "kubelet",
+      "kubectl"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Which command is used to delete resources from a YAML file?",
+    "opts": [
+      "kubectl remove",
+      "kubectl delete -f",
+      "kubectl destroy",
+      "kubectl erase"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What is a ReplicaSet responsible for?",
+    "opts": [
+      "Managing database replication",
+      "Managing node scaling",
+      "Maintaining a stable set of Pod replicas",
+      "Managing container images"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Which Kubernetes object is commonly used for stateless applications?",
+    "opts": [
+      "StatefulSet",
+      "Deployment",
+      "DaemonSet",
+      "PersistentVolume"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which object is commonly used for stateful applications?",
+    "opts": [
+      "ConfigMap",
+      "ReplicaSet",
+      "StatefulSet",
+      "Namespace"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What is Minikube?",
+    "opts": [
+      "A Kubernetes cloud provider",
+      "A local Kubernetes cluster tool",
+      "A container runtime",
+      "A Helm chart"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which command starts Minikube?",
+    "opts": [
+      "minikube init",
+      "minikube run",
+      "minikube start",
+      "minikube up"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What command checks Minikube status?",
+    "opts": [
+      "minikube health",
+      "minikube check",
+      "minikube info",
+      "minikube status"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Which object controls external traffic routing to Services?",
+    "opts": [
+      "Secret",
+      "Ingress",
+      "ConfigMap",
+      "ReplicaSet"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What is the default internal Service type?",
+    "opts": [
+      "ClusterIP",
+      "NodePort",
+      "LoadBalancer",
+      "ExternalName"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What command scales a Deployment?",
+    "opts": [
+      "kubectl scale",
+      "kubectl replicas",
+      "kubectl resize",
+      "kubectl duplicate"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What does rolling update mean in Kubernetes?",
+    "opts": [
+      "Deleting all Pods at once",
+      "Updating Pods gradually with minimal downtime",
+      "Restarting nodes",
+      "Moving Pods between namespaces"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What command retrieves cluster nodes?",
+    "opts": [
+      "kubectl get nodes",
+      "kubectl list nodes",
+      "kubectl nodes",
+      "kubectl show nodes"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Which object provides persistent storage to Pods?",
+    "opts": [
+      "PersistentVolume",
+      "ConfigMap",
+      "Deployment",
+      "Ingress"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What is a Namespace used for?",
+    "opts": [
+      "Container storage",
+      "Logical separation of resources",
+      "Network routing",
+      "Image management"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which command switches Kubernetes namespaces temporarily?",
+    "opts": [
+      "kubectl namespace",
+      "kubectl config set-context",
+      "kubectl switch namespace",
+      "kubectl use namespace"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which object automatically runs one Pod on every node?",
+    "opts": [
+      "StatefulSet",
+      "DaemonSet",
+      "ReplicaSet",
+      "CronJob"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What is a CronJob in Kubernetes?",
+    "opts": [
+      "A scheduled task runner",
+      "A logging service",
+      "A monitoring tool",
+      "A deployment strategy"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Which command opens a shell inside a running Pod?",
+    "opts": [
+      "kubectl connect",
+      "kubectl attach",
+      "kubectl exec -it",
+      "kubectl shell"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What command continuously watches Pods?",
+    "opts": [
+      "kubectl get pods -w",
+      "kubectl monitor pods",
+      "kubectl logs -f",
+      "kubectl trace pods"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Which Kubernetes object defines desired application state?",
+    "opts": [
+      "Deployment",
+      "Node",
+      "Container runtime",
+      "Image"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What does self-healing mean in Kubernetes?",
+    "opts": [
+      "Automatic node upgrades",
+      "Automatic Pod recreation after failure",
+      "Automatic code compilation",
+      "Automatic database repair"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which component forwards traffic to Pods?",
+    "opts": [
+      "kube-proxy",
+      "scheduler",
+      "kubectl",
+      "etcd"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Which Kubernetes object is used to expose applications externally in cloud environments?",
+    "opts": [
+      "NodePort",
+      "LoadBalancer",
+      "ClusterIP",
+      "ReplicaSet"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What command displays all Kubernetes resources?",
+    "opts": [
+      "kubectl get everything",
+      "kubectl get all",
+      "kubectl show all",
+      "kubectl resources"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What does YAML stand for?",
+    "opts": [
+      "Yet Another Markup Language",
+      "Your Application Markup Language",
+      "Young API Modeling Language",
+      "Yield Application Machine Language"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What field identifies the Kubernetes resource type in YAML?",
+    "opts": [
+      "version",
+      "resource",
+      "kind",
+      "type"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Which field specifies the API version in a manifest?",
+    "opts": [
+      "version",
+      "apiVersion",
+      "kubeVersion",
+      "specVersion"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What section in YAML contains resource configuration?",
+    "opts": [
+      "metadata",
+      "details",
+      "spec",
+      "config"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What command validates and explains resource fields?",
+    "opts": [
+      "kubectl explain",
+      "kubectl validate",
+      "kubectl inspect",
+      "kubectl schema"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What is a label in Kubernetes?",
+    "opts": [
+      "A Docker image tag",
+      "A key-value pair for organizing resources",
+      "A storage class",
+      "A namespace alias"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What is a selector used for?",
+    "opts": [
+      "Selecting container images",
+      "Selecting nodes manually",
+      "Matching resources using labels",
+      "Choosing Kubernetes versions"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Which command retrieves Pod logs continuously?",
+    "opts": [
+      "kubectl logs -w",
+      "kubectl logs -f",
+      "kubectl follow logs",
+      "kubectl stream logs"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which Kubernetes object manages networking rules for external access?",
+    "opts": [
+      "Deployment",
+      "Service",
+      "Ingress",
+      "ConfigMap"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What is Helm in Kubernetes?",
+    "opts": [
+      "A monitoring system",
+      "A package manager for Kubernetes",
+      "A container runtime",
+      "A logging framework"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What is a Helm Chart?",
+    "opts": [
+      "A cluster dashboard",
+      "A packaged Kubernetes application",
+      "A YAML validator",
+      "A Pod template"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which command installs a Helm chart?",
+    "opts": [
+      "helm deploy",
+      "helm apply",
+      "helm install",
+      "helm create"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What is Horizontal Pod Autoscaler used for?",
+    "opts": [
+      "Scaling nodes",
+      "Scaling Pods automatically",
+      "Scaling storage",
+      "Scaling namespaces"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which metric is commonly used by HPA?",
+    "opts": [
+      "CPU usage",
+      "Disk partitions",
+      "Image size",
+      "Node hostname"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What command displays events in Kubernetes?",
+    "opts": [
+      "kubectl get events",
+      "kubectl logs events",
+      "kubectl describe events",
+      "kubectl monitor"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What is a taint in Kubernetes?",
+    "opts": [
+      "A container image vulnerability",
+      "A restriction preventing Pods from scheduling on nodes",
+      "A networking policy",
+      "A logging mechanism"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What is a toleration?",
+    "opts": [
+      "Permission to access secrets",
+      "Permission for Pods to schedule onto tainted nodes",
+      "A Service type",
+      "A container limit"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which object defines network traffic rules between Pods?",
+    "opts": [
+      "NetworkPolicy",
+      "Ingress",
+      "ReplicaSet",
+      "DaemonSet"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What does kubectl apply do?",
+    "opts": [
+      "Deletes resources",
+      "Applies configuration changes declaratively",
+      "Starts Minikube",
+      "Builds Docker images"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which command removes a Pod directly?",
+    "opts": [
+      "kubectl erase pod",
+      "kubectl remove pod",
+      "kubectl delete pod",
+      "kubectl destroy pod"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What happens if a Pod managed by a Deployment crashes?",
+    "opts": [
+      "Nothing",
+      "The node restarts",
+      "Kubernetes recreates the Pod",
+      "The Service is deleted"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Which object manages stable identities for Pods?",
+    "opts": [
+      "Deployment",
+      "StatefulSet",
+      "ConfigMap",
+      "ReplicaSet"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What command retrieves resource usage metrics?",
+    "opts": [
+      "kubectl metrics",
+      "kubectl top",
+      "kubectl usage",
+      "kubectl monitor"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which Kubernetes feature supports zero-downtime deployments?",
+    "opts": [
+      "Rolling updates",
+      "DaemonSets",
+      "NodePort",
+      "ConfigMaps"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What is kubeadm commonly used for?",
+    "opts": [
+      "Managing Docker images",
+      "Bootstrapping Kubernetes clusters",
+      "Creating Pods",
+      "Monitoring Services"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What is the purpose of readiness probes?",
+    "opts": [
+      "Check if a Pod should receive traffic",
+      "Check disk space",
+      "Build images",
+      "Monitor namespaces"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What is the purpose of liveness probes?",
+    "opts": [
+      "Monitor networking",
+      "Restart unhealthy containers",
+      "Scale Pods",
+      "Expose Services"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which command retrieves namespaces?",
+    "opts": [
+      "kubectl get ns",
+      "kubectl namespaces",
+      "kubectl list namespaces",
+      "kubectl show ns"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What is the role of kube-proxy?",
+    "opts": [
+      "Scheduling Pods",
+      "Managing network traffic routing",
+      "Storing cluster data",
+      "Managing secrets"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What is etcd?",
+    "opts": [
+      "A container runtime",
+      "A distributed key-value store",
+      "A network plugin",
+      "A logging system"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What is the purpose of PersistentVolumeClaim?",
+    "opts": [
+      "Request storage resources",
+      "Create Pods",
+      "Expose Services",
+      "Store secrets"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Which command edits a live Kubernetes resource?",
+    "opts": [
+      "kubectl update",
+      "kubectl edit",
+      "kubectl modify",
+      "kubectl patch"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What is a sidecar container?",
+    "opts": [
+      "A backup node",
+      "A helper container running alongside the main container",
+      "A Service type",
+      "A cluster component"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What is AKS?",
+    "opts": [
+      "Azure Kubernetes Service",
+      "Amazon Kubernetes Service",
+      "Advanced Kubernetes Scheduler",
+      "Azure Key Storage"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What is the default restart policy for Pods in Deployments?",
+    "opts": [
+      "Never",
+      "OnFailure",
+      "Always",
+      "Manual"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What command shows current Kubernetes context?",
+    "opts": [
+      "kubectl current-context",
+      "kubectl config current-context",
+      "kubectl get context",
+      "kubectl show context"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What is a Kubernetes context?",
+    "opts": [
+      "A Docker image",
+      "A combination of cluster, namespace, and user settings",
+      "A Pod label",
+      "A deployment strategy"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What command lists all contexts?",
+    "opts": [
+      "kubectl config get-contexts",
+      "kubectl contexts",
+      "kubectl list contexts",
+      "kubectl show contexts"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What is container orchestration?",
+    "opts": [
+      "Building source code",
+      "Managing containers automatically",
+      "Compressing images",
+      "Managing databases"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which object is best for batch processing tasks?",
+    "opts": [
+      "Job",
+      "Ingress",
+      "ReplicaSet",
+      "Namespace"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What command creates a namespace?",
+    "opts": [
+      "kubectl add namespace",
+      "kubectl namespace create",
+      "kubectl create namespace",
+      "kubectl init namespace"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Which file commonly stores Kubernetes cluster access configuration?",
+    "opts": [
+      "docker-compose.yml",
+      "kubeconfig",
+      "deployment.yaml",
+      "configmap.yaml"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What is the purpose of imagePullPolicy?",
+    "opts": [
+      "Control how container images are pulled",
+      "Manage Pod replicas",
+      "Control networking",
+      "Store secrets"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Which imagePullPolicy value avoids pulling if the image already exists locally?",
+    "opts": [
+      "Always",
+      "Never",
+      "IfNotPresent",
+      "OnDemand"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What is a headless Service?",
+    "opts": [
+      "A Service without a cluster IP",
+      "A Service without Pods",
+      "A hidden Service",
+      "A disabled Service"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Which Kubernetes object controls Pod placement rules?",
+    "opts": [
+      "Affinity",
+      "ConfigMap",
+      "Secret",
+      "Ingress"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What does node affinity do?",
+    "opts": [
+      "Controls Service exposure",
+      "Controls Pod scheduling preferences",
+      "Controls storage",
+      "Controls namespaces"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What command restarts a Deployment rollout?",
+    "opts": [
+      "kubectl rollout restart",
+      "kubectl restart deployment",
+      "kubectl refresh deployment",
+      "kubectl redeploy"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What is a rollout in Kubernetes?",
+    "opts": [
+      "A Service update",
+      "A Deployment update process",
+      "A namespace deletion",
+      "A Pod backup"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which command checks rollout status?",
+    "opts": [
+      "kubectl rollout status",
+      "kubectl status rollout",
+      "kubectl deployment status",
+      "kubectl rollout check"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What is resource throttling related to?",
+    "opts": [
+      "CPU and memory limits",
+      "Networking rules",
+      "Service discovery",
+      "Namespaces"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Which field defines container resource limits?",
+    "opts": [
+      "constraints",
+      "resources",
+      "capacity",
+      "allocation"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What command forwards local traffic to a Pod?",
+    "opts": [
+      "kubectl expose",
+      "kubectl connect",
+      "kubectl port-forward",
+      "kubectl proxy"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Which Kubernetes object groups related API objects?",
+    "opts": [
+      "Namespace",
+      "Cluster",
+      "Node",
+      "Image"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What is the main benefit of Kubernetes?",
+    "opts": [
+      "Automatic container management and scaling",
+      "Replacing Docker",
+      "Replacing Linux",
+      "Managing source code"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Which cloud provider offers AKS?",
+    "opts": [
+      "Google",
+      "Amazon",
+      "Microsoft",
+      "Oracle"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What does kubectl apply compare against when updating resources?",
+    "opts": [
+      "Docker Hub",
+      "Current cluster state",
+      "Node operating system",
+      "Container logs"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What is service discovery in Kubernetes?",
+    "opts": [
+      "Automatically finding Services by DNS names",
+      "Building Docker images",
+      "Monitoring containers",
+      "Managing namespaces"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What DNS name pattern is commonly used for internal Services?",
+    "opts": [
+      "service-name",
+      "service-name.namespace.svc.cluster.local",
+      "service-name.local",
+      "cluster.service"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What is a control plane in Kubernetes?",
+    "opts": [
+      "The networking layer",
+      "The set of components managing the cluster",
+      "A Docker runtime",
+      "A monitoring dashboard"
+    ],
+    "a": 1
+  }
+]

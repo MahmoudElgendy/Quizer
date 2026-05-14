@@ -8,6 +8,7 @@
     "DockerFile.json",
     "dotnetapi.json",
     "GithubActions.json",
+    "k8s.json",
     "Networking.json",
     "OperatingSystem.json",
     "systemDesign.json"
