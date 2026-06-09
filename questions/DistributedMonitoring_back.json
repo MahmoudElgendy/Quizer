@@ -1,0 +1,302 @@
+[
+  {
+    "q": "Why is distributed monitoring important in modern systems?",
+    "opts": [
+      "To replace databases",
+      "To prevent cascading failures and detect issues early",
+      "To increase image size",
+      "To avoid using APIs"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What is a cascading failure in distributed systems?",
+    "opts": [
+      "A UI redesign issue",
+      "A single failure causing dependent services to fail",
+      "A database backup strategy",
+      "A container deployment method"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What type of database is commonly used in monitoring systems for metrics?",
+    "opts": [
+      "Graph database",
+      "Document database",
+      "Time-series database",
+      "Relational database"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What is the primary responsibility of a data collector in a monitoring system?",
+    "opts": [
+      "Serving web pages",
+      "Collecting and storing metrics",
+      "Managing DNS",
+      "Compiling applications"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Why are alert managers used in monitoring systems?",
+    "opts": [
+      "To compile code",
+      "To create Docker images",
+      "To notify administrators when rules are violated",
+      "To host applications"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Which of the following is an example of a monitored system metric?",
+    "opts": [
+      "CPU usage",
+      "Image resolution",
+      "CSS styles",
+      "HTML tags"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Why is service discovery important in distributed monitoring?",
+    "opts": [
+      "Services scale dynamically and endpoints change",
+      "To replace Kubernetes",
+      "To remove databases",
+      "To compress metrics"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What problem can occur with a single monitoring server?",
+    "opts": [
+      "It improves scalability",
+      "It creates a single point of failure",
+      "It reduces network latency",
+      "It eliminates alerts"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What is a major advantage of the pull-based monitoring model?",
+    "opts": [
+      "Applications directly control monitoring",
+      "It prevents network congestion and decouples applications",
+      "It removes the need for storage",
+      "It avoids dashboards"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What is a disadvantage of storing monitoring data forever?",
+    "opts": [
+      "It improves performance",
+      "It reduces storage requirements",
+      "It becomes resource-intensive",
+      "It removes the need for databases"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What is the role of blob storage in a monitoring system?",
+    "opts": [
+      "To store long-term metric data",
+      "To replace APIs",
+      "To host dashboards",
+      "To compile applications"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What does a rules database store in a monitoring system?",
+    "opts": [
+      "Application binaries",
+      "Container images",
+      "Alert conditions and actions",
+      "Network packets"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Which component is responsible for visualizing monitoring metrics?",
+    "opts": [
+      "Dashboard",
+      "Compiler",
+      "DNS server",
+      "Container runtime"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Why are hybrid push/pull monitoring architectures used?",
+    "opts": [
+      "To eliminate metrics",
+      "To improve scalability across data centers",
+      "To replace cloud providers",
+      "To reduce hardware"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What happens in the local pull stage of hybrid monitoring?",
+    "opts": [
+      "Applications send metrics globally",
+      "Secondary monitoring servers scrape local nodes",
+      "Databases replicate automatically",
+      "Dashboards generate alerts"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What is the purpose of the global monitoring layer?",
+    "opts": [
+      "To manage operating systems",
+      "To aggregate monitoring data from multiple data centers",
+      "To replace local monitoring",
+      "To compile metrics"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which of the following can monitoring systems track?",
+    "opts": [
+      "Hardware failures",
+      "Network latency",
+      "Power events",
+      "All of the above"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Why are heat maps useful in monitoring systems?",
+    "opts": [
+      "They compress Docker images",
+      "They visualize server health at scale",
+      "They improve SQL performance",
+      "They reduce storage costs"
+    ],
+    "a": 1
+  },
+  {
+    "q": "In a monitoring heat map, what does a red cell typically indicate?",
+    "opts": [
+      "Healthy server",
+      "High storage capacity",
+      "Non-responsive or unhealthy node",
+      "Completed deployment"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What does a green cell represent in a monitoring heat map?",
+    "opts": [
+      "Server operating normally",
+      "Network disconnected",
+      "Database corrupted",
+      "Storage full"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Why is network latency monitoring important in distributed systems?",
+    "opts": [
+      "To track UI colors",
+      "To identify communication delays between systems",
+      "To increase storage usage",
+      "To replace routing protocols"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What is one benefit of using hierarchical monitoring systems?",
+    "opts": [
+      "Reduced scalability",
+      "Centralized hardware dependency",
+      "Distributed load handling",
+      "Elimination of alerts"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Which technology is often integrated with service discovery?",
+    "opts": [
+      "Kubernetes",
+      "Photoshop",
+      "Excel",
+      "FTP servers"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What is the purpose of retention policies in monitoring systems?",
+    "opts": [
+      "To permanently keep all metrics",
+      "To remove or downsample old data",
+      "To increase memory usage",
+      "To disable alerts"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which communication method is commonly used by alert managers?",
+    "opts": [
+      "Slack or email notifications",
+      "Video streaming",
+      "Database replication",
+      "Container orchestration"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Why is monitoring global service health important?",
+    "opts": [
+      "To improve font rendering",
+      "To detect outages across multiple data centers",
+      "To replace CDNs",
+      "To reduce API usage"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What is one drawback of a push-based monitoring approach?",
+    "opts": [
+      "Potential network congestion",
+      "No metrics collection",
+      "No scalability",
+      "No alerting support"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What is the main role of the querying service?",
+    "opts": [
+      "Deploying applications",
+      "Fetching metric data from storage",
+      "Restarting servers",
+      "Compiling source code"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Why do monitoring systems track power consumption and events?",
+    "opts": [
+      "To detect infrastructure-level issues",
+      "To improve CSS performance",
+      "To replace monitoring dashboards",
+      "To increase bandwidth"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What is a common scalability strategy in monitoring system design?",
+    "opts": [
+      "Using a single monitoring server forever",
+      "Adding hierarchical monitoring layers",
+      "Removing storage systems",
+      "Avoiding service discovery"
+    ],
+    "a": 1
+  }
+]

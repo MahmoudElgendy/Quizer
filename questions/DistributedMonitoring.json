@@ -1,0 +1,302 @@
+[
+  {
+    "q": "Why is distributed monitoring important in modern systems?",
+    "opts": [
+      "To replace databases",
+      "To prevent cascading failures and detect issues early",
+      "To increase image size",
+      "To avoid using APIs"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What is a cascading failure in distributed systems?",
+    "opts": [
+      "A UI redesign issue",
+      "A single failure causing dependent services to fail",
+      "A database backup strategy",
+      "A container deployment method"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which of the following is a primary goal of monitoring?",
+    "opts": [
+      "Increase code complexity",
+      "Reduce server memory",
+      "Provide visibility into system health and failures",
+      "Eliminate all network traffic"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What does observability primarily help engineers understand?",
+    "opts": [
+      "Why a system issue occurred",
+      "How to compile code",
+      "How to create databases",
+      "How to replace operating systems"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Which issue is commonly detected through monitoring?",
+    "opts": [
+      "Syntax highlighting",
+      "Container-level resource exhaustion",
+      "Keyboard malfunction",
+      "CSS formatting"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What is the purpose of metrics in a monitoring system?",
+    "opts": [
+      "Encrypt network traffic",
+      "Measure system activity and performance",
+      "Compile applications",
+      "Replace logging"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which of the following is an example of a monitoring metric?",
+    "opts": [
+      "Source code comments",
+      "CPU utilization",
+      "Font size",
+      "IDE theme"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Why should metric collection have minimal overhead?",
+    "opts": [
+      "To avoid affecting system performance",
+      "To reduce Docker image size",
+      "To disable alerts",
+      "To improve UI colors"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What does a monitoring alert typically contain?",
+    "opts": [
+      "A SQL query and a Dockerfile",
+      "A condition and an action",
+      "A container and a volume",
+      "A service and a namespace"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What happens when a metric exceeds a predefined threshold?",
+    "opts": [
+      "The application recompiles automatically",
+      "An alert is triggered",
+      "The database is deleted",
+      "The operating system restarts"
+    ],
+    "a": 1
+  },
+  {
+    "q": "In a pull-based monitoring model, who initiates metric collection?",
+    "opts": [
+      "The monitored server",
+      "The client browser",
+      "The monitoring system",
+      "The database"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What is an advantage of the pull monitoring strategy?",
+    "opts": [
+      "Servers control polling frequency",
+      "Monitoring systems avoid being overwhelmed",
+      "No metrics are stored",
+      "Databases become unnecessary"
+    ],
+    "a": 1
+  },
+  {
+    "q": "In a push-based monitoring model, what happens?",
+    "opts": [
+      "Monitoring systems request data manually",
+      "Servers proactively send metrics",
+      "Metrics are deleted automatically",
+      "Clients send database queries"
+    ],
+    "a": 1
+  },
+  {
+    "q": "When is the push model especially useful?",
+    "opts": [
+      "When firewalls block incoming monitoring requests",
+      "When containers are removed",
+      "When applications use localhost",
+      "When there are no servers"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What type of database is commonly used to store monitoring metrics over time?",
+    "opts": [
+      "Relational database",
+      "Graph database",
+      "Time series database (TSDB)",
+      "Document database"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Why are time series databases useful in monitoring?",
+    "opts": [
+      "They store metrics chronologically for trend analysis",
+      "They replace APIs",
+      "They compile applications",
+      "They reduce network traffic"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What is code instrumentation in monitoring?",
+    "opts": [
+      "Removing logs from applications",
+      "Embedding code to capture custom metrics",
+      "Encrypting databases",
+      "Scaling containers automatically"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which type of monitoring error is usually represented by HTTP 5xx codes?",
+    "opts": [
+      "Client-side errors",
+      "Server-side errors",
+      "DNS errors",
+      "CSS errors"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Which type of monitoring error is usually represented by HTTP 4xx codes?",
+    "opts": [
+      "Kernel errors",
+      "Server crashes",
+      "Client-side errors",
+      "Database replication failures"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Why can some client-side errors be invisible to backend services?",
+    "opts": [
+      "The request never reaches the server",
+      "Containers block all requests",
+      "Monitoring systems ignore clients",
+      "Databases remove the logs"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What is one major consequence of downtime in large-scale systems?",
+    "opts": [
+      "Reduced image quality",
+      "Financial and reputational losses",
+      "Automatic scaling improvements",
+      "Faster deployments"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Why is manual debugging difficult in modern distributed systems?",
+    "opts": [
+      "There are too many globally distributed servers",
+      "Operating systems no longer support debugging",
+      "Containers cannot be monitored",
+      "Metrics are unavailable"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What is the role of logging in monitoring?",
+    "opts": [
+      "Recording system events for troubleshooting and analysis",
+      "Replacing metrics",
+      "Reducing CPU usage",
+      "Deleting failed requests"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Which operating system metric is commonly monitored?",
+    "opts": [
+      "CPU usage",
+      "Wallpaper settings",
+      "Mouse sensitivity",
+      "Monitor brightness"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What does network latency measure?",
+    "opts": [
+      "Database size",
+      "Round-trip communication delay",
+      "Container image size",
+      "Memory allocation"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Why are alerts important in distributed monitoring?",
+    "opts": [
+      "They automatically rewrite code",
+      "They notify operators when issues occur",
+      "They remove metrics",
+      "They replace monitoring dashboards"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What is a retry storm in distributed systems?",
+    "opts": [
+      "A sudden increase in repeated requests causing congestion",
+      "A type of SQL query",
+      "A Kubernetes deployment strategy",
+      "A logging framework"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What is the primary purpose of monitoring dashboards?",
+    "opts": [
+      "To visualize system health and trends",
+      "To replace APIs",
+      "To compile applications",
+      "To increase latency"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Why must monitoring systems support historical analysis?",
+    "opts": [
+      "To identify trends and recurring issues",
+      "To reduce RAM usage",
+      "To remove logs",
+      "To avoid using metrics"
+    ],
+    "a": 0
+  },
+  {
+    "q": "What is one benefit of automated monitoring in large infrastructures?",
+    "opts": [
+      "It reduces operational costs and improves scalability",
+      "It eliminates all failures permanently",
+      "It removes the need for servers",
+      "It disables networking"
+    ],
+    "a": 0
+  }
+]

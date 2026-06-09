@@ -2,6 +2,8 @@
     "az_configs.json",
     "az_scaling.json",
     "azure functions.json",
+    "DistributedMonitoring.json",
+    "DistributedMonitoring_back.json",
     "Docker real senerios.json",
     "Docker v2.json",
     "Docker.json",
